@@ -58,11 +58,16 @@ const Banner = () => {
     <div> 
       <BannerWrapper>
         <Container>
-          <img src={bgimages} />
-          <Heading as="h1" content="AGRICULTURE CATALOG" />
-          <Heading as="h2" content="IBEX BIONOMICS" />
+          <Fade bottom >
+            <img src={bgimages} />
+          </Fade>
+          <Fade bottom >
+          <Heading as="h1" content="AGRICULTURE CATALOG" /></Fade>
+          <Fade bottom >
+          <Heading as="h2" content="IBEX BIONOMICS" /></Fade>
+          <Fade bottom >
           <h3>www.IBEXBionomics.com</h3>
-          <h4><a>info@IBEXBionomics.com</a></h4>
+          <h4><a>info@IBEXBionomics.com</a></h4></Fade>
         <ContentArea>
           
         {/**  <Heading as="h1" content="AGRICULTURE CATALOG" />

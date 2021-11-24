@@ -20,7 +20,7 @@ import BannerWrapper, {
   CarouselArea,
 } from './banner.style';
 
-
+import leafimages from '../../../common/assets/image/interior/IbexImages/S2/LeafImages.png'
 
 const S2Products = () => {
   
@@ -50,14 +50,30 @@ const S2Products = () => {
                         alt="IbexBG"
                         className="carousel_img"
                       /> <img src={leafbg} alt="IbexBG" className="bg_img" /> */}
-
-        
-        <ContentArea>
+        <Fade bottom >
+        <ContentArea className="shadow">
+        <img src={leafimages}/>
+        <Heading as="h2" textAlign="center" content={"ALL LIQUID PRODUCTS ARE AVAILABLE IN THE FOLLOWING PRESENTATIONS:"} />
+        <Text content="High Density Plastic Container" />
+        <Text content="4 liters Bottle" />
+        <Text content="20 liters Drum" />
+        <Text content="60 liters Container" />
+        <Text content="1000 liters" />
+        <br/>
+        <br/>
+        <br/>
+        <Heading as="h3" textAlign="center" content={"ALL SOLID PRODUCTS ARE AVAILABLE IN THE FOLLOWING PRESENTATIONS:"} />
+        <Text content="High Density Plastic Container" />
+        <Text content="1 kilogram" />
+        <Text content="25 kilograms" />
         </ContentArea>
+        </Fade>
+        <Fade bottom >
         <ContentArea>
-        <Heading as="h1" content={title} />
-        <Text content={text} />
+        <Heading as="h1" content={title} textAlign="left" />
+        <Text content={text} textAlign="left" />
         </ContentArea>
+        </Fade>
         </Container>
       </BannerWrapper>
     </div>

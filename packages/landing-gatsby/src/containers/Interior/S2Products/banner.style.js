@@ -56,14 +56,39 @@ export const Container = styled.div`
     padding: 100px 30px;
   }
   @media only screen and (max-width: 767px) {
-    padding: 100px 50px;
+    padding: 100px 35px;
     flex-direction: column;
+  }
+  .shadow{
+    background: rgb(136, 66, 213, 0.4)
   }
 `;
 
 export const ContentArea = styled.div`
-  width: 595px;
-  padding-right: 88px;
+  width: 100%;
+  min-width: calc(50vw - 50px);
+  display: flex-inline;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+  margin:  auto;
+  padding: 20px;
+  img{
+    height: auto;
+    max-width: 50%;
+    padding: 20px;
+  }
+  h2,h3{
+    color: #191919;
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 20px;
+    }
+    p{
+      font-size: 18px;
+      line-height: 25px;
+    }
   @media only screen and (max-width: 1600px) {
     width: 50%;
   }
@@ -79,7 +104,17 @@ export const ContentArea = styled.div`
   }
   @media only screen and (max-width: 480px) {
     padding-right: 0;
+    h2{
+    font-size: 25px;
+    line-height: 33px;
+    padding-bottom: 20px;
+    }
+    p{
+      font-size: 18px;
+      line-height: 25px;
+    }
   }
+  
 
   h1,
   p {
