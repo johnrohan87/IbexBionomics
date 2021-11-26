@@ -103,7 +103,8 @@ export const ContentArea = styled.div`
     padding-right: 50px;
   }
   @media only screen and (max-width: 480px) {
-    padding-right: 0;
+    padding: 10px 0;
+    margin: 0;
     h2{
     font-size: 25px;
     line-height: 33px;
