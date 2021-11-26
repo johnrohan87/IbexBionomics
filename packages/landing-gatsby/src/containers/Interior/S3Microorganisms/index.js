@@ -1,5 +1,5 @@
 import React from 'react';
-//{ Fragment, useState, useEffect }
+//, { Fragment, useState, useEffect }
 import { useStaticQuery, graphql } from 'gatsby';
 import Fade from 'react-reveal/Fade';
 //import { Icon } from 'react-icons-kit';
@@ -21,64 +21,46 @@ import BannerWrapper, {
   //CarouselArea,
 } from './banner.style';
 
-import leafimages from '../../../common/assets/image/interior/IbexImages/S2/LeafImages.png'
+//import MicroorganismsBG from '../../../common/assets/image/interior/IbexImages/S3/S3MicroorganismsBG.jpg'
 import IBEXLogo from '../../../common/assets/image/interior/IbexImages/IbexBionomicsLogo.png'
 
-const S2Products = () => {
+const S3Microorganisms = () => {
   
   const data = useStaticQuery(graphql`
     query {
       interiorJson {
-        S2ProductsData {
-          
+        S3MicroorganismsData {
           title
-          text
+          p1
+          p2
+          p3
+          p4
         }
       }
     }
   `);
 
-  const { title, text } =
-  data.interiorJson.S2ProductsData;
+  const { title, p1, p2, p3, p4 } =
+  data.interiorJson.S3MicroorganismsData;
 
   return(
     <div> 
       <BannerWrapper>
         <Container>
-       {/** <GatsbyImage
-                        src={(bg_url !== null) | undefined
-                          ? bg_url
-                          : {}}
-                        alt="IbexBG"
-                        className="carousel_img"
-                      /> <img src={leafbg} alt="IbexBG" className="bg_img" /> */}
-        <Fade bottom >
-        <ContentArea className="shadow">
-        <img src={leafimages}/>
-        <Heading as="h2" textAlign="center" content={"ALL LIQUID PRODUCTS ARE AVAILABLE IN THE FOLLOWING PRESENTATIONS:"} />
-        <Text content="High Density Plastic Container" />
-        <Text content="4 liters Bottle" />
-        <Text content="20 liters Drum" />
-        <Text content="60 liters Container" />
-        <Text content="1000 liters" />
-        <br/>
-        <br/>
-        <br/>
-        <Heading as="h3" textAlign="center" content={"ALL SOLID PRODUCTS ARE AVAILABLE IN THE FOLLOWING PRESENTATIONS:"} />
-        <Text content="High Density Plastic Container" />
-        <Text content="1 kilogram" />
-        <Text content="25 kilograms" />
-        </ContentArea>
-        </Fade>
-        <Fade bottom >
-        <ContentArea>
-        <img src={IBEXLogo} />
-        <Heading as="h1" content={title} textAlign="left" />
-        <Text content={text} textAlign="left" />
-        <br/>
-        <Text content=" All IBEX Bionomics agricultural products are fully biodegradable and harmless to the environment." textAlign="left" />
-        </ContentArea>
-        </Fade>
+          <Fade bottom >
+            <ContentArea className="shadow">
+              <Heading as="h1" textAlign="center" content={title} />
+              <Text content={p1} />
+              <Text content={p2} />
+              <Text content={p3} />
+              <Text content={p4} />
+            </ContentArea>
+          </Fade>
+          <Fade bottom >
+            <ContentArea>
+              <img src={IBEXLogo}/>
+            </ContentArea>
+          </Fade>
         </Container>
       </BannerWrapper>
     </div>
@@ -87,7 +69,7 @@ const S2Products = () => {
     
 
 
-export default S2Products;
+export default S3Microorganisms;
 
 
 {/**

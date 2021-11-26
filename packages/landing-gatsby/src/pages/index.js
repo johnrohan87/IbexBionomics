@@ -6,6 +6,7 @@ import { DrawerProvider } from 'common/contexts/DrawerContext';
 import Navbar from 'containers/Interior/Navbar';
 import Banner from 'containers/Interior/Banner';
 import S2Products from 'containers/Interior/S2Products';
+import S3Microorganisms from 'containers/Interior/S3Microorganisms';
 //import Feature from 'containers/Interior/Feature';
 import AboutUs from 'containers/Interior/AboutUs';
 import Project from 'containers/Interior/Project';
@@ -40,6 +41,7 @@ const Interior = () => {
           <ContentWrapper>
             <Banner />
             <S2Products />
+            <S3Microorganisms />
            {/* <Feature />*/}
             <AboutUs />
             <Project />

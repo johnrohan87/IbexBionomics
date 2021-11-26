@@ -60,7 +60,15 @@
   "S2ProductsData": {
     "bg_url": "../../assets/image/interior/IbexImages/S2/LeafBG.jpg",
     "title": "Agricultural Products",
-    "text": "IBEX Bionomics agricultural products are certified organic and provide biological and natural treatments that enhance the plant’s defenses, reduce the pathogen’s protection capacity, and enhance the growth and proliferation of beneficial microorganisms. All IBEX Bionomics agricultural products are fully biodegradable and harmless to the environment."
+    "text": "IBEX Bionomics agricultural products are certified organic and provide biological and natural treatments that enhance the plant’s defenses, reduce the pathogen’s protection capacity, and enhance the growth and proliferation of beneficial microorganisms."
+  },
+  "S3MicroorganismsData": {
+    "bg_url": "../../assets/image/interior/IbexImages/S2/LeafBG.jpg",
+    "title": "Agricultural Products",
+    "p1": "IBEX Bionomics agricultural products are either enzymatic, made from the fermentation of plant metabolites, or biological, composed of beneficial microorganisms with specific contributions to the efficacy of the products.",
+    "p2": "All microorganisms used in IBEX products are delivered in sporulated form, adopting the fundamental characteristics of the native colonies of microorganisms when they break latency.",
+    "p3": "They are produced through careful isolation, selection, and reproduction, guaranteeing chemoresistant and extremophile strains, able to resist high salt, metal, and toxic concentrations and to function at extreme pH (3 - 12) and temperature (1°- 99° C) levels.",
+    "p4": "All IBEX microorganisms are classified as Biosafety Level 1 by the American Type Culture Collection (ATCC) and are harmless to humans."
   },
   "featureData": {
     "title": "OUR SERVICES",
