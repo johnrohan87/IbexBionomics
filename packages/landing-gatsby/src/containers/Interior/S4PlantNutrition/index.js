@@ -5,7 +5,7 @@ import Fade from 'react-reveal/Fade';
 //import { Icon } from 'react-icons-kit';
 //import { iosEmailOutline } from 'react-icons-kit/ionicons/iosEmailOutline';
 import Heading from 'common/components/Heading';
-import Text from 'common/components/Text';
+//import Text from 'common/components/Text';
 //import Button from 'common/components/Button';
 //import Input from 'common/components/Input';
 //import GlideCarousel from 'common/components/GlideCarousel';
