@@ -77,7 +77,7 @@ export const ContentArea = styled.div`
   img{
     height: auto;
     max-width: 50%;
-    padding: 20px;
+    padding: 0px;
   }
   h2,h3{
     color: #191919;

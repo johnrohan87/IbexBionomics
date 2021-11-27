@@ -20,6 +20,7 @@ const shake = keyframes`
 `;
 
 const BannerWrapper = styled.div`
+  color: ${themeGet('colors.label', '#C6C6C6')};
   padding-top: 30px;
   margin-bottom: 81px;
   background-color: ${themeGet('colors.banner', '#171717')};
@@ -51,20 +52,23 @@ export const Container = styled.div`
     padding-top: 200px;
   }
   h1{
+    color: ${themeGet('colors.label', '#C6C6C6')};
     padding-top: 20px;
     padding-bottom: 50px;
     text-align: center;
   }
   h2{
+    color: ${themeGet('colors.label', '#C6C6C6')};
     padding-top: 50px; 
     padding-bottom: 50px; 
   }
   h3{
-    color: #191919;
+    color: ${themeGet('colors.label', '#C6C6C6')};
     font-weight: bold;
     margin-top: 0px;
   }
   h4{
+    color: ${themeGet('colors.label', '#C6C6C6')};
     margin: 0;
     padding-bottom: 100px;
   }

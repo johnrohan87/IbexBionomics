@@ -3,7 +3,6 @@ import { themeGet } from '@styled-system/theme-get';
 
 import error from 'common/assets/image/error.svg';
 import success from 'common/assets/image/success.svg';
-import leafbg from '../../../common/assets/image/interior/IbexImages/S2/LeafBG.jpg'
 
 const shake = keyframes`
   0% {
@@ -20,26 +19,20 @@ const shake = keyframes`
 `;
 
 const BannerWrapper = styled.div`
-  padding-top: 0px;
+  padding-top: 30px;
   margin-bottom: 81px;
   background-color: ${themeGet('colors.banner', '#171717')};
   @media only screen and (max-width: 1440px) {
     margin-bottom: 60px;
   }
   @media only screen and (max-width: 767px) {
-    
+    padding: 135px 0 82px;
     margin-bottom: 42px;
   }
 `;
 
 export const Container = styled.div`
-  background-image: url(${leafbg});
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  object-fit: cover;
   width: 100%;
-  height: 100%;
   max-width: 1580px;
   min-height: 100vh;
   margin: 0 auto;
@@ -47,75 +40,38 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   @media only screen and (max-width: 1600px) {
-    padding: 100px 81px;
+    padding: 0 81px;
   }
   @media only screen and (max-width: 1360px) {
-    padding: 100px 60px;
+    padding: 0 60px;
   }
   @media only screen and (max-width: 991px) {
-    padding: 100px 30px;
+    padding: 0 30px;
   }
   @media only screen and (max-width: 767px) {
-    padding: 100px 35px;
     flex-direction: column;
-  }
-  .shadow{
-    background: rgb(136, 66, 213, 0.4);
   }
 `;
 
 export const ContentArea = styled.div`
-  width: 100%;
-  min-width: calc(50vw - 50px);
-  display: flex-inline;
-  align-items: center;
-  align-self: center;
-  justify-content: center;
-  text-align: center;
-  margin:  auto;
-  padding: 20px;
-  img{
-    height: auto;
-    max-width: 50%;
-    padding: 20px 0;
-  }
-  h2,h3{
-    color: #191919;
-    font-size: 20px;
-    line-height: 30px;
-    padding-bottom: 20px;
-    }
-    p{
-      font-size: 18px;
-      line-height: 25px;
-    }
+  width: 595px;
+  padding-right: 88px;
   @media only screen and (max-width: 1600px) {
-    width: 50%;
+    width: 560px;
   }
   @media only screen and (max-width: 1360px) {
-    width: 50%;
+    width: 40%;
   }
   @media only screen and (max-width: 1200px) {
-    width: 50%;
+    width: 45%;
   }
   @media only screen and (max-width: 767px) {
     width: 100%;
     padding-right: 50px;
   }
   @media only screen and (max-width: 480px) {
-    padding: 10px 0;
-    margin: 0;
-    h2{
-    font-size: 25px;
-    line-height: 33px;
-    padding-bottom: 20px;
-    }
-    p{
-      font-size: 18px;
-      line-height: 25px;
-    }
+    padding-right: 0;
   }
-  
 
   h1,
   p {

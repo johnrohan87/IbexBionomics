@@ -3,7 +3,7 @@ import { themeGet } from '@styled-system/theme-get';
 
 import error from 'common/assets/image/error.svg';
 import success from 'common/assets/image/success.svg';
-import leafbg from '../../../common/assets/image/interior/IbexImages/S2/LeafBG.jpg'
+import S4PlantNutritionBG from '../../../common/assets/image/interior/IbexImages/S4/S4PlantNutritionBG.jpg'
 
 const shake = keyframes`
   0% {
@@ -33,7 +33,7 @@ const BannerWrapper = styled.div`
 `;
 
 export const Container = styled.div`
-  background-image: url(${leafbg});
+  background-image: url(${S4PlantNutritionBG});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -60,7 +60,7 @@ export const Container = styled.div`
     flex-direction: column;
   }
   .shadow{
-    background: rgb(136, 66, 213, 0.4);
+    background: rgb(136, 66, 213, 0.4)
   }
 `;
 
