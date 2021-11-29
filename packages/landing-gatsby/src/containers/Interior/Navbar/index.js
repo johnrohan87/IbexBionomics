@@ -17,7 +17,7 @@ import LoginModal from '../LoginModal';
 import Copyright from '../Copyright';
 
 //import logo from 'common/assets/image/interior/logo.svg';
-import logo from 'common/assets/image/interior/IbexImages/IbexBionomicsLogo.png';
+import logo from 'common/assets/image/interior/IbexImages/IbexBionomicsLogo2.png';
 
 const CloseModalButton = () => (
   <Button
