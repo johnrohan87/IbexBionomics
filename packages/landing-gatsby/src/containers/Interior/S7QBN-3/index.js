@@ -22,7 +22,7 @@ import BannerWrapper, {
 } from './banner.style';
 
 //import IBEXLogo from '../../../common/assets/image/interior/IbexImages/IbexBionomicsLogo.png'
-import S6RhyzominText from '../../../common/assets/image/interior/IbexImages/S6/S6RhyzominText.png'
+import S7QBN3Text from '../../../common/assets/image/interior/IbexImages/S7/S7QBN-3Text.png';
 
 const S5Rhyzomac = () => {
   
@@ -40,7 +40,7 @@ const S5Rhyzomac = () => {
   const { title } =
   data.interiorJson.S5RhyzomacData;
  */}
- 
+
   return(
     <div> 
       <BannerWrapper>
@@ -48,7 +48,7 @@ const S5Rhyzomac = () => {
           <Fade bottom >
             <ContentArea minWidth="40vw">
             <p className="shadowDark" padding="20px">
-              <i>A mineral prebiotic that increases responsiveness and physiological resistance in treated plants, leading to healthier crops and lower treatment costs for fungal, bacterial, and viral infections.</i>
+              <i>The organic components found in QBN-3 avoid biological impacts produced by heavy elements, eliminating the formation of toxic compounds through chemical reactions.</i>
             </p>
             </ContentArea>
           </Fade>
@@ -56,24 +56,25 @@ const S5Rhyzomac = () => {
             <ContentArea className="shadow" minWidth="60vw" minHeight="100vh" >
               <div >
                 <div>
-                  <img src={S6RhyzominText}/>
-                  <p><b>POTENTIATING MINERAL PREBIOTIC FOR AGRICULTURAL USE</b></p>
-                  <p>A pulverized, insoluble mineral compound for foliar and edaphic application. Through the remineralization of plants and soils, depleted or diminished mineral reserves are replaced in necessary quantities.</p>
+                  <img src={S7QBN3Text}/>
+                  <p><b>ORGANIC ENZYMATIC FERTILIZER FOR EDAPHIC AND FOLIAR USE</b></p>
+                  <p>Nutritional supplement - eliminates and degrades toxic compounds.</p>
                 </div>
               </div>
               <div className="flex-row" >
                 <div >
                   <h2>MODE OF ACTION</h2>
                   <p>
-                  For certain beneficial bacteria, fungi, and other microorganisms, the mineral elements contained in RHYZOMIN allow the restoration of biochemical reactions, leading to soil remediation and plant enrichment.
+                  QBN-3 stimulates the production and facilitates the action of auxins, gibberellins, and cytokinins, promoting growth and development.
                   <br/>
                   <br/>
-                  RHYZOMIN promotes ideal nutritional conditions for Ecological Farming by Remineralization (EFR), so plants can express their full bromatologic proteome (entire set of proteins), correcting the most common mineral and vitamin deficiencies commonly found in crops.
-                  <br/>
-                  Improves biological activity of the existing beneficial microorganisms by intensifying and increasing the soil’s biokinetic capacity.
+                  Stimulates the production of chlorophyll and amylases, allowing the plant to process nutrients and solar energy more efficiently.
                   <br/>
                   <br/>
-                  The activation of the bacterial microflora through this biomineral enhancer allows for the development of a non-restrictive, optimum level of efficiency in biological environments through natural and non- toxic elements.
+                  Prevents nutrient losses caused by evaporation and leaching.
+                  <br/>
+                  <br/>
+                  Prevents biological impact shocks produced by heavy elements, preventing the generation of toxic compounds through chemical reactions.
                   </p>
                 </div>
                 <div >
@@ -82,16 +83,16 @@ const S5Rhyzomac = () => {
                   <br/>
                   <br/>
                   <p>
-                  The continued use of RHYZOMIN increases crop productivity and optimizes the cost- benefit ratio of agricultural holdings.
+                  QBN-3 is designed for foliar applications but may be used edaphically for
                   <br/>
                   <br/>
-                  Application rates are minimal by hectare and its use is completely safe for field personnel.
+                  seedlings in nurseries.	It is also ideal for hydroponic plant nutrition.
                   <br/>
                   <br/>
                   Does not require safety waiting periods after application for access or harvest.
                   </p>
                   <br/>
-                  <b>Solid Product</b>
+                  <b>Liquid Product</b>
                   <br/>
                   <br/>
                   <br/>
@@ -99,7 +100,7 @@ const S5Rhyzomac = () => {
                     <p>
                       <b>ACTIVE INGREDIENTS:</b>
                       <br/>
-                      Pulverized calcic and silicic rock and other mineral traces with prebiotic characteristics.
+                      Natural extracts and organic metabolites of vegetable origin.
                     </p>
                   </div>
                 </div>

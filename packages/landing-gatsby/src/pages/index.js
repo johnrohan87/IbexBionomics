@@ -10,6 +10,7 @@ import S3Microorganisms from 'containers/Interior/S3Microorganisms';
 import S4PlantNutrition from 'containers/Interior/S4PlantNutrition';
 import S5Rhyzomac from 'containers/Interior/S5Rhyzomac';
 import S6Rhyzomin from 'containers/Interior/S6Rhyzomin';
+import S7QBN3 from 'containers/Interior/S7QBN-3';
 //import Feature from 'containers/Interior/Feature';
 import AboutUs from 'containers/Interior/AboutUs';
 import Project from 'containers/Interior/Project';
@@ -48,6 +49,7 @@ const Interior = () => {
             <S4PlantNutrition />
             <S5Rhyzomac />
             <S6Rhyzomin />
+            <S7QBN3 />
            {/* <Feature />*/}
             <AboutUs />
             <Project />

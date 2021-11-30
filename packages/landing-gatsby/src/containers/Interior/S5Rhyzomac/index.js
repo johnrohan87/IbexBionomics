@@ -1,6 +1,6 @@
 import React from 'react';
 //, { Fragment, useState, useEffect }
-import { useStaticQuery, graphql } from 'gatsby';
+//import { useStaticQuery, graphql } from 'gatsby';
 import Fade from 'react-reveal/Fade';
 //import { Icon } from 'react-icons-kit';
 //import { iosEmailOutline } from 'react-icons-kit/ionicons/iosEmailOutline';
@@ -26,6 +26,7 @@ import S5RhyzomacText from '../../../common/assets/image/interior/IbexImages/S5/
 
 const S5Rhyzomac = () => {
   
+  {/**
   const data = useStaticQuery(graphql`
     query {
       interiorJson {
@@ -38,6 +39,7 @@ const S5Rhyzomac = () => {
 
   const { title } =
   data.interiorJson.S5RhyzomacData;
+ */}
 
   return(
     <div> 
