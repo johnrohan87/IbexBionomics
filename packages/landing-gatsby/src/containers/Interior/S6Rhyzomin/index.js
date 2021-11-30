@@ -22,7 +22,7 @@ import BannerWrapper, {
 } from './banner.style';
 
 //import IBEXLogo from '../../../common/assets/image/interior/IbexImages/IbexBionomicsLogo.png'
-import S5RhyzomacText from '../../../common/assets/image/interior/IbexImages/S5/S5RhyzomacText.png'
+import S6RhyzominText from '../../../common/assets/image/interior/IbexImages/S6/S6RhyzominText.png'
 
 const S5Rhyzomac = () => {
   
@@ -46,7 +46,7 @@ const S5Rhyzomac = () => {
           <Fade bottom >
             <ContentArea minWidth="40vw">
             <p className="shadowDark" padding="20px">
-            A highly effective biological fertilizer. Due to its sporulated form, it immediately adopts the characteristics of the native colonies of beneficial microorganisms, promoting their growth and reproduction.
+              <i>A mineral prebiotic that increases responsiveness and physiological resistance in treated plants, leading to healthier crops and lower treatment costs for fungal, bacterial, and viral infections.</i>
             </p>
             </ContentArea>
           </Fade>
@@ -54,51 +54,42 @@ const S5Rhyzomac = () => {
             <ContentArea className="shadow" minWidth="60vw" minHeight="100vh" >
               <div >
                 <div>
-                  <img src={S5RhyzomacText}/>
-                  <p><b>BIOLOGICAL NUTRITIONAL REGULATOR</b></p>
-                  <p>A concentrated and stable liquid fertilizer composed of highly resistant spores of Azotobacter and other rhizospheric microorganisms that fix atmospheric nitrogen and solubilizes phosphorus and potassium present in the soil.</p>
+                  <img src={S6RhyzominText}/>
+                  <p><b>POTENTIATING MINERAL PREBIOTIC FOR AGRICULTURAL USE</b></p>
+                  <p>A pulverized, insoluble mineral compound for foliar and edaphic application. Through the remineralization of plants and soils, depleted or diminished mineral reserves are replaced in necessary quantities.</p>
                 </div>
               </div>
               <div className="flex-row" >
                 <div >
                   <h2>MODE OF ACTION</h2>
-                  <p>Natural fertilizer that transforms conventional soils, optimizing biological
-                  and organic activity.	Actively promotes the degradation of organic matter, producing humic and fulvic acids, improving soil structure and water retention.
+                  <p>
+                  For certain beneficial bacteria, fungi, and other microorganisms, the mineral elements contained in RHYZOMIN allow the restoration of biochemical reactions, leading to soil remediation and plant enrichment.
                   <br/>
                   <br/>
-                  Mineralizes organic compounds in the soil, improving pH levels and the action of the mineral salts that affect crops. Stimulates the indigenous populations of microorganisms, and is antagonistic to
-                  phytopathogenic	microorganisms. Increases bioavalability of phosphorus and potassium present in the soil.
+                  RHYZOMIN promotes ideal nutritional conditions for Ecological Farming by Remineralization (EFR), so plants can express their full bromatologic proteome (entire set of proteins), correcting the most common mineral and vitamin deficiencies commonly found in crops.
+                  <br/>
+                  Improves biological activity of the existing beneficial microorganisms by intensifying and increasing the soil’s biokinetic capacity.
                   <br/>
                   <br/>
-                  Increases the plants natural defenses to diseases, and low temperatures.
-                  <br/>
-                  <br/>
-                  RHYZOMAC contains bacteria that absorb atmospheric nitrogen, then secure, convert and release it to the plant. This ability to fix the free atmospheric nitrogen, is of vital ecological importance and contributes significantly to increase the fertility of the soil and habitat where they develop. This also prevents nitrogen from leaching into streams and other bodies of water.
+                  The activation of the bacterial microflora through this biomineral enhancer allows for the development of a non-restrictive, optimum level of efficiency in biological environments through natural and non- toxic elements.
                   </p>
                 </div>
                 <div >
-                  <b>USES</b>
-                  <br/>
-                  <br/>
-                  <ul>
-                    <li>Pre-sowing treatment of soil.</li>
-                    <li>Applications in soil.</li>
-                    <li>Inoculant for seeds, seedlings, and transplants.</li>
-                    <li>Inoculant for nursery crops and potted plants.</li>
-                    <li>Fertilizer for vegetables, fruit trees, flowers, fodder, cereals, and flooded crops, such as rice.</li>
-                  </ul>
-                  <br/>
-                  <br/>
                   <br/>
                   <b>MODE OF USE</b>
                   <br/>
                   <br/>
                   <p>
-                  RHYZOMAC may be applied directly to the soil by spraying, or may be mixed with irrigation water, whether by drip, pump or gravity.
+                  The continued use of RHYZOMIN increases crop productivity and optimizes the cost- benefit ratio of agricultural holdings.
+                  <br/>
+                  <br/>
+                  Application rates are minimal by hectare and its use is completely safe for field personnel.
+                  <br/>
+                  <br/>
                   Does not require safety waiting periods after application for access or harvest.
                   </p>
                   <br/>
-                  <b>Liquid Product</b>
+                  <b>Solid Product</b>
                   <br/>
                   <br/>
                   <br/>
@@ -106,7 +97,7 @@ const S5Rhyzomac = () => {
                     <p>
                       <b>ACTIVE INGREDIENTS:</b>
                       <br/>
-                        Sporulated	Azotobacter and other rhizospheric microorganisms.
+                      Pulverized calcic and silicic rock and other mineral traces with prebiotic characteristics.
                     </p>
                   </div>
                 </div>

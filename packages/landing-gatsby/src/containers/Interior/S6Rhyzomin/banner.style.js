@@ -3,7 +3,7 @@ import { themeGet } from '@styled-system/theme-get';
 
 import error from 'common/assets/image/error.svg';
 import success from 'common/assets/image/success.svg';
-import S5RhyzomacBG from '../../../common/assets/image/interior/IbexImages/S5/S5RhyzomacBG.jpg'
+import S5RhyzomacBG from '../../../common/assets/image/interior/IbexImages/S6/S6RhyzominBG.jpg'
 
 const shake = keyframes`
   0% {
