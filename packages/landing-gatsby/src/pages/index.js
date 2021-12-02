@@ -15,6 +15,8 @@ import S8Banner from 'containers/Interior/S8Banner';
 import S9Rayfol from 'containers/Interior/S9Rayfol';
 import S10Banner from 'containers/Interior/S10Banner';
 import S11QComplex from 'containers/Interior/S11QComplex';
+import S12QClean from 'containers/Interior/S12QClean';
+import S13QCombat from 'containers/Interior/S13QCombat';
 //import Feature from 'containers/Interior/Feature';
 import AboutUs from 'containers/Interior/AboutUs';
 import Project from 'containers/Interior/Project';
@@ -58,6 +60,8 @@ const Interior = () => {
             <S9Rayfol />
             <S10Banner />
             <S11QComplex />
+            <S12QClean />
+            <S13QCombat />
            {/* <Feature />*/}
             <AboutUs />
             <Project />
