@@ -60,14 +60,14 @@ export const Container = styled.div`
     flex-direction: column;
   }
   .shadow{
-    padding: 0 10px;
+    padding: 5px 10px;
     background: rgb(136, 66, 213, 0.4);
     border-radius: 15px;
     -moz-border-radius: 15px;
     //border: 2px solid #000;
   }
   .shadowDark{
-    padding: 0 10px;
+    padding: 5px 10px;
     background: rgb(0, 0, 0, 0.4);
     border-radius: 15px;
     -moz-border-radius: 15px;
