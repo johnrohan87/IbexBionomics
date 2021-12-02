@@ -23,7 +23,7 @@ import BannerWrapper, {
 
 //import bgimages from '../../../common/assets/image/interior/IbexImages/S1/IbexBannerImages.png'
 
-const S10Banner = () => {
+const S16Banner = () => {
   {/**
   const data = useStaticQuery(graphql`
     query {
@@ -64,7 +64,7 @@ const S10Banner = () => {
             <div>
               <h1 className="shadowDark">
                 <b>
-                Biological Control <br/>of <br/>Pests and Diseases
+                Creation of Suppressive Soils
                 </b>
               </h1>
             </div>
@@ -82,4 +82,4 @@ const S10Banner = () => {
     
 
 
-export default S10Banner;
+export default S16Banner;

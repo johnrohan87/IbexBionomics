@@ -19,6 +19,9 @@ import S12QClean from 'containers/Interior/S12QClean';
 import S13QCombat from 'containers/Interior/S13QCombat';
 import S14Subtifol from 'containers/Interior/S14Subtifol';
 import S15LanceTip from 'containers/Interior/S15LanceTip';
+import S16Banner from 'containers/Interior/S16Banner';
+import S17PlantGrowth from 'containers/Interior/S17PlantGrowth';
+import S18PlantGrowthP2 from 'containers/Interior/S18PlantGrowthP2';
 //import Feature from 'containers/Interior/Feature';
 import AboutUs from 'containers/Interior/AboutUs';
 import Project from 'containers/Interior/Project';
@@ -66,6 +69,9 @@ const Interior = () => {
             <S13QCombat />
             <S14Subtifol />
             <S15LanceTip />
+            <S16Banner />
+            <S17PlantGrowth />
+            <S18PlantGrowthP2 />
            {/* <Feature />*/}
             <AboutUs />
             <Project />

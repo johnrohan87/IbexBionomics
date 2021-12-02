@@ -3,7 +3,7 @@ import { themeGet } from '@styled-system/theme-get';
 
 import error from 'common/assets/image/error.svg';
 import success from 'common/assets/image/success.svg';
-import S16BannerBG from '../../../common/assets/image/interior/IbexImages/S16/S16BannerBG.jpg'
+import S18PlantGrowthP2BG from '../../../common/assets/image/interior/IbexImages/S18/S18PlantGrowthP2BG.jpg'
 
 const shake = keyframes`
   0% {
@@ -20,57 +20,47 @@ const shake = keyframes`
 `;
 
 const BannerWrapper = styled.div`
-  color: ${themeGet('colors.label', '#C6C6C6')};
-  //padding-top: 30px;
+  padding-top: 0px;
   margin-bottom: 81px;
-  background-color: #ffffff;
+  background-color: ${themeGet('colors.banner', '#171717')};
   @media only screen and (max-width: 1440px) {
     margin-bottom: 60px;
   }
   @media only screen and (max-width: 767px) {
-    padding: 30px 0 0px;
+    
     margin-bottom: 42px;
   }
 `;
 
 export const Container = styled.div`
-  background-image: url(${S16BannerBG});
+  background-image: url(${S18PlantGrowthP2BG});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
   width: 100%;
+  height: 100%;
   max-width: 1580px;
-  min-height: 100vh;
-  margin: 50px auto 0 auto;
-  padding: 0px 20px;
+  min-height: 50vh;
+  margin: 0 auto;
+  padding: 0 20px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  img{
-    padding-top: 200px;
-  }
-  h1{
-    color: ${themeGet('colors.label', '#C6C6C6')};
-    padding-top: 20px;
-    padding-bottom: 50px;
-    text-align: center;
-  }
   @media only screen and (max-width: 1600px) {
-    padding: 0 81px;
+    padding: 100px 81px;
   }
   @media only screen and (max-width: 1360px) {
-    padding: 0 60px;
+    padding: 100px 60px;
   }
   @media only screen and (max-width: 991px) {
-    padding: 0 30px;
+    padding: 100px 30px;
   }
   @media only screen and (max-width: 767px) {
+    padding: 100px 35px;
     flex-direction: column;
   }
   .shadow{
-    padding: 5px 10px;
+    padding: 20px;
     background: rgb(136, 66, 213, 0.4);
     border-radius: 15px;
     -moz-border-radius: 15px;
@@ -83,11 +73,66 @@ export const Container = styled.div`
     -moz-border-radius: 15px;
     //border: 2px solid #000;
   }
+  .flex-row{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10vh;
+    //border: medium dashed green;
+    div{
+      width: 100%;
+      padding: 10px 10px;
+      color: ${themeGet('colors.label', '#C6C6C6')};
+      b{
+        color: ${themeGet('colors.label', '#949494')};
+      }
+      
+    }
+  }
+  .smPadding{
+    padding: 10px;
+  }
+  .medPadding{
+    padding: 25px;
+  }
+  .alignCenter{
+    align-items: center;
+    justify-content: center;
+  }
+  .rightBar{
+    border-right: 5px solid #C6C6C6;
+  }
 `;
 
 export const ContentArea = styled.div`
-  width: 595px;
-  padding-right: 88px;
+  height: 100%; 
+  width: 100%;
+  minHeight: 50vh; 
+  minWidth: 50vw;
+  min-width: calc(${props => (props.minWidth ? props.minWidth : "50vw")} - 50px);
+  min-height: calc(${props => (props.minHeight ? props.minHeight : "50vh")} - 50px);
+  display: inline-block;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  text-align: left;
+  margin:  auto;
+  padding: 20px;
+  img{
+    height: auto;
+    width: auto;
+    min-width: 25vw;
+    padding: 20px 0;
+  }
+  h2,h3{
+    color: ${themeGet('colors.label', '#C6C6C6')};
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 20px;
+    }
+    p{
+      font-size: 18px;
+      line-height: 25px;
+    }
   @media only screen and (max-width: 1600px) {
     width: 50%;
   }
@@ -96,14 +141,34 @@ export const ContentArea = styled.div`
   }
   @media only screen and (max-width: 1200px) {
     width: 50%;
+    .flex-row{
+      display: block;
+    }
   }
   @media only screen and (max-width: 767px) {
     width: 100%;
     padding-right: 50px;
+    .flex-row{
+      display: block;
+    }
   }
   @media only screen and (max-width: 480px) {
-    padding-right: 0;
+    padding: 10px 0;
+    margin: 0;
+    h2{
+    font-size: 25px;
+    line-height: 33px;
+    padding-bottom: 20px;
+    }
+    p{
+      font-size: 18px;
+      line-height: 25px;
+    }
+    .flex-row{
+      display: block;
+    }
   }
+  
 
   h1,
   p {

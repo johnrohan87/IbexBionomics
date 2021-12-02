@@ -3,7 +3,6 @@ import { themeGet } from '@styled-system/theme-get';
 
 import error from 'common/assets/image/error.svg';
 import success from 'common/assets/image/success.svg';
-import S16BannerBG from '../../../common/assets/image/interior/IbexImages/S16/S16BannerBG.jpg'
 
 const shake = keyframes`
   0% {
@@ -20,43 +19,26 @@ const shake = keyframes`
 `;
 
 const BannerWrapper = styled.div`
-  color: ${themeGet('colors.label', '#C6C6C6')};
-  //padding-top: 30px;
+  padding-top: 30px;
   margin-bottom: 81px;
-  background-color: #ffffff;
+  background-color: ${themeGet('colors.banner', '#171717')};
   @media only screen and (max-width: 1440px) {
     margin-bottom: 60px;
   }
   @media only screen and (max-width: 767px) {
-    padding: 30px 0 0px;
+    padding: 135px 0 82px;
     margin-bottom: 42px;
   }
 `;
 
 export const Container = styled.div`
-  background-image: url(${S16BannerBG});
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  object-fit: cover;
   width: 100%;
   max-width: 1580px;
   min-height: 100vh;
-  margin: 50px auto 0 auto;
-  padding: 0px 20px;
+  margin: 0 auto;
+  padding: 0 20px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  img{
-    padding-top: 200px;
-  }
-  h1{
-    color: ${themeGet('colors.label', '#C6C6C6')};
-    padding-top: 20px;
-    padding-bottom: 50px;
-    text-align: center;
-  }
   @media only screen and (max-width: 1600px) {
     padding: 0 81px;
   }
@@ -69,33 +51,19 @@ export const Container = styled.div`
   @media only screen and (max-width: 767px) {
     flex-direction: column;
   }
-  .shadow{
-    padding: 5px 10px;
-    background: rgb(136, 66, 213, 0.4);
-    border-radius: 15px;
-    -moz-border-radius: 15px;
-    //border: 2px solid #000;
-  }
-  .shadowDark{
-    padding: 5px 10px;
-    background: rgb(0, 0, 0, 0.4);
-    border-radius: 15px;
-    -moz-border-radius: 15px;
-    //border: 2px solid #000;
-  }
 `;
 
 export const ContentArea = styled.div`
   width: 595px;
   padding-right: 88px;
   @media only screen and (max-width: 1600px) {
-    width: 50%;
+    width: 560px;
   }
   @media only screen and (max-width: 1360px) {
-    width: 50%;
+    width: 40%;
   }
   @media only screen and (max-width: 1200px) {
-    width: 50%;
+    width: 45%;
   }
   @media only screen and (max-width: 767px) {
     width: 100%;
