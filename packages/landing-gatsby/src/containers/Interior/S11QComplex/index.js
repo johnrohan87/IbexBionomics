@@ -45,15 +45,16 @@ const S11QComplex = () => {
     <div> 
       <BannerWrapper>
         <Container>
-          <Fade bottom >
+          
             <ContentArea minWidth="40vw">
+            <Fade bottom >
             <p className="shadowDark" padding="20px">
               <i>Promotes natural resistance against different types of pathogens (fungi, viruses, and bacteria) that make up the complex diseases proliferating in monoculture crops.</i>
             </p>
             <p className="smPadding alignCenter shadowDark">
             <b>ACTIVE METABOLITES</b>
             <div className="flex-row smPadding alignCenter">
-              <ol>
+              <ol className="gridContainer">
                 <li>Allicin</li>
                 <li>Garcilina</li>
                 <li>Eucaliptol</li>
@@ -76,11 +77,13 @@ const S11QComplex = () => {
               </ol>
             </div>
             </p>
+            </Fade>
             </ContentArea>
-          </Fade>
-          <Fade bottom >
+          
+          
             <ContentArea className="shadow" minWidth="60vw" minHeight="100vh" >
-              <div >
+              <Fade bottom >
+                <div >
                 <div>
                   <img src={S11QComplexText}/>
                   <p><b>INDUCES PHYSIOLOGICAL RESISTANCE <br/>AGAINST COMPLEX PATHOGENIC ATTACKS</b></p>
@@ -148,8 +151,9 @@ const S11QComplex = () => {
                   </div>
                 </div>
               </div>
+              </Fade>
             </ContentArea>
-          </Fade>
+          
         </Container>
       </BannerWrapper>
     </div>

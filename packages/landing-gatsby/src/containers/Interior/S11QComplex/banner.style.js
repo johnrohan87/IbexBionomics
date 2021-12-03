@@ -89,7 +89,7 @@ export const Container = styled.div`
     }
    
   }
-  ol{
+  .gridContainer{
     //display: flex;
     //flex-wrap: wrap; 
     //gap: 10px;
