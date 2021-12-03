@@ -60,18 +60,24 @@ export const Container = styled.div`
     flex-direction: column;
   }
   .shadow{
-    padding: 5px 10px;
+    padding: 10px;
     background: rgb(136, 66, 213, 0.4);
     border-radius: 15px;
     -moz-border-radius: 15px;
     //border: 2px solid #000;
   }
   .shadowDark{
-    padding: 5px 10px;
+    padding: 10px;
     background: rgb(0, 0, 0, 0.4);
     border-radius: 15px;
     -moz-border-radius: 15px;
     //border: 2px solid #000;
+  }
+  .smPadding{
+    padding: 10px;
+  }
+  .medPadding{
+    padding: 25px;
   }
   .flex-row{
     display: flex;
@@ -167,6 +173,12 @@ export const ContentArea = styled.div`
     + p {
       margin: 0;
     }
+  }
+  li{
+    list-style-type: disc;
+    text-align: left;
+    padding: 5px;
+    margin-left: 5px;
   }
 `;
 

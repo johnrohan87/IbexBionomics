@@ -46,10 +46,10 @@ const S5Rhyzomac = () => {
       <BannerWrapper>
         <Container>
           <Fade bottom >
-            <ContentArea minWidth="40vw">
-            <p className="shadowDark" padding="20px">
-            A highly effective biological fertilizer. Due to its sporulated form, it immediately adopts the characteristics of the native colonies of beneficial microorganisms, promoting their growth and reproduction.
-            </p>
+            <ContentArea minWidth="40vw" className="shadow">
+              <p className="shadowDark">
+              A highly effective biological fertilizer. Due to its sporulated form, it immediately adopts the characteristics of the native colonies of beneficial microorganisms, promoting their growth and reproduction.
+              </p>
             </ContentArea>
           </Fade>
           <Fade bottom >
@@ -57,13 +57,15 @@ const S5Rhyzomac = () => {
               <div >
                 <div>
                   <img src={S5RhyzomacText}/>
-                  <p><b>BIOLOGICAL NUTRITIONAL REGULATOR</b></p>
-                  <p>A concentrated and stable liquid fertilizer composed of highly resistant spores of Azotobacter and other rhizospheric microorganisms that fix atmospheric nitrogen and solubilizes phosphorus and potassium present in the soil.</p>
+                  <div className="shadowDark">
+                    <p><b>BIOLOGICAL NUTRITIONAL REGULATOR</b></p>
+                    <p>A concentrated and stable liquid fertilizer composed of highly resistant spores of Azotobacter and other rhizospheric microorganisms that fix atmospheric nitrogen and solubilizes phosphorus and potassium present in the soil.</p>
+                  </div>
                 </div>
               </div>
-              <div className="flex-row" >
-                <div >
-                  <h2>MODE OF ACTION</h2>
+              <div className="flex-row smPadding" >
+                <div className="shadowDark">
+                  <h2><b>MODE OF ACTION</b></h2>
                   <p>Natural fertilizer that transforms conventional soils, optimizing biological
                   and organic activity.	Actively promotes the degradation of organic matter, producing humic and fulvic acids, improving soil structure and water retention.
                   <br/>
@@ -78,10 +80,8 @@ const S5Rhyzomac = () => {
                   RHYZOMAC contains bacteria that absorb atmospheric nitrogen, then secure, convert and release it to the plant. This ability to fix the free atmospheric nitrogen, is of vital ecological importance and contributes significantly to increase the fertility of the soil and habitat where they develop. This also prevents nitrogen from leaching into streams and other bodies of water.
                   </p>
                 </div>
-                <div >
-                  <b>USES</b>
-                  <br/>
-                  <br/>
+                <div className="shadowDark">
+                  <h3><b>USES</b></h3>
                   <ul>
                     <li>Pre-sowing treatment of soil.</li>
                     <li>Applications in soil.</li>
