@@ -57,12 +57,15 @@ export const Container = styled.div`
       width: auto;
     }
   }
+    
   @media only screen and (max-width: 1600px) {
     padding: 100px 81px;
     flex-direction: column;
     .flex{
       display: flex;
       flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
     }
     
   }
@@ -72,6 +75,8 @@ export const Container = styled.div`
     .flex{
       display: flex;
       flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
     }
   }
   @media only screen and (max-width: 991px) {
@@ -80,6 +85,8 @@ export const Container = styled.div`
     .flex{
       display: flex;
       flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
     }
   }
   @media only screen and (max-width: 767px) {

@@ -46,10 +46,12 @@ const S5Rhyzomac = () => {
       <BannerWrapper>
         <Container>
           <div className="alignCenter">
-            <img className="" src={S5RhyzomacText}/>
+            <Fade bottom >
+              <img className="shadowDark" src={S5RhyzomacText}/>
+            </Fade>
           </div>
           <div className="flex">
-            <ContentArea minWidth="40vw">
+            <ContentArea minWidth="40vw" className="alignTop">
               <Fade bottom >
                 <div className="shadow">
                   <p className="shadowDark">
