@@ -95,6 +95,7 @@ const S13QCombat = () => {
               <Fade bottom >
                 <div className="shadow">
                 <div >
+                <div >
                   <img src={S13QCombatText}/>
                   <p><b>INDUCER OF PLANT PHYSIOLOGICAL RESISTANCE AGAINST INSECT PLAGUES</b></p>
                   <p>
@@ -160,7 +161,8 @@ const S13QCombat = () => {
                     </p>
                   </div>
                 </div>
-              </div></Fade>
+              </div></div>
+              </Fade>
             </ContentArea>
           
         </Container>

@@ -44,20 +44,51 @@ export const Container = styled.div`
   min-height: 100vh;
   margin: 0 auto;
   padding: 0 20px;
-  display: flex;
+  display: flex-column;
   align-items: center;
+  .alignCenter{
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 0;
+    img{
+      width: auto;
+    }
+  }
   @media only screen and (max-width: 1600px) {
     padding: 100px 81px;
+    flex-direction: column;
+    .flex{
+      display: flex;
+      flex-direction: row;
+    }
+    
   }
   @media only screen and (max-width: 1360px) {
     padding: 100px 60px;
+    flex-direction: column;
+    .flex{
+      display: flex;
+      flex-direction: row;
+    }
   }
   @media only screen and (max-width: 991px) {
     padding: 100px 30px;
+    flex-direction: column;
+    .flex{
+      display: flex;
+      flex-direction: row;
+    }
   }
   @media only screen and (max-width: 767px) {
     padding: 100px 35px;
     flex-direction: column;
+    .flex{
+      display: flex;
+      flex-direction: column;
+    }
   }
   .shadow{
     padding: 10px;
