@@ -95,8 +95,16 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
   }
-  .rightBar{
-    border-right: 5px solid #C6C6C6;
+  ol{
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;
+    justify-content: space-between;
+      
+    li{
+      list-style-type: disc;
+      margin-left: 20px;
+    }
   }
 `;
 

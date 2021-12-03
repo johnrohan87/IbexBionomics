@@ -102,9 +102,7 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
   }
-  .rightBar{
-    border-right: 5px solid #C6C6C6;
-  }
+  
 `;
 
 export const ContentArea = styled.div`

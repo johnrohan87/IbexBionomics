@@ -87,7 +87,20 @@ export const Container = styled.div`
       }
       
     }
+   
   }
+  ol{
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;
+    justify-content: space-between;
+      
+    li{
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+  }
+  
   .smPadding{
     padding: 10px;
   }
@@ -95,9 +108,7 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
   }
-  .rightBar{
-    border-right: 5px solid #C6C6C6;
-  }
+  
 `;
 
 export const ContentArea = styled.div`

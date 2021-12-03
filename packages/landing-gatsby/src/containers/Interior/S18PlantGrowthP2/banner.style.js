@@ -98,9 +98,7 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
   }
-  .rightBar{
-    border-right: 5px solid #C6C6C6;
-  }
+  
 `;
 
 export const ContentArea = styled.div`
@@ -181,6 +179,12 @@ export const ContentArea = styled.div`
       margin: 0;
     }
   }
+  
+    li{
+      list-style-type: disc;
+      //margin-left: 20px;
+    }
+  
 `;
 
 export const HighlightedText = styled.p`

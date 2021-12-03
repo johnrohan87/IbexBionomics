@@ -53,7 +53,7 @@ const S13QCombat = () => {
             <p className="smPadding alignCenter shadowDark">
             <b>ACTIVE METABOLITES</b>
             <div className="flex-row smPadding alignCenter">
-              <ol className="smPadding rightBar">
+              <ol >
                 <li>Allicin</li>
                 <li>Concanavalin</li>
                 <li>Cineol</li>
@@ -64,8 +64,7 @@ const S13QCombat = () => {
                 <li>Mentola</li>
                 <li>Rutina</li>
                 <li>L-limonene</li>
-              </ol>
-              <ol className="smPadding rightBar">
+              
                 <li>Boreol</li>
                 <li>Camphene</li>
                 <li>Ciñelo</li>
@@ -75,8 +74,7 @@ const S13QCombat = () => {
                 <li>Menthene</li>
                 <li>Methyleugenol</li>
                 <li>Serotonin</li>
-              </ol>
-              <ol className="smPadding">
+             
                 <li>Borneol</li>
                 <li>Calendulina</li>
                 <li>Citronellal</li>

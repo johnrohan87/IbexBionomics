@@ -53,15 +53,13 @@ const S15LanceTip = () => {
             <p className="smPadding alignCenter shadowDark">
             <b>ACTIVE METABOLITES</b>
             <div className="flex-row smPadding alignCenter">
-              <ol className="smPadding rightBar">
+              <ol >
                 <li>Allicin</li>
                 <li>Garcilina</li>
-              </ol>
-              <ol className="smPadding rightBar">
+              
                 <li>Alilo</li>
                 <li>Nicotinamide</li>
-              </ol>
-              <ol className="smPadding">
+            
                 <li>Choline</li>
                 <li>Sulfides</li>
               </ol>
