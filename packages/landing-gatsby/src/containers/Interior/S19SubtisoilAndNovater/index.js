@@ -47,7 +47,7 @@ const S19SubtisoilAndNovater = () => {
       <BannerWrapper>
         <Container>
           
-            <ContentArea minWidth="50vw" minHeight="100vh">
+            <ContentArea minWidth="50vw" minHeight="50vh">
             <Fade bottom >
               <p className="shadowDark medPadding">
                 <img src={SubTiSoil}/>
@@ -57,7 +57,7 @@ const S19SubtisoilAndNovater = () => {
             </ContentArea>
           
           
-            <ContentArea minWidth="50vw" minHeight="100vh" >
+            <ContentArea minWidth="50vw" minHeight="75vh" >
               <div >
                 <Fade bottom >
                 <div className="shadow">
