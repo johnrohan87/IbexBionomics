@@ -90,14 +90,20 @@ export const Container = styled.div`
    
   }
   ol{
-    display: flex;
-    flex-wrap: wrap; 
-    gap: 10px;
-    justify-content: space-between;
+    //display: flex;
+    //flex-wrap: wrap; 
+    //gap: 10px;
+    //justify-content: space-between;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    padding: 5px;
       
     li{
-      list-style-type: disc;
-      margin-left: 20px;
+      //list-style-type: disc;
+      //margin-left: 20px;
+      padding: 5px;
+      //font-size: 30px;
+      text-align: left;
     }
   }
   
