@@ -45,15 +45,16 @@ const S13QCombat = () => {
     <div> 
       <BannerWrapper>
         <Container>
-          <Fade bottom >
+          
             <ContentArea minWidth="40vw">
+              <Fade bottom >
             <p className="shadowDark" padding="20px">
               <i>Contains metabolites that affect, repel and deter  insects through contact and chemical signals, and increase the plant’s entomological defenses.</i>
             </p>
             <p className="smPadding alignCenter shadowDark">
             <b>ACTIVE METABOLITES</b>
             <div className="flex-row smPadding alignCenter">
-              <ol >
+              <ol className="gridContainer" >
                 <li>Allicin</li>
                 <li>Concanavalin</li>
                 <li>Cineol</li>
@@ -86,13 +87,14 @@ const S13QCombat = () => {
                 <li>Thujone</li>
               </ol>
             </div>
-            </p>
+            </p></Fade>
             </ContentArea>
-          </Fade>
-          <Fade bottom >
-            <ContentArea className="shadow" minWidth="60vw" minHeight="100vh" >
-              <div >
-                <div>
+          
+          
+            <ContentArea minWidth="60vw" minHeight="100vh" >
+              <Fade bottom >
+                <div className="shadow">
+                <div >
                   <img src={S13QCombatText}/>
                   <p><b>INDUCER OF PLANT PHYSIOLOGICAL RESISTANCE AGAINST INSECT PLAGUES</b></p>
                   <p>
@@ -158,9 +160,9 @@ const S13QCombat = () => {
                     </p>
                   </div>
                 </div>
-              </div>
+              </div></Fade>
             </ContentArea>
-          </Fade>
+          
         </Container>
       </BannerWrapper>
     </div>

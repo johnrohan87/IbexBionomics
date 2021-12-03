@@ -95,17 +95,6 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
   }
-  ol{
-    display: flex;
-    flex-wrap: wrap; 
-    gap: 10px;
-    justify-content: space-between;
-      
-    li{
-      list-style-type: disc;
-      margin-left: 20px;
-    }
-  }
 `;
 
 export const ContentArea = styled.div`
@@ -138,41 +127,126 @@ export const ContentArea = styled.div`
       font-size: 18px;
       line-height: 25px;
     }
-  @media only screen and (max-width: 1600px) {
-    width: 50%;
-  }
-  @media only screen and (max-width: 1360px) {
-    width: 50%;
-  }
-  @media only screen and (max-width: 1200px) {
-    width: 50%;
-    .flex-row{
-      display: block;
+    @media only screen and (max-width: 1600px) {
+      width: 50%;
+      .gridContainer{
+        //display: flex;
+        //flex-wrap: wrap; 
+        //gap: 10px;
+        //justify-content: space-between;
+        display: grid;
+        grid-template-columns: max-content max-content max-content;
+        padding: 5px;
+          
+        li{
+          //list-style-type: disc;
+          //margin-left: 20px;
+          padding: 5px;
+          //font-size: 30px;
+          text-align: left;
+        }
+      }
     }
-  }
-  @media only screen and (max-width: 767px) {
-    width: 100%;
-    padding-right: 50px;
-    .flex-row{
-      display: block;
+    @media only screen and (max-width: 1360px) {
+      width: 50%;
+      .gridContainer{
+        //display: flex;
+        //flex-wrap: wrap; 
+        //gap: 10px;
+        //justify-content: space-between;
+        display: grid;
+        grid-template-columns: max-content max-content max-content;
+        padding: 5px;
+          
+        li{
+          //list-style-type: disc;
+          //margin-left: 20px;
+          padding: 5px;
+          //font-size: 30px;
+          text-align: left;
+        }
+      }
     }
-  }
-  @media only screen and (max-width: 480px) {
-    padding: 10px 0;
-    margin: 0;
-    h2{
-    font-size: 25px;
-    line-height: 33px;
-    padding-bottom: 20px;
+    @media only screen and (max-width: 1200px) {
+      width: 50%;
+      .flex-row{
+        display: block;
+      }
+      .gridContainer{
+        //display: flex;
+        //flex-wrap: wrap; 
+        //gap: 10px;
+        //justify-content: space-between;
+        display: grid;
+        grid-template-columns: max-content max-content;
+        padding: 5px;
+          
+        li{
+          //list-style-type: disc;
+          //margin-left: 20px;
+          padding: 5px;
+          //font-size: 30px;
+          text-align: left;
+        }
+      }
     }
-    p{
-      font-size: 18px;
-      line-height: 25px;
+    @media only screen and (max-width: 767px) {
+      width: 100%;
+      padding-right: 50px;
+      .flex-row{
+        display: block;
+      }
+      .gridContainer{
+        //display: flex;
+        //flex-wrap: wrap; 
+        //gap: 10px;
+        //justify-content: space-between;
+        display: grid;
+        grid-template-columns: max-content max-content;
+        padding: 5px;
+          
+        li{
+          //list-style-type: disc;
+          //margin-left: 20px;
+          padding: 5px;
+          //font-size: 30px;
+          text-align: left;
+        }
+      }
     }
-    .flex-row{
-      display: block;
+    @media only screen and (max-width: 480px) {
+      padding: 10px 0;
+      margin: 0;
+      h2{
+      font-size: 25px;
+      line-height: 33px;
+      padding-bottom: 20px;
+      }
+      p{
+        font-size: 18px;
+        line-height: 25px;
+      }
+      .flex-row{
+        display: block;
+      }
+      .gridContainer{
+        //display: flex;
+        //flex-wrap: wrap; 
+        //gap: 10px;
+        //justify-content: space-between;
+        display: grid;
+        grid-template-columns: max-content max-content;
+        padding: 5px;
+          
+        li{
+          //list-style-type: disc;
+          //margin-left: 20px;
+          padding: 5px;
+          //font-size: 30px;
+          text-align: left;
+        }
+      }
     }
-  }
   
 
   h1,

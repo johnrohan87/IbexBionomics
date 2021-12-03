@@ -53,7 +53,7 @@ const S12QClean = () => {
             <p className="smPadding alignCenter shadowDark">
             <b>ACTIVE METABOLITES</b>
             <div className="flex-row smPadding alignCenter">
-              <ol >
+              <ol className="gridContainer">
                 <li>Allicin</li>
                 <li>Eucaliptol</li>
                 <li>Filosterine</li>

@@ -45,32 +45,35 @@ const S15LanceTip = () => {
     <div> 
       <BannerWrapper>
         <Container>
-          <Fade bottom >
-            <ContentArea minWidth="40vw">
-            <p className="shadowDark" padding="20px">
-              <i>Causes inhibitions and complex changes in the cell membrane of fungi and pathogenic bacteria, blocking their enzymes by unfolding the proteins.</i>
-            </p>
-            <p className="smPadding alignCenter shadowDark">
-            <b>ACTIVE METABOLITES</b>
-            <div className="flex-row smPadding alignCenter">
-              <ol >
-                <li>Allicin</li>
-                <li>Garcilina</li>
+          
+            <ContentArea minWidth="40vw"><Fade bottom >
+            <div>
+              <p className="shadowDark" padding="20px">
+                <i>Causes inhibitions and complex changes in the cell membrane of fungi and pathogenic bacteria, blocking their enzymes by unfolding the proteins.</i>
+              </p>
+              <p className="smPadding alignCenter shadowDark">
+              <b>ACTIVE METABOLITES</b>
+              <div className="flex-row smPadding alignCenter">
+                <ol className="gridContainer">
+                  <li>Allicin</li>
+                  <li>Garcilina</li>
+                
+                  <li>Alilo</li>
+                  <li>Nicotinamide</li>
               
-                <li>Alilo</li>
-                <li>Nicotinamide</li>
-            
-                <li>Choline</li>
-                <li>Sulfides</li>
-              </ol>
-              <br/>
-            </div>
-              <i><b>Also effective in the protection of post-harvest fruits and flowers.</b></i>
-            </p>
+                  <li>Choline</li>
+                  <li>Sulfides</li>
+                </ol>
+                <br/>
+              </div>
+                <i><b>Also effective in the protection of post-harvest fruits and flowers.</b></i>
+              </p>
+            </div></Fade>
             </ContentArea>
-          </Fade>
-          <Fade bottom >
-            <ContentArea className="shadow" minWidth="60vw" minHeight="100vh" >
+          
+          
+            <ContentArea  minWidth="60vw" minHeight="100vh" >
+              <Fade bottom ><div className="shadow">
               <div >
                 <div>
                   <img src={S15LanceTipText}/>
@@ -147,8 +150,9 @@ const S15LanceTip = () => {
                   </div>
                 </div>
               </div>
+              </div></Fade>
             </ContentArea>
-          </Fade>
+          
         </Container>
       </BannerWrapper>
     </div>
