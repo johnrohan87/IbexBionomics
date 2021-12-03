@@ -47,20 +47,26 @@ const S3Microorganisms = () => {
     <div> 
       <BannerWrapper>
         <Container>
-          <Fade bottom >
-            <ContentArea className="shadow">
-              <Heading as="h1" textAlign="center" content={title} />
-              <Text content={p1} />
-              <Text content={p2} />
-              <Text content={p3} />
-              <Text content={p4} />
+          
+            <ContentArea >
+              <Fade bottom >
+                <div className="shadow">
+                  <Heading as="h1" textAlign="center" content={title} />
+                  <Text content={p1} />
+                  <Text content={p2} />
+                  <Text content={p3} />
+                  <Text content={p4} />
+                </div>
+              </Fade>
             </ContentArea>
-          </Fade>
-          <Fade bottom >
+          
+          
             <ContentArea>
-              <img src={IBEXLogo}/>
+              <Fade bottom >
+                <img src={IBEXLogo}/>
+              </Fade>
             </ContentArea>
-          </Fade>
+          
         </Container>
       </BannerWrapper>
     </div>

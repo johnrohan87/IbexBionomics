@@ -43,17 +43,21 @@ const S4PlantNutrition = () => {
     <div> 
       <BannerWrapper>
         <Container>
-          <Fade bottom >
-            <ContentArea>
-            <img src={S4PlantNutritionWheat} style={{height:"100%",width:"100%"}}/>
-            </ContentArea>
-          </Fade>
-          <Fade bottom >
-            <ContentArea className="shadow">
+         
+          <ContentArea>
+            <Fade bottom >
+              <img src={S4PlantNutritionWheat} style={{height:"100%",width:"100%"}}/>
+            </Fade>
+          </ContentArea>
+         
+          
+          <ContentArea className="shadow">
+            <Fade bottom >
               <img src={IBEXLogo}/>
               <Heading as="h1" textAlign="center" content={title} />
-            </ContentArea>
-          </Fade>
+            </Fade>
+          </ContentArea>
+  
         </Container>
       </BannerWrapper>
     </div>

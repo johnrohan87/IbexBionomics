@@ -52,33 +52,41 @@ const S2Products = () => {
                           alt="IbexBG"
                           className="carousel_img"
                         /> <img src={leafbg} alt="IbexBG" className="bg_img" /> */}
-          <Fade bottom >
-            <ContentArea className="shadow">
-              <img src={leafimages}/>
-              <Heading as="h2" textAlign="center" content={"ALL LIQUID PRODUCTS ARE AVAILABLE IN THE FOLLOWING PRESENTATIONS:"} />
-              <Text content="High Density Plastic Container" />
-              <Text content="4 liters Bottle" />
-              <Text content="20 liters Drum" />
-              <Text content="60 liters Container" />
-              <Text content="1000 liters" />
-              <br/>
-              <br/>
-              <br/>
-              <Heading as="h3" textAlign="center" content={"ALL SOLID PRODUCTS ARE AVAILABLE IN THE FOLLOWING PRESENTATIONS:"} />
-              <Text content="High Density Plastic Container" />
-              <Text content="1 kilogram" />
-              <Text content="25 kilograms" />
-            </ContentArea>
-          </Fade>
-          <Fade bottom >
+          
             <ContentArea>
-              <img src={IBEXLogo} />
-              <Heading as="h1" content={title} textAlign="left" />
-              <Text content={text} textAlign="left" />
-              <br/>
-              <Text content=" All IBEX Bionomics agricultural products are fully biodegradable and harmless to the environment." textAlign="left" />
-            </ContentArea>
-          </Fade>
+              <Fade bottom >
+                <div className="shadow">
+                  <img src={leafimages}/>
+                  <Heading as="h2" textAlign="center" content={"ALL LIQUID PRODUCTS ARE AVAILABLE IN THE FOLLOWING PRESENTATIONS:"} />
+                  <Text content="High Density Plastic Container" />
+                  <Text content="4 liters Bottle" />
+                  <Text content="20 liters Drum" />
+                  <Text content="60 liters Container" />
+                  <Text content="1000 liters" />
+                  <br/>
+                  <br/>
+                  <br/>
+                  <Heading as="h3" textAlign="center" content={"ALL SOLID PRODUCTS ARE AVAILABLE IN THE FOLLOWING PRESENTATIONS:"} />
+                  <Text content="High Density Plastic Container" />
+                  <Text content="1 kilogram" />
+                  <Text content="25 kilograms" />
+                </div>
+              </Fade>
+          </ContentArea>
+          
+          
+          <ContentArea>
+            <Fade bottom >
+              <div className="shadow">
+                <img src={IBEXLogo} />
+                <Heading as="h1" content={title} textAlign="left" />
+                <Text content={text} textAlign="left" />
+                <br/>
+                <Text content=" All IBEX Bionomics agricultural products are fully biodegradable and harmless to the environment." textAlign="left" />
+              </div>
+            </Fade>
+          </ContentArea>
+          
         </Container>
       </BannerWrapper>
     </div>
