@@ -50,8 +50,8 @@ const S5Rhyzomac = () => {
               <img className="shadowDark" src={S5RhyzomacText}/>
             </Fade>
           </div>
-          <div className="flex">
-            <ContentArea minWidth="40vw" className="alignTop">
+          <div className="flex h100">
+            <ContentArea minWidth="40vw" minHeight="100vh" className="alignTop">
               <Fade bottom >
                 <div className="shadow">
                   <p className="shadowDark">

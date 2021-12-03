@@ -57,7 +57,14 @@ export const Container = styled.div`
       width: auto;
     }
   }
-    
+  .alignTop{
+    margin: 0 auto;
+    align-items: flex-start;
+    align-self: flex-start;
+  }
+  .h100{
+    height: 100%;
+  }
   @media only screen and (max-width: 1600px) {
     padding: 100px 81px;
     flex-direction: column;
