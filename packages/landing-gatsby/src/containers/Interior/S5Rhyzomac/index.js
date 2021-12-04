@@ -47,11 +47,13 @@ const S5Rhyzomac = () => {
         <Container>
           <div className="alignCenter">
             <Fade bottom >
+              <div className="shadow">
               <img className="shadowDark" src={S5RhyzomacText}/>
+              </div>
             </Fade>
           </div>
           <div className="flex h100">
-            <ContentArea minWidth="40vw" minHeight="100vh" className="alignTop">
+            <ContentArea minWidth="40vw" minHeight="40vh" className="alignTop">
               <Fade bottom >
                 <div className="shadow">
                   <p className="shadowDark">
@@ -64,19 +66,19 @@ const S5Rhyzomac = () => {
             
               <ContentArea minWidth="60vw" minHeight="100vh" >
                 <Fade bottom >
-                  <div className="shadow">
+                  <div className="shadow textAlignLeft">
                     <div >
                       <div>
                         
                         <div className="shadowDark">
-                          <p><b>BIOLOGICAL NUTRITIONAL REGULATOR</b></p>
+                          <p className="textAlignCenter"><b>BIOLOGICAL NUTRITIONAL REGULATOR</b></p>
                           <p>A concentrated and stable liquid fertilizer composed of highly resistant spores of Azotobacter and other rhizospheric microorganisms that fix atmospheric nitrogen and solubilizes phosphorus and potassium present in the soil.</p>
                         </div>
                       </div>
                     </div>
                     <div className="flex-row smPadding" >
                       <div className="shadowDark">
-                        <h2><b>MODE OF ACTION</b></h2>
+                        <h2 className="textAlignCenter"><b>MODE OF ACTION</b></h2>
                         <p>Natural fertilizer that transforms conventional soils, optimizing biological
                         and organic activity.	Actively promotes the degradation of organic matter, producing humic and fulvic acids, improving soil structure and water retention.
                         <br/>
@@ -92,7 +94,7 @@ const S5Rhyzomac = () => {
                         </p>
                       </div>
                       <div className="shadowDark">
-                        <h3><b>USES</b></h3>
+                        <h3 className="textAlignCenter"><b>USES</b></h3>
                         <ul>
                           <li>Pre-sowing treatment of soil.</li>
                           <li>Applications in soil.</li>
@@ -103,7 +105,7 @@ const S5Rhyzomac = () => {
                         <br/>
                         <br/>
                         <br/>
-                        <b>MODE OF USE</b>
+                        <p className="textAlignCenter"><b>MODE OF USE</b></p>
                         <br/>
                         <br/>
                         <p>
@@ -111,7 +113,7 @@ const S5Rhyzomac = () => {
                         Does not require safety waiting periods after application for access or harvest.
                         </p>
                         <br/>
-                        <b>Liquid Product</b>
+                        <p className="textAlignCenter"><b>Liquid Product</b></p>
                         <br/>
                         <br/>
                         <br/>
