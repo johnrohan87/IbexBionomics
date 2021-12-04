@@ -44,41 +44,110 @@ export const Container = styled.div`
   min-height: 100vh;
   margin: 0 auto;
   padding: 0 20px;
-  display: flex;
+  display: flex-column;
   align-items: center;
+  .alignCenter{
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 0;
+    img{
+      width: auto;
+    }
+  }
+  .alignTop{
+    margin: 0 auto;
+    align-items: flex-start;
+    align-self: flex-start;
+  }
+  .h100{
+    height: 100%;
+  }
   @media only screen and (max-width: 1600px) {
     padding: 100px 81px;
+    flex-direction: column;
+    .flex{
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+    
   }
   @media only screen and (max-width: 1360px) {
     padding: 100px 60px;
+    flex-direction: column;
+    .flex{
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
   }
   @media only screen and (max-width: 991px) {
     padding: 100px 30px;
+    flex-direction: column;
+    .flex{
+      //display: flex;
+      //flex-direction: column;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
   }
   @media only screen and (max-width: 767px) {
     padding: 100px 35px;
     flex-direction: column;
+    .flex{
+      display: flex;
+      flex-direction: column;
+    }
   }
   .shadow{
-    padding: 5px 10px;
+    padding: 10px;
     background: rgb(136, 66, 213, 0.4);
     border-radius: 15px;
     -moz-border-radius: 15px;
     //border: 2px solid #000;
   }
   .shadowDark{
-    padding: 5px 10px;
+    padding: 10px;
     background: rgb(0, 0, 0, 0.4);
     border-radius: 15px;
     -moz-border-radius: 15px;
     //border: 2px solid #000;
   }
+  .smPadding{
+    padding: 10px;
+  }
+  .medPadding{
+    padding: 25px;
+  }
+  .flex-row{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10vh;
+    //border: medium dashed green;
+    div{
+      width: 100%;
+      padding: 10px 10px;
+      color: ${themeGet('colors.label', '#C6C6C6')};
+      b{
+        color: ${themeGet('colors.label', '#949494')};
+      }
+      
+    }
+  }
 `;
 
 export const ContentArea = styled.div`
+  height: 100%; 
   width: 100%;
-  min-width: calc(50vw - 50px);
-  display: flex-inline;
+  min-width: calc(${props => (props.minWidth ? props.minWidth : "50vw")} - 50px);
+  min-height: calc(${props => (props.minHeight ? props.minHeight : "50vh")} - 50px);
+  display: inline-block;
   align-items: center;
   align-self: center;
   justify-content: center;
@@ -87,19 +156,33 @@ export const ContentArea = styled.div`
   padding: 20px;
   img{
     height: auto;
-    max-width: 50%;
+    width: auto;
+    min-width: 25vw;
     padding: 20px 0;
   }
+  .textAlignLeft{
+    text-align: left;
+  }
+  .textAlignCenter{
+    text-align: center;
+  }
+  .textJustify{
+    text-align: justify;
+  }
   h2,h3{
-    color: #191919;
-    font-size: 20px;
+    color: ${themeGet('colors.label', '#C6C6C6')};
+    font-size: 25px;
     line-height: 30px;
     padding-bottom: 20px;
+  }
+  p{
+    font-size: 20px;
+    line-height: 25px;
+    b{
+      font-size: 25px;
+      line-height: 30px;
     }
-    p{
-      font-size: 18px;
-      line-height: 25px;
-    }
+  }
   @media only screen and (max-width: 1600px) {
     width: 50%;
   }
@@ -108,22 +191,41 @@ export const ContentArea = styled.div`
   }
   @media only screen and (max-width: 1200px) {
     width: 50%;
+    .flex-row{
+      display: block;
+    }
   }
   @media only screen and (max-width: 767px) {
     width: 100%;
     padding-right: 50px;
+    .flex-row{
+      display: block;
+    }
   }
   @media only screen and (max-width: 480px) {
     padding: 10px 0;
     margin: 0;
-    h2{
-    font-size: 25px;
-    line-height: 33px;
+    h2,h3{
+    font-size: 32px;
+    line-height: 35px;
     padding-bottom: 20px;
+    text-align: center;
     }
     p{
-      font-size: 18px;
-      line-height: 25px;
+      font-size: 22px;
+      line-height: 38px;
+      b{
+        font-size: 25px;
+        line-height: 38px;
+        text-align: center;
+      }
+    }
+    li{
+      font-size: 22px;
+      line-height: 38px;
+    }
+    .flex-row{
+      display: block;
     }
   }
   
@@ -138,6 +240,12 @@ export const ContentArea = styled.div`
     + p {
       margin: 0;
     }
+  }
+  li{
+    list-style-type: disc;
+    text-align: left;
+    padding: 5px;
+    margin-left: 5px;
   }
 `;
 

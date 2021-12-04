@@ -44,7 +44,7 @@ const S2Products = () => {
   return(
     <div> 
       <BannerWrapper>
-        <Container>
+        <Container className="flex-row">
         {/** <GatsbyImage
                           src={(bg_url !== null) | undefined
                             ? bg_url
@@ -56,20 +56,22 @@ const S2Products = () => {
             <ContentArea>
               <Fade bottom >
                 <div className="shadow">
-                  <img src={leafimages}/>
-                  <Heading as="h2" textAlign="center" content={"ALL LIQUID PRODUCTS ARE AVAILABLE IN THE FOLLOWING PRESENTATIONS:"} />
-                  <Text content="High Density Plastic Container" />
-                  <Text content="4 liters Bottle" />
-                  <Text content="20 liters Drum" />
-                  <Text content="60 liters Container" />
-                  <Text content="1000 liters" />
-                  <br/>
-                  <br/>
-                  <br/>
-                  <Heading as="h3" textAlign="center" content={"ALL SOLID PRODUCTS ARE AVAILABLE IN THE FOLLOWING PRESENTATIONS:"} />
-                  <Text content="High Density Plastic Container" />
-                  <Text content="1 kilogram" />
-                  <Text content="25 kilograms" />
+                  <div className="shadowDark">
+                    <img src={leafimages}/>
+                    <Heading as="h2" textAlign="center" content={"ALL LIQUID PRODUCTS ARE AVAILABLE IN THE FOLLOWING PRESENTATIONS:"} />
+                    <Text content="High Density Plastic Container" />
+                    <Text content="4 liters Bottle" />
+                    <Text content="20 liters Drum" />
+                    <Text content="60 liters Container" />
+                    <Text content="1000 liters" />
+                    <br/>
+                    <br/>
+                    <br/>
+                    <Heading as="h3" textAlign="center" content={"ALL SOLID PRODUCTS ARE AVAILABLE IN THE FOLLOWING PRESENTATIONS:"} />
+                    <Text content="High Density Plastic Container" />
+                    <Text content="1 kilogram" />
+                    <Text content="25 kilograms" />
+                  </div>
                 </div>
               </Fade>
           </ContentArea>
@@ -78,11 +80,13 @@ const S2Products = () => {
           <ContentArea>
             <Fade bottom >
               <div className="shadow">
-                <img src={IBEXLogo} />
-                <Heading as="h1" content={title} textAlign="left" />
-                <Text content={text} textAlign="left" />
-                <br/>
-                <Text content=" All IBEX Bionomics agricultural products are fully biodegradable and harmless to the environment." textAlign="left" />
+                <div className="shadowDark">
+                  <img src={IBEXLogo} />
+                  <Heading as="h1" content={title} textAlign="left" />
+                  <Text content={text} textAlign="left" />
+                  <br/>
+                  <Text content=" All IBEX Bionomics agricultural products are fully biodegradable and harmless to the environment." textAlign="left" />
+                </div>
               </div>
             </Fade>
           </ContentArea>
