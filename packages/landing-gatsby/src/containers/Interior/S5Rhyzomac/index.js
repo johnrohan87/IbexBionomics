@@ -53,7 +53,7 @@ const S5Rhyzomac = () => {
             </Fade>
           </div>
           <div className="flex h100">
-            <ContentArea minWidth="40vw" minHeight="100vh" className="alignTop">
+            <ContentArea minWidth="40vw" minHeight="40vh" className="alignTop">
               <Fade bottom >
                 <div className="shadow">
                   <p className="shadowDark">
