@@ -90,11 +90,11 @@ export const Container = styled.div`
     padding: 100px 30px;
     flex-direction: column;
     .flex{
-      display: flex;
-      flex-direction: column;
-      //flex-direction: row;
-      //align-items: flex-start;
-      //justify-content: flex-start;
+      //display: flex;
+      //flex-direction: column;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
     }
   }
   @media only screen and (max-width: 767px) {
