@@ -44,7 +44,7 @@ export const Container = styled.div`
   min-height: 100vh;
   margin: 0 auto;
   padding: 0 20px;
-  display: flex-column;
+  display: flex;
   align-items: center;
   .alignCenter{
     display: flex;
@@ -90,11 +90,11 @@ export const Container = styled.div`
     padding: 100px 30px;
     flex-direction: column;
     .flex{
-      //display: flex;
-      //flex-direction: column;
-      flex-direction: row;
-      align-items: flex-start;
-      justify-content: flex-start;
+      display: flex;
+      flex-direction: column;
+      //flex-direction: row;
+      //align-items: flex-start;
+      //justify-content: flex-start;
     }
   }
   @media only screen and (max-width: 767px) {
