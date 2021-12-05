@@ -66,10 +66,10 @@ export const Container = styled.div`
     height: 100%;
   }
   .textAlignLeft{
-    text-align: left;
+    //text-align: left;
   }
   .textAlignCenter{
-    text-align: center;
+    //text-align: center;
   }
   .textJustify{
     //text-align: justify;
