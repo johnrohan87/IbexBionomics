@@ -44,7 +44,7 @@ export const Container = styled.div`
   min-height: 100vh;
   margin: 0 auto;
   padding: 0 20px;
-  display: flex;
+  display: flex-column;
   align-items: center;
   .alignCenter{
     display: flex;
@@ -57,22 +57,12 @@ export const Container = styled.div`
       width: auto;
     }
   }
-  .alignTop{
-    margin: 0 auto;
-    align-items: flex-start;
-    align-self: flex-start;
-  }
-  .h100{
-    height: 100%;
-  }
   @media only screen and (max-width: 1600px) {
     padding: 100px 81px;
     flex-direction: column;
     .flex{
       display: flex;
       flex-direction: row;
-      align-items: flex-start;
-      justify-content: flex-start;
     }
     
   }
@@ -82,8 +72,6 @@ export const Container = styled.div`
     .flex{
       display: flex;
       flex-direction: row;
-      align-items: flex-start;
-      justify-content: flex-start;
     }
   }
   @media only screen and (max-width: 991px) {
@@ -91,10 +79,7 @@ export const Container = styled.div`
     flex-direction: column;
     .flex{
       display: flex;
-      flex-direction: column;
-      //flex-direction: row;
-      //align-items: flex-start;
-      //justify-content: flex-start;
+      flex-direction: row;
     }
   }
   @media only screen and (max-width: 767px) {
@@ -145,7 +130,9 @@ export const Container = styled.div`
 export const ContentArea = styled.div`
   height: 100%; 
   width: 100%;
-  min-width: calc(${props => (props.minWidth ? props.minWidth : "50vw")} - 60px);
+  minHeight: 50vh; 
+  minWidth: 50vw;
+  min-width: calc(${props => (props.minWidth ? props.minWidth : "50vw")} - 50px);
   min-height: calc(${props => (props.minHeight ? props.minHeight : "50vh")} - 50px);
   display: inline-block;
   align-items: center;
@@ -160,29 +147,16 @@ export const ContentArea = styled.div`
     min-width: 25vw;
     padding: 20px 0;
   }
-  .textAlignLeft{
-    text-align: left;
-  }
-  .textAlignCenter{
-    text-align: center;
-  }
-  .textJustify{
-    text-align: justify;
-  }
   h2,h3{
     color: ${themeGet('colors.label', '#C6C6C6')};
-    font-size: 25px;
+    font-size: 20px;
     line-height: 30px;
     padding-bottom: 20px;
-  }
-  p{
-    font-size: 20px;
-    line-height: 25px;
-    b{
-      font-size: 25px;
-      line-height: 30px;
     }
-  }
+    p{
+      font-size: 18px;
+      line-height: 25px;
+    }
   @media only screen and (max-width: 1600px) {
     width: 50%;
   }
@@ -205,24 +179,14 @@ export const ContentArea = styled.div`
   @media only screen and (max-width: 480px) {
     padding: 10px 0;
     margin: 0;
-    h2,h3{
-    font-size: 32px;
-    line-height: 35px;
+    h2{
+    font-size: 25px;
+    line-height: 33px;
     padding-bottom: 20px;
-    text-align: center;
     }
     p{
-      font-size: 22px;
-      line-height: 38px;
-      b{
-        font-size: 25px;
-        line-height: 38px;
-        text-align: center;
-      }
-    }
-    li{
-      font-size: 22px;
-      line-height: 38px;
+      font-size: 18px;
+      line-height: 25px;
     }
     .flex-row{
       display: block;
