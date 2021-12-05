@@ -65,6 +65,15 @@ export const Container = styled.div`
   .h100{
     height: 100%;
   }
+  .textAlignLeft{
+    text-align: left;
+  }
+  .textAlignCenter{
+    text-align: center;
+  }
+  .textJustify{
+    text-align: justify;
+  }
   @media only screen and (max-width: 1600px) {
     padding: 100px 81px;
     flex-direction: column;
@@ -87,7 +96,7 @@ export const Container = styled.div`
     flex-direction: column;
     .flex{
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
     }
   }
   @media only screen and (max-width: 767px) {
@@ -157,13 +166,17 @@ export const ContentArea = styled.div`
   }
   h2,h3{
     color: ${themeGet('colors.label', '#C6C6C6')};
-    font-size: 20px;
+    font-size: 25px;
     line-height: 30px;
     padding-bottom: 20px;
     }
     p{
-      font-size: 18px;
+      font-size: 20px;
       line-height: 25px;
+      b{
+        font-size: 25px;
+        line-height: 30px;
+      }
     }
   @media only screen and (max-width: 1600px) {
     width: 50%;
@@ -187,14 +200,23 @@ export const ContentArea = styled.div`
   @media only screen and (max-width: 480px) {
     padding: 10px 0;
     margin: 0;
-    h2{
-    font-size: 25px;
-    line-height: 33px;
+    h2,h3{
+    font-size: 32px;
+    line-height: 35px;
     padding-bottom: 20px;
     }
     p{
-      font-size: 18px;
-      line-height: 25px;
+      font-size: 22px;
+      line-height: 38px;
+      b{
+        font-size: 25px;
+        line-height: 38px;
+        text-align: center;
+      }
+    }
+    li{
+      font-size: 22px;
+      line-height: 38px;
     }
     .flex-row{
       display: block;

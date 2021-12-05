@@ -52,7 +52,7 @@ const S2Products = () => {
                           alt="IbexBG"
                           className="carousel_img"
                         /> <img src={leafbg} alt="IbexBG" className="bg_img" /> */}
-          
+          <div className="flex">
             <ContentArea>
               <Fade bottom >
                 <div className="shadow">
@@ -77,7 +77,7 @@ const S2Products = () => {
           </ContentArea>
           
           
-          <ContentArea>
+          <ContentArea className="alignTop alignSelfStart">
             <Fade bottom >
               <div className="shadow">
                 <div className="shadowDark">
@@ -90,7 +90,7 @@ const S2Products = () => {
               </div>
             </Fade>
           </ContentArea>
-          
+          </div>
         </Container>
       </BannerWrapper>
     </div>

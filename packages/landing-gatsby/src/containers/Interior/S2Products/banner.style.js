@@ -102,7 +102,7 @@ export const Container = styled.div`
     flex-direction: column;
     .flex{
       display: flex;
-      flex-direction: column;
+      flex-direction: column-reverse;
     }
   }
   .shadow{
