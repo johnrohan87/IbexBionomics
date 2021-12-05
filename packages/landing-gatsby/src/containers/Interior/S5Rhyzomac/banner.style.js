@@ -72,7 +72,7 @@ export const Container = styled.div`
     text-align: center;
   }
   .textJustify{
-    text-align: justify;
+    //text-align: justify;
   }
   @media only screen and (max-width: 1600px) {
     padding: 100px 81px;
