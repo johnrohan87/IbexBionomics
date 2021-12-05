@@ -66,13 +66,13 @@ export const Container = styled.div`
     height: 100%;
   }
   .textAlignLeft{
-    //text-align: left;
+    text-align: left;
   }
   .textAlignCenter{
-    //text-align: center;
+    text-align: center;
   }
   .textJustify{
-    //text-align: justify;
+    text-align: justify;
   }
   @media only screen and (max-width: 1600px) {
     padding: 100px 81px;
@@ -169,7 +169,7 @@ export const ContentArea = styled.div`
     font-size: 25px;
     line-height: 30px;
     padding-bottom: 20px;
-    }
+    
     p{
       font-size: 20px;
       line-height: 25px;
@@ -178,6 +178,7 @@ export const ContentArea = styled.div`
         line-height: 30px;
       }
     }
+  }
   @media only screen and (max-width: 1600px) {
     width: 50%;
   }
