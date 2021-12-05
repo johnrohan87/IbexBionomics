@@ -202,22 +202,18 @@ export const ContentArea = styled.div`
     padding: 10px 0;
     margin: 0;
     h2,h3{
-    font-size: 32px;
-    line-height: 35px;
+    font-size: 30px;
+    line-height: 30px;
     padding-bottom: 20px;
     }
     p{
       font-size: 22px;
-      line-height: 38px;
+      line-height: 35px;
       b{
-        font-size: 25px;
-        line-height: 38px;
+        //font-size: 25px;
+        //line-height: 38px;
         text-align: center;
       }
-    }
-    li{
-      font-size: 22px;
-      line-height: 38px;
     }
     .flex-row{
       display: block;
@@ -241,6 +237,7 @@ export const ContentArea = styled.div`
     text-align: left;
     padding: 5px;
     margin-left: 5px;
+    font-size: 20px;
   }
 `;
 
