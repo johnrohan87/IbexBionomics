@@ -145,7 +145,7 @@ export const Container = styled.div`
 export const ContentArea = styled.div`
   height: 100%; 
   width: 100%;
-  min-width: calc(${props => (props.minWidth ? props.minWidth : "50vw")} - 50px);
+  min-width: calc(${props => (props.minWidth ? props.minWidth : "50vw")} - 60px);
   min-height: calc(${props => (props.minHeight ? props.minHeight : "50vh")} - 50px);
   display: inline-block;
   align-items: center;
