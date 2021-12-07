@@ -53,8 +53,8 @@ const S2Products = () => {
                           className="carousel_img"
                         /> <img src={leafbg} alt="IbexBG" className="bg_img" /> */}
           <div className="flex">
-            <ContentArea>
-              <Fade bottom >
+            <Fade bottom >
+              <ContentArea>
                 <div className="shadow">
                   <div className="shadowDark">
                     <img src={leafimages}/>
@@ -73,23 +73,23 @@ const S2Products = () => {
                     <Text content="25 kilograms" />
                   </div>
                 </div>
-              </Fade>
-          </ContentArea>
-          
-          
-          <ContentArea className="alignTop alignSelfStart">
-            <Fade bottom >
-              <div className="shadow">
-                <div className="shadowDark">
-                  <img src={IBEXLogo} />
-                  <Heading as="h1" content={title} textAlign="left" />
-                  <Text content={text} textAlign="left" />
-                  <br/>
-                  <Text content=" All IBEX Bionomics agricultural products are fully biodegradable and harmless to the environment." textAlign="left" />
-                </div>
-              </div>
+              
+              </ContentArea>
             </Fade>
-          </ContentArea>
+          
+            <Fade bottom >
+              <ContentArea className="alignTop alignSelfStart">
+                <div className="shadow">
+                  <div className="shadowDark">
+                    <img src={IBEXLogo} />
+                    <Heading as="h1" content={title} textAlign="left" />
+                    <Text content={text} textAlign="left" />
+                    <br/>
+                    <Text content=" All IBEX Bionomics agricultural products are fully biodegradable and harmless to the environment." textAlign="left" />
+                  </div>
+                </div>
+              </ContentArea>
+            </Fade>
           </div>
         </Container>
       </BannerWrapper>

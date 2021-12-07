@@ -221,6 +221,7 @@ export const ContentArea = styled.div`
     }
   }
   @media only screen and (max-width: 480px) {
+    width: 100%;
     padding: 10px 0;
     margin: 0;
     h2,h3{

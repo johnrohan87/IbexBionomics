@@ -117,7 +117,7 @@ const S12QClean = () => {
                 </div>
                 <div className="shadowDark">
                   <br/>
-                  <b>MODE OF USE</b>
+                  <p><b>MODE OF USE</b></p>
                   <br/>
                   <br/>
                   <p className="textAlignLeft">
@@ -133,13 +133,13 @@ const S12QClean = () => {
                     Does not require safety waiting periods after application for access or harvest.
                   </p>
                   <br/>
-                  <b>Liquid Product</b>
+                  <p><b>Liquid Product</b></p>
                   <br/>
                   <br/>
                   <br/>
                   <div>
                     <p>
-                      <b>ACTIVE INGREDIENTS:</b>
+                      <p><b>ACTIVE INGREDIENTS:</b></p>
                       <br/>
                       Natural extracts and organic metabolites of vegetable origin.
                     </p>

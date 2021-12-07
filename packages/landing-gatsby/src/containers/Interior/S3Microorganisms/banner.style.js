@@ -56,7 +56,7 @@ export const Container = styled.div`
     padding: 100px 30px;
   }
   @media only screen and (max-width: 767px) {
-    padding: 100px 35px;
+    padding: 100px 0;
     flex-direction: column;
   }
   .shadow{
@@ -111,20 +111,47 @@ export const ContentArea = styled.div`
     width: 50%;
   }
   @media only screen and (max-width: 767px) {
-    width: 100%;
+    width: 90%;
     padding-right: 50px;
+    .flex-row{
+      display: block;
+    }
+    h2,h3{
+      color: ${themeGet('colors.label', '#C6C6C6')};
+      font-size: 25px;
+      line-height: 30px;
+      padding-bottom: 20px;
+      
+      p{
+        font-size: 20px;
+        line-height: 25px;
+        b{
+          font-size: 25px;
+          line-height: 30px;
+        }
+      }
+    }
   }
   @media only screen and (max-width: 480px) {
+    width: 100%;
     padding: 10px 0;
     margin: 0;
-    h2{
-    font-size: 25px;
-    line-height: 33px;
+    h2,h3{
+    font-size: 30px;
+    line-height: 30px;
     padding-bottom: 20px;
     }
     p{
-      font-size: 18px;
-      line-height: 25px;
+      font-size: 22px;
+      line-height: 35px;
+      b{
+        //font-size: 25px;
+        //line-height: 38px;
+        text-align: center;
+      }
+    }
+    .flex-row{
+      display: block;
     }
   }
   

@@ -98,7 +98,7 @@ export const Container = styled.div`
     }
   }
   @media only screen and (max-width: 767px) {
-    padding: 100px 35px;
+    padding: 100px 0;
     flex-direction: column;
     .flex{
       display: flex;
@@ -196,13 +196,14 @@ export const ContentArea = styled.div`
     }
   }
   @media only screen and (max-width: 767px) {
-    width: 100%;
+    width: 90%;
     padding-right: 50px;
     .flex-row{
       display: block;
     }
   }
   @media only screen and (max-width: 480px) {
+    width: 100%;
     padding: 10px 0;
     margin: 0;
     h2,h3{
