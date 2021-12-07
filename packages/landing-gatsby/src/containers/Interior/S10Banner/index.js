@@ -61,7 +61,7 @@ const S10Banner = () => {
       <BannerWrapper>
         <Container>
           <Fade bottom >
-            <div>
+            <div className="shadow">
               <h1 className="shadowDark">
                 <b>
                 Biological Control <br/>of <br/>Pests and Diseases

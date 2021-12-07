@@ -53,17 +53,19 @@ const S9Rayfol = () => {
             </div>
           </div>
           <div className="flex h100 alignCenter">
-            <Fade bottom >
-              <ContentArea minWidth="40vw">
-              <p className="shadowDark" padding="20px">
-                <i>RAYFOL increases the sucrose concentration in sugarcane through non-stressful means, by regulating ethylene levels.
-                  <br/>Increases subsequent budding and resistance to diseases and low temperatures.</i>
-              </p>
-              </ContentArea>
-            </Fade>
-            <Fade bottom >
-              <ContentArea className="shadow" minWidth="60vw" minHeight="100vh" >
-                <div >
+            <ContentArea minWidth="40vw" minHeight="40vh" className="alignTop">
+              <Fade bottom >
+                <div className="shadow">
+                  <p className="shadowDark" padding="20px">
+                    <i>RAYFOL increases the sucrose concentration in sugarcane through non-stressful means, by regulating ethylene levels.
+                      <br/>Increases subsequent budding and resistance to diseases and low temperatures.</i>
+                  </p>
+                </div>
+              </Fade>
+            </ContentArea>
+            <ContentArea className="shadow" minWidth="60vw" minHeight="100vh" >
+              <Fade bottom >
+                <div className="shadowDark">
                   <div>
                     
                     <p><b>ORGANIC RIPENER AND SUCROSE CONCENTRATOR</b></p>
@@ -71,33 +73,33 @@ const S9Rayfol = () => {
                   </div>
                 </div>
                 <div className="flex-row" >
-                  <div >
+                  <div className="shadowDark">
                     <h2>MODE OF ACTION</h2>
                     <p>
-                    RAYFOL is an organic complex formulated from the fermentation of vegetable metabolites.
-                    <br/>
-                    <br/>
-                    Promotes the production of hormonal compounds in plant tissues, regulating gibberellin and ethylene.
-                    <br/>
-                    <br/>
-                    In sugarcane crops, RAYFOL increases sucrose accumulation in the stalk, improving its efficiency in transporting sugars from the leaves to the storage cells. This allows a higher concentration of sucrose in the upper third of the stalk.
-                    <br/>
-                    <br/>
-                    Increases root development of plants. In sugarcane it stimulates production of tillers after planting or harvesting.
-                    <br/>
-                    <br/>
-                    Increases natural defenses and resistance to diseases, water stress and low temperatures.
-                    <br/>
-                    <br/>
-                    Naturally ripens and concentrates
-                    <br/>
-                    <br/>
-                    sugarcane sucrose.	Replaces stress-based chemical ripeners. Will not harm neighboring crops.
+                      RAYFOL is an organic complex formulated from the fermentation of vegetable metabolites.
+                      <br/>
+                      <br/>
+                      Promotes the production of hormonal compounds in plant tissues, regulating gibberellin and ethylene.
+                      <br/>
+                      <br/>
+                      In sugarcane crops, RAYFOL increases sucrose accumulation in the stalk, improving its efficiency in transporting sugars from the leaves to the storage cells. This allows a higher concentration of sucrose in the upper third of the stalk.
+                      <br/>
+                      <br/>
+                      Increases root development of plants. In sugarcane it stimulates production of tillers after planting or harvesting.
+                      <br/>
+                      <br/>
+                      Increases natural defenses and resistance to diseases, water stress and low temperatures.
+                      <br/>
+                      <br/>
+                      Naturally ripens and concentrates
+                      <br/>
+                      <br/>
+                      sugarcane sucrose.	Replaces stress-based chemical ripeners. Will not harm neighboring crops.
                     </p>
                   </div>
-                  <div >
+                  <div className="shadowDark">
                     <br/>
-                    <b>MODE OF USE</b>
+                    <p><b>MODE OF USE</b></p>
                     <br/>
                     <br/>
                     <p>
@@ -113,21 +115,21 @@ const S9Rayfol = () => {
                       Does not require safety waiting periods after application for access or harvest
                     </p>
                     <br/>
-                    <b>Liquid Product</b>
+                    <p><b>Liquid Product</b></p>
                     <br/>
                     <br/>
                     <br/>
                     <div>
                       <p>
-                        <b>ACTIVE INGREDIENTS:</b>
+                        <p><b>ACTIVE INGREDIENTS:</b></p>
                         <br/>
                         Natural extracts and organic metabolites of vegetable origin.
                       </p>
                     </div>
                   </div>
                 </div>
-              </ContentArea>
-            </Fade>
+              </Fade>
+            </ContentArea>
           </div>
           
         </Container>

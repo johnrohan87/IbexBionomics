@@ -157,7 +157,7 @@ export const ContentArea = styled.div`
   justify-content: center;
   text-align: center;
   margin:  auto;
-  padding: 20px;
+  padding: 0 20px;
   img{
     height: auto;
     width: auto;
