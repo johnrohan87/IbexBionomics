@@ -55,11 +55,11 @@ const S5Rhyzomac = () => {
             </Fade>
           </div>
           <div className="flex h100 alignCenter">
-            <ContentArea minWidth="40vw">
+            <ContentArea minWidth="40vw" minHeight="40vh" className="alignTop">
               <div className="shadow">
                 <p className="shadowDark" padding="20px">
-                <i>A mineral prebiotic that increases responsiveness and physiological resistance in treated plants, leading to healthier crops and lower treatment costs for fungal, bacterial, and viral infections.</i>
-              </p>
+                  <i>A mineral prebiotic that increases responsiveness and physiological resistance in treated plants, leading to healthier crops and lower treatment costs for fungal, bacterial, and viral infections.</i>
+                </p>
               </div>
             </ContentArea>
           

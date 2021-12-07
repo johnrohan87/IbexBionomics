@@ -61,7 +61,7 @@ const S8Banner = () => {
       <BannerWrapper>
         <Container>
           <Fade bottom >
-            <div>
+            <div className="shadow">
               <h1 className="shadowDark">
                 <b>
                   Fruit Ripening <br/>and<br/> Concentration of Sucrose <br/>in Sugarcane

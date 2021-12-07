@@ -53,67 +53,72 @@ const S5Rhyzomac = () => {
             </div>
           </div>
           <div className="flex h100 alignCenter">
-            <Fade bottom >
-              <ContentArea minWidth="40vw">
-              <p className="shadowDark" padding="20px">
-                <i>The organic components found in QBN-3 avoid biological impacts produced by heavy elements, eliminating the formation of toxic compounds through chemical reactions.</i>
-              </p>
+            
+              <ContentArea minWidth="40vw" minHeight="40vh" className="alignTop">
+                <Fade bottom >
+                  <div className="shadow">
+                    <p className="shadowDark" padding="20px">
+                      <i>The organic components found in QBN-3 avoid biological impacts produced by heavy elements, eliminating the formation of toxic compounds through chemical reactions.</i>
+                    </p>
+                  </div>
+                </Fade>
               </ContentArea>
-            </Fade>
-            <Fade bottom >
+            
+            
               <ContentArea minWidth="60vw" minHeight="100vh" >
-                <div className="shadow">
-                  <div className="shadowDark">
-                    <p><b>ORGANIC ENZYMATIC FERTILIZER FOR EDAPHIC AND FOLIAR USE</b></p>
-                    <p>Nutritional supplement - eliminates and degrades toxic compounds.</p>
-                  </div>
-                </div>
-                <div className="flex-row shadow" >
-                  <div className="shadowDark">
-                    <h2>MODE OF ACTION</h2>
-                    <p className="textAlignLeft">
-                      QBN-3 stimulates the production and facilitates the action of auxins, gibberellins, and cytokinins, promoting growth and development.
-                      <br/>
-                      <br/>
-                      Stimulates the production of chlorophyll and amylases, allowing the plant to process nutrients and solar energy more efficiently.
-                      <br/>
-                      <br/>
-                      Prevents nutrient losses caused by evaporation and leaching.
-                      <br/>
-                      <br/>
-                      Prevents biological impact shocks produced by heavy elements, preventing the generation of toxic compounds through chemical reactions.
-                    </p>
-                  </div>
-                  <div className="shadowDark">
-                    <br/>
-                    <p><b>MODE OF USE</b></p>
-                    <br/>
-                    <br/>
-                    <p className="textAlignLeft">
-                      QBN-3 is designed for foliar applications but may be used edaphically for
-                      <br/>
-                      <br/>
-                      seedlings in nurseries.	It is also ideal for hydroponic plant nutrition.
-                      <br/>
-                      <br/>
-                      Does not require safety waiting periods after application for access or harvest.
-                    </p>
-                    <br/>
-                    <p><b>Liquid Product</b></p>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <div>
-                      <p>
-                        <b>ACTIVE INGREDIENTS:</b>
-                        <br/>
-                        Natural extracts and organic metabolites of vegetable origin.
-                      </p>
+                <Fade bottom >
+                  <div className="shadow">
+                    <div className="shadowDark">
+                      <p><b>ORGANIC ENZYMATIC FERTILIZER FOR EDAPHIC AND FOLIAR USE</b></p>
+                      <p>Nutritional supplement - eliminates and degrades toxic compounds.</p>
                     </div>
                   </div>
-                </div>
+                  <div className="flex-row shadow" >
+                    <div className="shadowDark">
+                      <h2>MODE OF ACTION</h2>
+                      <p className="textAlignLeft">
+                        QBN-3 stimulates the production and facilitates the action of auxins, gibberellins, and cytokinins, promoting growth and development.
+                        <br/>
+                        <br/>
+                        Stimulates the production of chlorophyll and amylases, allowing the plant to process nutrients and solar energy more efficiently.
+                        <br/>
+                        <br/>
+                        Prevents nutrient losses caused by evaporation and leaching.
+                        <br/>
+                        <br/>
+                        Prevents biological impact shocks produced by heavy elements, preventing the generation of toxic compounds through chemical reactions.
+                      </p>
+                    </div>
+                    <div className="shadowDark">
+                      <br/>
+                      <p><b>MODE OF USE</b></p>
+                      <br/>
+                      <br/>
+                      <p className="textAlignLeft">
+                        QBN-3 is designed for foliar applications but may be used edaphically for
+                        <br/>
+                        <br/>
+                        seedlings in nurseries.	It is also ideal for hydroponic plant nutrition.
+                        <br/>
+                        <br/>
+                        Does not require safety waiting periods after application for access or harvest.
+                      </p>
+                      <br/>
+                      <p><b>Liquid Product</b></p>
+                      <br/>
+                      <br/>
+                      <br/>
+                      <div>
+                        <p>
+                          <b>ACTIVE INGREDIENTS:</b>
+                          <br/>
+                          Natural extracts and organic metabolites of vegetable origin.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </Fade>
               </ContentArea>
-            </Fade>
           </div>
           
         </Container>
