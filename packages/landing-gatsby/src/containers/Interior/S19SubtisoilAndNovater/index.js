@@ -48,13 +48,13 @@ const S19SubtisoilAndNovater = () => {
         <Container>
           <div className="alignCenter flex">
             <ContentArea minWidth="50vw" minHeight="50vh" className="alignTop">
-            <Fade bottom >
-              <div className="shadow">
-              <p className="shadowDark medPadding">
-                <img src={SubTiSoil}/>
-                <img src={Novater}/>
-              </p>
-              </div>
+              <Fade bottom >
+                <div className="shadow">
+                  <p className="shadowDark medPadding">
+                    <img src={SubTiSoil}/>
+                    <img src={Novater}/>
+                  </p>
+                </div>
               </Fade >
             </ContentArea>
           
@@ -62,15 +62,15 @@ const S19SubtisoilAndNovater = () => {
             <ContentArea minWidth="50vw" minHeight="75vh" >
               <div >
                 <Fade bottom >
-                <div className="shadow">
-                  <p className="shadowDark">
-                    <i>
-                      These two products work together in the creation of suppressive soils through the degradation of toxic compounds and organic material, and the inoculation and nutrition of beneficial microorganisms in the soil.
-                      <br/><br/>
-                      The products are specifically formulated to break down and degrade the short and long molecular chains of fats and oils in the soil, whether vegetable, animal, or mineral.
-                    </i>
-                  </p>
-                </div>
+                  <div className="shadow">
+                    <p className="shadowDark">
+                      <i>
+                        These two products work together in the creation of suppressive soils through the degradation of toxic compounds and organic material, and the inoculation and nutrition of beneficial microorganisms in the soil.
+                        <br/><br/>
+                        The products are specifically formulated to break down and degrade the short and long molecular chains of fats and oils in the soil, whether vegetable, animal, or mineral.
+                      </i>
+                    </p>
+                  </div>
                 </Fade>
               </div>
             </ContentArea>

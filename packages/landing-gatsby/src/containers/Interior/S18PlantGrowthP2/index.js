@@ -46,7 +46,7 @@ const S18PlantGrowthP2 = () => {
         <Container>
           <div className="flex">
             <ContentArea minWidth="50vw" minHeight="50vh" className="alignTop">
-              
+              <Fade bottom>
                 <div className="shadow">
                   <p className="shadowDark">
                     <b>PGPR is the treatment and protection of soils by the biopotentiation of the rhizosphere, be it for protecting autochthonous organisms or through the inoculation of living microorganisms.</b>
@@ -56,6 +56,8 @@ const S18PlantGrowthP2 = () => {
                     <br/><br/>Rhizobacteria are antagonistic to the presence of pathogenic organisms.
                   </p>
                 </div>
+              </Fade>
+              <Fade bottom>
                 <div className="shadow">
                   <p className="shadowDark">
                     <b>USES IN SOIL TREATMENT</b>
@@ -66,7 +68,7 @@ const S18PlantGrowthP2 = () => {
                     </p>
                   </p>
                 </div>
-              
+              </Fade>
             </ContentArea>
             <ContentArea minWidth="50vw" minHeight="100vh" >
               <div >

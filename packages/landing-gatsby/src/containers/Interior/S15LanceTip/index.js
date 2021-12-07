@@ -97,7 +97,9 @@ const S15LanceTip = () => {
                     </div>
                   </div>
                 </div>
+              </Fade>
                 <div className="flex-row">
+                  <Fade bottom>
                   <div className="shadow" >
                     <div className="shadowDark">
                       <h2>MODE OF ACTION</h2>
@@ -117,6 +119,8 @@ const S15LanceTip = () => {
                       </p>
                     </div>
                   </div>
+                </Fade>
+                <Fade bottom>
                   <div className="shadow">
                     <div className="shadowDark">
                       <br/>
@@ -160,8 +164,8 @@ const S15LanceTip = () => {
                       </div>
                     </div>
                   </div>
-                </div>
-              </Fade>
+                </Fade>
+              </div>
             </ContentArea>
           </div>
         </Container>

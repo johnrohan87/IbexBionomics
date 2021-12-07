@@ -45,7 +45,7 @@ const S21Subtisoil = () => {
     <div> 
       <BannerWrapper>
         <Container>
-        <div className="alignCenter">
+          <div className="alignCenter">
             <Fade bottom >
               <div className="shadow">
                 <div className="shadowDark">
@@ -55,7 +55,7 @@ const S21Subtisoil = () => {
             </Fade>
           </div>
           <div className="flex">
-            <ContentArea minWidth="40vw" className="alignTop">
+            <ContentArea minHeight="0" minWidth="40vw" className="alignTop">
               
             </ContentArea>
           

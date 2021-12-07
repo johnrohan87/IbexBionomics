@@ -55,7 +55,7 @@ const S22Novater = () => {
             </Fade>
           </div>
           <div className="flex">
-            <ContentArea minWidth="40vw" className="alignTop">
+            <ContentArea minHeight="0" minWidth="40vw" className="alignTop">
               
             </ContentArea>
           
@@ -74,7 +74,9 @@ const S22Novater = () => {
                     </div>
                   </div>
                 </div>
+              </Fade>
                 <div className="flex-row">
+                  <Fade bottom>
                   <div className="shadow" >
                     <div className="shadowDark">
                       <h2>MODE OF ACTION</h2>
@@ -91,6 +93,8 @@ const S22Novater = () => {
                       </p>
                     </div>
                   </div>
+                  </Fade>
+                  <Fade bottom>
                   <div className="shadow">
                     <div className="shadowDark">
                       <br/>
@@ -126,8 +130,8 @@ const S22Novater = () => {
                       </div>
                     </div>
                   </div>
-                </div>
               </Fade>
+                </div>
             </ContentArea>
           </div>
         </Container>

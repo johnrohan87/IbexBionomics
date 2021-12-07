@@ -52,10 +52,16 @@ const S17PlantGrowth = () => {
                     <p>
                       <b>Plant Growth Promoting Rhizobacteria (PGPR) And the Creation of Suppressive Soils</b>
                     </p>
-                    <p>
+                    <p className="textAlignLeft">
                       Suppressive soils are those in which pathogens do not find ideal conditions to establish themselves or to persist.
+                      <br/>
+                      <br/>
                       If a pathogen does establish itself in these soils, its attacks will not provoke any notable damage or disease, due to interruption of quorum sensing.
+                      <br/>
+                      <br/>
                       The main biotic characteristic of natural or induced suppressive soils is the presence of a high rate of actinomycetes, an elevated metabolic potential, and a co-metabolism of the living agents necessary for the high productivity of crop soils.
+                      <br/>
+                      <br/>
                       Suppressive soils contain microorganisms (fungi, Bacillus, Pseudomonas, Streptomyces and yeast) which produce protective elements against fungosis, bacteriosis, viroses, and plague insects.
                     </p>
                   </Fade>
