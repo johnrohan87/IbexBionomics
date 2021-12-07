@@ -73,51 +73,59 @@ const S5Rhyzomac = () => {
                       <p>Nutritional supplement - eliminates and degrades toxic compounds.</p>
                     </div>
                   </div>
-                  <div className="flex-row shadow" >
-                    <div className="shadowDark">
-                      <h2>MODE OF ACTION</h2>
-                      <p className="textAlignLeft">
-                        QBN-3 stimulates the production and facilitates the action of auxins, gibberellins, and cytokinins, promoting growth and development.
-                        <br/>
-                        <br/>
-                        Stimulates the production of chlorophyll and amylases, allowing the plant to process nutrients and solar energy more efficiently.
-                        <br/>
-                        <br/>
-                        Prevents nutrient losses caused by evaporation and leaching.
-                        <br/>
-                        <br/>
-                        Prevents biological impact shocks produced by heavy elements, preventing the generation of toxic compounds through chemical reactions.
-                      </p>
-                    </div>
-                    <div className="shadowDark">
-                      <br/>
-                      <p><b>MODE OF USE</b></p>
-                      <br/>
-                      <br/>
-                      <p className="textAlignLeft">
-                        QBN-3 is designed for foliar applications but may be used edaphically for
-                        <br/>
-                        <br/>
-                        seedlings in nurseries.	It is also ideal for hydroponic plant nutrition.
-                        <br/>
-                        <br/>
-                        Does not require safety waiting periods after application for access or harvest.
-                      </p>
-                      <br/>
-                      <p><b>Liquid Product</b></p>
-                      <br/>
-                      <br/>
-                      <br/>
-                      <div>
-                        <p>
-                          <b>ACTIVE INGREDIENTS:</b>
+                  </Fade>
+                  <div className="flex-row" >
+                  <Fade bottom >
+                    <div className="shadow">
+                      <div className="shadowDark">
+                        <h2>MODE OF ACTION</h2>
+                        <p className="textAlignLeft">
+                          QBN-3 stimulates the production and facilitates the action of auxins, gibberellins, and cytokinins, promoting growth and development.
                           <br/>
-                          Natural extracts and organic metabolites of vegetable origin.
+                          <br/>
+                          Stimulates the production of chlorophyll and amylases, allowing the plant to process nutrients and solar energy more efficiently.
+                          <br/>
+                          <br/>
+                          Prevents nutrient losses caused by evaporation and leaching.
+                          <br/>
+                          <br/>
+                          Prevents biological impact shocks produced by heavy elements, preventing the generation of toxic compounds through chemical reactions.
                         </p>
                       </div>
                     </div>
-                  </div>
+                    </Fade>
+                    <Fade bottom >
+                    <div className="shadow">
+                      <div className="shadowDark">
+                        <br/>
+                        <p><b>MODE OF USE</b></p>
+                        <br/>
+                        <br/>
+                        <p className="textAlignLeft">
+                          QBN-3 is designed for foliar applications but may be used edaphically for
+                          <br/>
+                          <br/>
+                          seedlings in nurseries.	It is also ideal for hydroponic plant nutrition.
+                          <br/>
+                          <br/>
+                          Does not require safety waiting periods after application for access or harvest.
+                        </p>
+                        <br/>
+                        <p><b>Liquid Product</b></p>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <div>
+                          <p>
+                            <b>ACTIVE INGREDIENTS:</b>
+                            <br/>
+                            Natural extracts and organic metabolites of vegetable origin.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                 </Fade>
+                  </div>
               </ContentArea>
           </div>
           

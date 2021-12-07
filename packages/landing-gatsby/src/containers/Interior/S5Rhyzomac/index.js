@@ -65,18 +65,22 @@ const S5Rhyzomac = () => {
             
             
               <ContentArea minWidth="60vw" minHeight="100vh" >
-                <Fade bottom >
-                  <div className="shadow textAlignLeft">
-                    <div >
-                      <div>
-                        
+                
+                  <div className="textAlignLeft">
+                    <Fade bottom >
+                      <div className="shadow">
                         <div className="shadowDark">
-                          <p className="textAlignCenter"><b>BIOLOGICAL NUTRITIONAL REGULATOR</b></p>
-                          <p>A concentrated and stable liquid fertilizer composed of highly resistant spores of Azotobacter and other rhizospheric microorganisms that fix atmospheric nitrogen and solubilizes phosphorus and potassium present in the soil.</p>
+                          <div>
+                            <p className="textAlignCenter"><b>BIOLOGICAL NUTRITIONAL REGULATOR</b></p>
+                            <p>A concentrated and stable liquid fertilizer composed of highly resistant spores of Azotobacter and other rhizospheric microorganisms that fix atmospheric nitrogen and solubilizes phosphorus and potassium present in the soil.</p>
+                          </div>
                         </div>
                       </div>
-                    </div>
+                    </Fade>
+                    
                     <div className="flex-row" >
+                      <Fade bottom >
+                      <div className="shadow">
                       <div className="shadowDark">
                         <h2 className="textAlignCenter"><b>MODE OF ACTION</b></h2>
                         <p>Natural fertilizer that transforms conventional soils, optimizing biological
@@ -93,6 +97,10 @@ const S5Rhyzomac = () => {
                         RHYZOMAC contains bacteria that absorb atmospheric nitrogen, then secure, convert and release it to the plant. This ability to fix the free atmospheric nitrogen, is of vital ecological importance and contributes significantly to increase the fertility of the soil and habitat where they develop. This also prevents nitrogen from leaching into streams and other bodies of water.
                         </p>
                       </div>
+                      </div>
+                      </Fade>
+                      <Fade bottom >
+                      <div className="shadow">
                       <div className="shadowDark">
                         <h3 className="textAlignCenter"><b>USES</b></h3>
                         <ul>
@@ -125,9 +133,10 @@ const S5Rhyzomac = () => {
                           </p>
                         </div>
                       </div>
+                      </div>
+                </Fade>
                   </div>
-                </div>
-              </Fade>
+              </div>
             </ContentArea>
           </div>
         </Container>

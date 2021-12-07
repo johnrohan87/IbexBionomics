@@ -56,22 +56,27 @@ const S5Rhyzomac = () => {
           </div>
           <div className="flex h100 alignCenter">
             <ContentArea minWidth="40vw" minHeight="40vh" className="alignTop">
-              <div className="shadow">
-                <p className="shadowDark" padding="20px">
-                  <i>A mineral prebiotic that increases responsiveness and physiological resistance in treated plants, leading to healthier crops and lower treatment costs for fungal, bacterial, and viral infections.</i>
-                </p>
-              </div>
+              <Fade bottom >
+                <div className="shadow">
+                  <p className="shadowDark" padding="20px">
+                    <i>A mineral prebiotic that increases responsiveness and physiological resistance in treated plants, leading to healthier crops and lower treatment costs for fungal, bacterial, and viral infections.</i>
+                  </p>
+                </div>
+              </Fade>
             </ContentArea>
           
-            <Fade bottom >
-              <ContentArea minWidth="60vw" minHeight="100vh" >
+            <ContentArea minWidth="60vw" minHeight="100vh" >
+              <Fade bottom >
                 <div className="shadow">
                   <div className="shadowDark">
                     <p><b>POTENTIATING MINERAL PREBIOTIC FOR AGRICULTURAL USE</b></p>
                     <p className="textAlignLeft">A pulverized, insoluble mineral compound for foliar and edaphic application. Through the remineralization of plants and soils, depleted or diminished mineral reserves are replaced in necessary quantities.</p>
                   </div>
                 </div>
-                <div className="flex-row shadow" >
+              </Fade>
+              <div className="flex-row" >
+              <Fade bottom >
+                <div className="shadow">
                   <div className="shadowDark">
                     <h2>MODE OF ACTION</h2>
                     <p className="textAlignLeft">
@@ -87,6 +92,10 @@ const S5Rhyzomac = () => {
                       The activation of the bacterial microflora through this biomineral enhancer allows for the development of a non-restrictive, optimum level of efficiency in biological environments through natural and non- toxic elements.
                     </p>
                   </div>
+                </div>
+                </Fade>
+                <Fade bottom >
+                <div className="shadow">
                   <div className="shadowDark">
                     <br/>
                     <h3>MODE OF USE</h3>
@@ -115,8 +124,9 @@ const S5Rhyzomac = () => {
                     </div>
                   </div>
                 </div>
-              </ContentArea>
-            </Fade>
+              </Fade>
+              </div>
+            </ContentArea>
           </div>
           
         </Container>

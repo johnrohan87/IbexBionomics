@@ -66,7 +66,6 @@ const S9Rayfol = () => {
               </Fade>
             </ContentArea>
             <ContentArea minWidth="60vw" minHeight="100vh" >
-
               <Fade bottom >
                 <div className="shadow">
                 <div className="shadowDark">
@@ -78,9 +77,9 @@ const S9Rayfol = () => {
                 </div>
                 </div>
               </Fade>
-              <Fade bottom >
-                <div className="shadow">
-                  <div className="flex-row" >
+              <div className="flex-row" >
+                <Fade bottom >
+                  <div className="shadow">
                     <div className="shadowDark">
                       <h2>MODE OF ACTION</h2>
                       <p className="textAlignLeft">
@@ -105,42 +104,45 @@ const S9Rayfol = () => {
                         sugarcane sucrose.	Replaces stress-based chemical ripeners. Will not harm neighboring crops.
                       </p>
                     </div>
-                    <div className="shadowDark">
-                      <br/>
-                      <p><b>MODE OF USE</b></p>
-                      <br/>
-                      <br/>
-                      <p className="textAlignLeft">
-                        Product for foliar application.
+                  </div>
+                  </Fade>
+                  <Fade bottom>
+                    <div className="shadow">
+                      <div className="shadowDark">
+                        <br/>
+                        <p><b>MODE OF USE</b></p>
                         <br/>
                         <br/>
-                        Sugarcane Ripener: Apply 1 liter per hectare three months before harvest.
-                        <br/>
-                        <br/>
-                        Flowering, fruit setting, and fruit ripening:  Apply 1 liter per hectare at the beginning of each vegetative stage. (Dosage may vary by crop)
-                        <br/>
-                        <br/>
-                        Does not require safety waiting periods after application for access or harvest
-                      </p>
-                      <br/>
-                      <p><b>Liquid Product</b></p>
-                      <br/>
-                      <br/>
-                      <br/>
-                      <div>
-                        <p>
-                          <p><b>ACTIVE INGREDIENTS:</b></p>
+                        <p className="textAlignLeft">
+                          Product for foliar application.
                           <br/>
-                          Natural extracts and organic metabolites of vegetable origin.
+                          <br/>
+                          Sugarcane Ripener: Apply 1 liter per hectare three months before harvest.
+                          <br/>
+                          <br/>
+                          Flowering, fruit setting, and fruit ripening:  Apply 1 liter per hectare at the beginning of each vegetative stage. (Dosage may vary by crop)
+                          <br/>
+                          <br/>
+                          Does not require safety waiting periods after application for access or harvest
                         </p>
+                        <br/>
+                        <p><b>Liquid Product</b></p>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <div>
+                          <p>
+                            <p><b>ACTIVE INGREDIENTS:</b></p>
+                            <br/>
+                            Natural extracts and organic metabolites of vegetable origin.
+                          </p>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </Fade>
                 </div>
-              </Fade>
             </ContentArea>
           </div>
-          
         </Container>
       </BannerWrapper>
     </div>
