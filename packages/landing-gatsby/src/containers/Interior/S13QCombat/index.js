@@ -55,7 +55,7 @@ const S13QCombat = () => {
             </Fade>
           </div>
           <div className="flex h100 alignCenter">
-            <ContentArea minWidth="40vw">
+            <ContentArea minWidth="40vw" className="alignTop">
               <Fade bottom >
                 <div className="shadow">
                   <p className="shadowDark" padding="20px">
@@ -66,7 +66,7 @@ const S13QCombat = () => {
               <Fade bottom>
                 <div className="shadow">
                   <p className="smPadding alignCenter shadowDark flex column">
-                    <b>ACTIVE METABOLITES</b>
+                    <p><b>ACTIVE METABOLITES</b></p>
                     <div className="flex-row smPadding alignCenter">
                       <ol className="gridContainer" >
                         <li>Allicin</li>

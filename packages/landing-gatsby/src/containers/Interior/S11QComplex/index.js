@@ -67,7 +67,7 @@ const S11QComplex = () => {
                 <div className="shadow">
                   <p className="smPadding alignCenter shadowDark flex column">
                     <div>
-                      <b>ACTIVE METABOLITES</b>
+                      <p><b>ACTIVE METABOLITES</b></p>
                     </div>
                     <div className="flex-row smPadding alignCenter">
                       <ol className="gridContainer">
