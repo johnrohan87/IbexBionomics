@@ -59,8 +59,10 @@ const S11QComplex = () => {
                   <p className="shadowDark" padding="20px">
                     <i>Promotes natural resistance against different types of pathogens (fungi, viruses, and bacteria) that make up the complex diseases proliferating in monoculture crops.</i>
                   </p>
-                  <p className="smPadding alignCenter shadowDark">
-                    <b>ACTIVE METABOLITES</b>
+                  <p className="smPadding alignCenter shadowDark flex column">
+                    <div>
+                      <b>ACTIVE METABOLITES</b>
+                    </div>
                     <div className="flex-row smPadding alignCenter">
                       <ol className="gridContainer">
                         <li>Allicin</li>
@@ -94,16 +96,16 @@ const S11QComplex = () => {
                   <div className="shadowDark">
                     
                     <p><b>INDUCES PHYSIOLOGICAL RESISTANCE <br/>AGAINST COMPLEX PATHOGENIC ATTACKS</b></p>
-                    <p>Q-COMPLEX is an organic inducer of physiological resistance in plants, 
-                      <br/>which primarily and specifically activates mechanisms related to 
-                      <br/>the reduction of the physiological and morphological impact 
-                      <br/>caused by fungal, bacterial, and viral complexes.</p>
+                    <p className="textAlignLeft">Q-COMPLEX is an organic inducer of physiological resistance in plants, 
+                      which primarily and specifically activates mechanisms related to 
+                      the reduction of the physiological and morphological impact 
+                      caused by fungal, bacterial, and viral complexes.</p>
                   </div>
                 </div>
                 <div className="flex-row shadow" >
                   <div className="shadowDark">
                     <h2>MODE OF ACTION</h2>
-                    <p>
+                    <p className="textAlignLeft">
                     The metabolites present in Q-COMPLEX provide the plant with primary sources for the production of proteins that that interrupt the formation of soluble substances that nourish a vast array of pathogens, providing the plant with resistance against complex attacks.
                     <br/>
                     <br/>
@@ -132,7 +134,7 @@ const S11QComplex = () => {
                     <p><b>MODE OF USE</b></p>
                     <br/>
                     <br/>
-                    <p>
+                    <p className="textAlignLeft">
                       Q-COMPLEX should be used as a foliar spray.
                       <br/>
                       <br/>

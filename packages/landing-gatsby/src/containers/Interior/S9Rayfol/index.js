@@ -46,11 +46,13 @@ const S9Rayfol = () => {
       <BannerWrapper>
         <Container>
           <div className="alignCenter">
-            <div className="shadow">
-              <div className="shadowDark">
-                <img src={S9RayfolText}/>
+            <Fade bottom >
+              <div className="shadow">
+                <div className="shadowDark">
+                  <img src={S9RayfolText}/>
+                </div>
               </div>
-            </div>
+            </Fade>
           </div>
           <div className="flex h100 alignCenter">
             <ContentArea minWidth="40vw" minHeight="40vh" className="alignTop">
@@ -75,7 +77,7 @@ const S9Rayfol = () => {
                 <div className="flex-row" >
                   <div className="shadowDark">
                     <h2>MODE OF ACTION</h2>
-                    <p>
+                    <p className="textAlignLeft">
                       RAYFOL is an organic complex formulated from the fermentation of vegetable metabolites.
                       <br/>
                       <br/>
@@ -102,7 +104,7 @@ const S9Rayfol = () => {
                     <p><b>MODE OF USE</b></p>
                     <br/>
                     <br/>
-                    <p>
+                    <p className="textAlignLeft">
                       Product for foliar application.
                       <br/>
                       <br/>

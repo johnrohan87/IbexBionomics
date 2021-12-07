@@ -199,7 +199,7 @@ export const ContentArea = styled.div`
     }
   }
   @media only screen and (max-width: 767px) {
-    width: 100%;
+    width: 90%;
     padding-right: 50px;
     .flex-row{
       display: block;

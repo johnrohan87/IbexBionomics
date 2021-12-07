@@ -144,6 +144,23 @@ export const Container = styled.div`
       
     }
   }
+  .gridContainer{
+    //display: flex;
+    //flex-wrap: wrap; 
+    //gap: 10px;
+    //justify-content: space-between;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    padding: 5px;
+      
+    li{
+      //list-style-type: disc;
+      //margin-left: 20px;
+      padding: 5px;
+      //font-size: 30px;
+      text-align: left;
+    }
+  }
 `;
 
 export const ContentArea = styled.div`
@@ -185,6 +202,9 @@ export const ContentArea = styled.div`
     padding: 5px;
     margin-left: 15px;
     font-size: 20px;
+  }
+  .column{
+    flex-direction: column;
   }
   @media only screen and (max-width: 1600px) {
     width: 80%;
