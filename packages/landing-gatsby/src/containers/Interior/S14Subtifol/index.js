@@ -45,71 +45,88 @@ const S14Subtifol = () => {
     <div> 
       <BannerWrapper>
         <Container>
-          <Fade bottom >
-            <ContentArea minWidth="40vw" />
-          </Fade>
-          <Fade bottom >
-            <ContentArea className="shadow" minWidth="60vw" minHeight="100vh" >
-              <div >
-                <div>
+          <div className="alignCenter">
+            <Fade bottom >
+              <div className="shadow">
+                <div className="shadowDark">
                   <img src={S14SubtifolText}/>
-                  <p><b>FOLIAR INHIBITOR OF PESTS AND DISEASE</b></p>
-                  <p>
-                  Composed of Bacillus Subtillis and other rhizospheric microorganisms with facultative character that interrupt the life cycles of pests and diseases on foliage.
-                  </p>
                 </div>
               </div>
-              <div className="flex-row" >
-                <div >
-                  <h2>MODE OF ACTION</h2>
-                  <p>
-                      SUBTIFOL interrupts chemical signals to pathogens, preventing the plant foliage from being recognized as a food source or appropriate place for egg laying.
-                    <br/>
-                    <br/>
-                      Stimulates the growth and concentration of beneficial microorganisms on leaf and stem surfaces.
-                    <br/>
-                    <br/>
-                      SUBTIFOL, like all IBEX products,	is biodegradable and environmentally harmless.
-                    <br/>
-                    <br/>
-                  </p>
-                </div>
-                <div >
-                  <br/>
-                  <b>MODE OF USE</b>
-                  <br/>
-                  <br/>
-                  <p>
-                    Designed for use as a foliar spray mixed with water.<br/>
-                    <br/>
-                    A dose of 1 to 2 liters per hectare is recommended.
-                    <br/>
-                    <br/>
-                    The lower dose acts as a protector for monthly preventive use.
-                    <br/>
-                    <br/>
-                    The higher dose acts as a corrector for curative purposes and should be used bi- weekly for three applications before proceeding to the lower, preventive dose.
-                    <br/>
-                    <br/>
-                    Does not require safety waiting periods after application for access or harvest.
-                    <br/>
-                  </p>
-                  <br/>
-                  <b>Liquid Product</b>
-                  <br/>
-                  <br/>
-                  <br/>
-                  <div>
-                    <p>
-                      <b>ACTIVE INGREDIENTS:</b>
-                      <br/>
-                      Bacillus Subtillis and other	rhizospheric microorganisms
-                    </p>
+            </Fade>
+          </div>
+          <div className="flex h100 alignCenter">
+            <ContentArea minWidth="40vw" minHeight="0" />
+              <ContentArea minWidth="60vw" minHeight="100vh" >
+                <Fade bottom >
+                  <div className="shadow" >
+                    <div className="shadowDark">
+                    
+                      <p><b>FOLIAR INHIBITOR OF PESTS AND DISEASE</b></p>
+                      <p>
+                      Composed of Bacillus Subtillis and other rhizospheric microorganisms with facultative character that interrupt the life cycles of pests and diseases on foliage.
+                      </p>
+                    </div>
                   </div>
+                </Fade>
+                <div className="flex-row" >
+                  <Fade bottom>
+                    <div className="shadow" >
+                      <div className="shadowDark">
+                        <h2>MODE OF ACTION</h2>
+                        <p>
+                            SUBTIFOL interrupts chemical signals to pathogens, preventing the plant foliage from being recognized as a food source or appropriate place for egg laying.
+                          <br/>
+                          <br/>
+                            Stimulates the growth and concentration of beneficial microorganisms on leaf and stem surfaces.
+                          <br/>
+                          <br/>
+                            SUBTIFOL, like all IBEX products,	is biodegradable and environmentally harmless.
+                          <br/>
+                          <br/>
+                        </p>
+                      </div>
+                    </div>
+                  </Fade>
+                  <Fade bottom>
+                    <div className="shadow" >
+                      <div className="shadowDark">
+                        <br/>
+                        <p><b>MODE OF USE</b></p>
+                        <br/>
+                        <br/>
+                        <p>
+                          Designed for use as a foliar spray mixed with water.<br/>
+                          <br/>
+                          A dose of 1 to 2 liters per hectare is recommended.
+                          <br/>
+                          <br/>
+                          The lower dose acts as a protector for monthly preventive use.
+                          <br/>
+                          <br/>
+                          The higher dose acts as a corrector for curative purposes and should be used bi- weekly for three applications before proceeding to the lower, preventive dose.
+                          <br/>
+                          <br/>
+                          Does not require safety waiting periods after application for access or harvest.
+                          <br/>
+                        </p>
+                        <br/>
+                        <p><b>Liquid Product</b></p>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <div>
+                          <p>
+                            <p><b>ACTIVE INGREDIENTS:</b></p>
+                            <br/>
+                            Bacillus Subtillis and other	rhizospheric microorganisms
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </Fade>
                 </div>
-              </div>
-            </ContentArea>
-          </Fade>
+              </ContentArea>
+            </div>
         </Container>
       </BannerWrapper>
     </div>

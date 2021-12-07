@@ -107,55 +107,57 @@ const S12QClean = () => {
                   </div>
                 </div>
               </Fade>
-              <Fade bottom>
-                <div className="flex-row shadow" >
-                  <div className="shadowDark">
-                    <h2>MODE OF ACTION</h2>
-                    <p className="textAlignLeft">
-                    Q-CLEAN’s systemic nature acts on the hormonal system by stimulating production of phytoalexins and other substances linked to the plant’s defense metabolism. It provides greater tolerance and resistance to fungal and bacterial attacks that damage internal and external organs such as roots, leaves, flowers, fruits and bark
-                    <br/>
-                    <br/>
-                    May be applied by air or land, with low or high volumes of water, Q-CLEAN ingredients are easily absorbed and incorporated by the plant, promoting positive hypersensitivity reactions and subsequent activation of protein production with a broad resistance spectrum.
-                    <br/>
-                    <br/>
-                    </p>
-                  </div>
-                </div>
-              </Fade>
-              <Fade bottom>
-                <div className="shadow">
-                  <div className="shadowDark">
-                    <br/>
-                    <p><b>MODE OF USE</b></p>
-                    <br/>
-                    <br/>
-                    <p className="textAlignLeft">
-                      A dose of 1 to 2 liters per hectare is recommended.
+              <div className="flex-row">
+                <Fade bottom>
+                  <div className="shadow" >
+                    <div className="shadowDark">
+                      <h2>MODE OF ACTION</h2>
+                      <p className="textAlignLeft">
+                      Q-CLEAN’s systemic nature acts on the hormonal system by stimulating production of phytoalexins and other substances linked to the plant’s defense metabolism. It provides greater tolerance and resistance to fungal and bacterial attacks that damage internal and external organs such as roots, leaves, flowers, fruits and bark
                       <br/>
                       <br/>
-                      The lower dose acts as a protector for monthly preventive use.
+                      May be applied by air or land, with low or high volumes of water, Q-CLEAN ingredients are easily absorbed and incorporated by the plant, promoting positive hypersensitivity reactions and subsequent activation of protein production with a broad resistance spectrum.
                       <br/>
                       <br/>
-                      The higher dose acts as a corrector for curative purposes and should be used bi- weekly for three applications before proceeding to the lower, preventive dose.
-                      <br/>
-                      <br/>
-                      Does not require safety waiting periods after application for access or harvest.
-                    </p>
-                    <br/>
-                    <p><b>Liquid Product</b></p>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <div>
-                      <p>
-                        <p><b>ACTIVE INGREDIENTS:</b></p>
-                        <br/>
-                        Natural extracts and organic metabolites of vegetable origin.
                       </p>
                     </div>
                   </div>
-                </div>
-              </Fade>
+                </Fade>
+                <Fade bottom>
+                  <div className="shadow">
+                    <div className="shadowDark">
+                      <br/>
+                      <p><b>MODE OF USE</b></p>
+                      <br/>
+                      <br/>
+                      <p className="textAlignLeft">
+                        A dose of 1 to 2 liters per hectare is recommended.
+                        <br/>
+                        <br/>
+                        The lower dose acts as a protector for monthly preventive use.
+                        <br/>
+                        <br/>
+                        The higher dose acts as a corrector for curative purposes and should be used bi- weekly for three applications before proceeding to the lower, preventive dose.
+                        <br/>
+                        <br/>
+                        Does not require safety waiting periods after application for access or harvest.
+                      </p>
+                      <br/>
+                      <p><b>Liquid Product</b></p>
+                      <br/>
+                      <br/>
+                      <br/>
+                      <div>
+                        <p>
+                          <p><b>ACTIVE INGREDIENTS:</b></p>
+                          <br/>
+                          Natural extracts and organic metabolites of vegetable origin.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </Fade>
+              </div>
             </ContentArea>
           </div>
         </Container>

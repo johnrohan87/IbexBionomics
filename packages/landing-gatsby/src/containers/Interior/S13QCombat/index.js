@@ -143,7 +143,7 @@ const S13QCombat = () => {
                     <div className="shadow">
                       <div className="shadowDark">
                         <br/>
-                        <b>Treated plants will have greater resilience to attacks and better healing with less risk of infection.</b>
+                        <p><b>Treated plants will have greater resilience to attacks and better healing with less risk of infection.</b></p>
                         <br/>
                         <br/>
                         <br/>
