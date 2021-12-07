@@ -40,43 +40,99 @@ export const Container = styled.div`
   object-fit: cover;
   width: 100%;
   height: 100%;
+  margin: 10px 0;
   max-width: 1580px;
   min-height: 100vh;
   margin: 0 auto;
   padding: 0 20px;
-  display: flex;
+  display: flex-column;
   align-items: center;
+  .alignCenter{
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 0;
+    img{
+      width: auto;
+    }
+  }
+  .alignTop{
+    margin: 0 auto;
+    align-items: flex-start;
+    align-self: flex-start;
+  }
+  .h100{
+    height: 100%;
+  }
+  .textAlignLeft{
+    text-align: left;
+  }
+  .textAlignCenter{
+    text-align: center;
+  }
+  .textJustify{
+    text-align: justify;
+  }
   @media only screen and (max-width: 1600px) {
     padding: 100px 81px;
+    flex-direction: column;
+    .flex{
+      display: flex;
+      flex-direction: row;
+    }
+    
   }
   @media only screen and (max-width: 1360px) {
     padding: 100px 60px;
+    flex-direction: column;
+    .flex{
+      display: flex;
+      flex-direction: row;
+    }
   }
   @media only screen and (max-width: 991px) {
     padding: 100px 30px;
+    flex-direction: column;
+    .flex{
+      display: flex;
+      flex-direction: column;
+    }
   }
   @media only screen and (max-width: 767px) {
-    padding: 100px 35px;
+    padding: 100px 0;
     flex-direction: column;
+    .flex{
+      display: flex;
+      flex-direction: column;
+    }
   }
   .shadow{
-    padding: 5px 10px;
+    padding: 10px;
     background: rgb(136, 66, 213, 0.4);
     border-radius: 15px;
     -moz-border-radius: 15px;
     //border: 2px solid #000;
   }
   .shadowDark{
-    padding: 5px 10px;
+    margin: 10px 0;
+    padding: 10px;
     background: rgb(0, 0, 0, 0.4);
     border-radius: 15px;
     -moz-border-radius: 15px;
     //border: 2px solid #000;
   }
+  .smPadding{
+    padding: 10px;
+  }
+  .medPadding{
+    padding: 25px;
+  }
   .flex-row{
     display: flex;
     flex-direction: row;
-    padding-top: 10vh;
+    //padding-top: 10vh;
     //border: medium dashed green;
     div{
       width: 100%;
@@ -93,8 +149,6 @@ export const Container = styled.div`
 export const ContentArea = styled.div`
   height: 100%; 
   width: 100%;
-  minHeight: 50vh; 
-  minWidth: 50vw;
   min-width: calc(${props => (props.minWidth ? props.minWidth : "50vw")} - 50px);
   min-height: calc(${props => (props.minHeight ? props.minHeight : "50vh")} - 50px);
   display: inline-block;
@@ -112,22 +166,34 @@ export const ContentArea = styled.div`
   }
   h2,h3{
     color: ${themeGet('colors.label', '#C6C6C6')};
-    font-size: 20px;
+    font-size: 25px;
     line-height: 30px;
     padding-bottom: 20px;
-    }
+    
     p{
-      font-size: 18px;
+      font-size: 20px;
       line-height: 25px;
+      b{
+        font-size: 25px;
+        line-height: 30px;
+      }
     }
+  }
+  li{
+    list-style-type: disc;
+    text-align: left;
+    padding: 5px;
+    margin-left: 15px;
+    font-size: 20px;
+  }
   @media only screen and (max-width: 1600px) {
-    width: 50%;
+    width: 80%;
   }
   @media only screen and (max-width: 1360px) {
-    width: 50%;
+    width: 80%;
   }
   @media only screen and (max-width: 1200px) {
-    width: 50%;
+    width: 80%;
     .flex-row{
       display: block;
     }
@@ -138,18 +204,38 @@ export const ContentArea = styled.div`
     .flex-row{
       display: block;
     }
+    h2,h3{
+      color: ${themeGet('colors.label', '#C6C6C6')};
+      font-size: 25px;
+      line-height: 30px;
+      padding-bottom: 20px;
+      
+      p{
+        font-size: 20px;
+        line-height: 25px;
+        b{
+          font-size: 25px;
+          line-height: 30px;
+        }
+      }
+    }
   }
   @media only screen and (max-width: 480px) {
     padding: 10px 0;
     margin: 0;
-    h2{
-    font-size: 25px;
-    line-height: 33px;
+    h2,h3{
+    font-size: 30px;
+    line-height: 30px;
     padding-bottom: 20px;
     }
     p{
-      font-size: 18px;
-      line-height: 25px;
+      font-size: 22px;
+      line-height: 35px;
+      b{
+        //font-size: 25px;
+        //line-height: 38px;
+        text-align: center;
+      }
     }
     .flex-row{
       display: block;
