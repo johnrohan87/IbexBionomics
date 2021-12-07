@@ -24,6 +24,8 @@ import S17PlantGrowth from 'containers/Interior/S17PlantGrowth';
 import S18PlantGrowthP2 from 'containers/Interior/S18PlantGrowthP2';
 import S19SubtisoilAndNovater from 'containers/Interior/S19SubtisoilAndNovater';
 import S20SubtisoilAndNovaterP2 from 'containers/Interior/S20SubtisoilAndNovaterP2';
+import S21Subtisoil from 'containers/Interior/S21Subtisoil';
+import S22Novater from 'containers/Interior/S22Novater';
 //import Feature from 'containers/Interior/Feature';
 import AboutUs from 'containers/Interior/AboutUs';
 import Project from 'containers/Interior/Project';
@@ -76,6 +78,8 @@ const Interior = () => {
             <S18PlantGrowthP2 />
             <S19SubtisoilAndNovater />
             <S20SubtisoilAndNovaterP2 />
+            <S21Subtisoil />
+            <S22Novater />
            {/* <Feature />
             <AboutUs />
             <Project />*/}
