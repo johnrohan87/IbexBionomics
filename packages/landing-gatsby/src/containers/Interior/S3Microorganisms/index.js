@@ -51,11 +51,13 @@ const S3Microorganisms = () => {
             <ContentArea >
               <Fade bottom >
                 <div className="shadow">
-                  <Heading as="h1" textAlign="center" content={title} />
-                  <Text content={p1} />
-                  <Text content={p2} />
-                  <Text content={p3} />
-                  <Text content={p4} />
+                  <div className="shadowDark">
+                    <Heading as="h1" textAlign="center" content={title} />
+                    <Text content={p1} />
+                    <Text content={p2} />
+                    <Text content={p3} />
+                    <Text content={p4} />
+                  </div>
                 </div>
               </Fade>
             </ContentArea>
@@ -63,7 +65,11 @@ const S3Microorganisms = () => {
           
             <ContentArea>
               <Fade bottom >
-                <img src={IBEXLogo}/>
+                <div className="shadow">
+                  <div className="shadowDark">
+                    <img src={IBEXLogo}/>
+                  </div>
+                </div>
               </Fade>
             </ContentArea>
           
