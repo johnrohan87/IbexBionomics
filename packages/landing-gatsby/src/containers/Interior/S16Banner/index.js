@@ -61,7 +61,7 @@ const S16Banner = () => {
       <BannerWrapper>
         <Container>
           <Fade bottom >
-            <div>
+            <div className="shadow">
               <h1 className="shadowDark">
                 <b>
                 Creation of Suppressive Soils

@@ -44,12 +44,9 @@ const S17PlantGrowth = () => {
     <div> 
       <BannerWrapper>
         <Container>
-          
-           
-          
-          
-            <ContentArea  minWidth="80vw" minHeight="100vh" >
-              <div className="shadow">
+          <ContentArea  minWidth="80vw" minHeight="100vh" >
+            <div className="shadow">
+              <div className="shadowDark">
                 <div>
                   <Fade bottom >
                     <p>
@@ -64,8 +61,8 @@ const S17PlantGrowth = () => {
                   </Fade>
                 </div>
               </div>
-            </ContentArea>
-
+            </div>
+          </ContentArea>
         </Container>
       </BannerWrapper>
     </div>
