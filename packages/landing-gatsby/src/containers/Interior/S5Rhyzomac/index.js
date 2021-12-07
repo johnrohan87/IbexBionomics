@@ -76,7 +76,7 @@ const S5Rhyzomac = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="flex-row smPadding" >
+                    <div className="flex-row" >
                       <div className="shadowDark">
                         <h2 className="textAlignCenter"><b>MODE OF ACTION</b></h2>
                         <p>Natural fertilizer that transforms conventional soils, optimizing biological

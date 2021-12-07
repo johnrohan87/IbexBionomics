@@ -40,6 +40,7 @@ export const Container = styled.div`
   object-fit: cover;
   width: 100%;
   height: 100%;
+  margin: 10px 0;
   max-width: 1580px;
   min-height: 100vh;
   margin: 0 auto;
@@ -100,7 +101,7 @@ export const Container = styled.div`
     }
   }
   @media only screen and (max-width: 767px) {
-    padding: 100px 35px;
+    padding: 100px 0;
     flex-direction: column;
     .flex{
       display: flex;
@@ -130,7 +131,7 @@ export const Container = styled.div`
   .flex-row{
     display: flex;
     flex-direction: row;
-    padding-top: 10vh;
+    //padding-top: 10vh;
     //border: medium dashed green;
     div{
       width: 100%;
@@ -147,8 +148,6 @@ export const Container = styled.div`
 export const ContentArea = styled.div`
   height: 100%; 
   width: 100%;
-  minHeight: 50vh; 
-  minWidth: 50vw;
   min-width: calc(${props => (props.minWidth ? props.minWidth : "50vw")} - 50px);
   min-height: calc(${props => (props.minHeight ? props.minHeight : "50vh")} - 50px);
   display: inline-block;
@@ -179,14 +178,21 @@ export const ContentArea = styled.div`
       }
     }
   }
+  li{
+    list-style-type: disc;
+    text-align: left;
+    padding: 5px;
+    margin-left: 15px;
+    font-size: 20px;
+  }
   @media only screen and (max-width: 1600px) {
-    width: 50%;
+    width: 80%;
   }
   @media only screen and (max-width: 1360px) {
-    width: 50%;
+    width: 80%;
   }
   @media only screen and (max-width: 1200px) {
-    width: 50%;
+    width: 80%;
     .flex-row{
       display: block;
     }
@@ -196,6 +202,21 @@ export const ContentArea = styled.div`
     padding-right: 50px;
     .flex-row{
       display: block;
+    }
+    h2,h3{
+      color: ${themeGet('colors.label', '#C6C6C6')};
+      font-size: 25px;
+      line-height: 30px;
+      padding-bottom: 20px;
+      
+      p{
+        font-size: 20px;
+        line-height: 25px;
+        b{
+          font-size: 25px;
+          line-height: 30px;
+        }
+      }
     }
   }
   @media only screen and (max-width: 480px) {
@@ -231,13 +252,6 @@ export const ContentArea = styled.div`
     + p {
       margin: 0;
     }
-  }
-  li{
-    list-style-type: disc;
-    text-align: left;
-    padding: 5px;
-    margin-left: 5px;
-    font-size: 20px;
   }
 `;
 

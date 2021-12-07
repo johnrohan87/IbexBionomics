@@ -82,7 +82,8 @@ const GlobalStyle = createGlobalStyle`
     line-height: 26px;
     font-family: 'Roboto', sans-serif;
     @media only screen and (max-width: 1440px) {
-      font-size: 15px;
+      font-size: 20px;
+      line-height: 28px;
     }
   }
 
