@@ -116,6 +116,7 @@ export const Container = styled.div`
     //border: 2px solid #000;
   }
   .shadowDark{
+    margin: 10px 0;
     padding: 10px;
     background: rgb(0, 0, 0, 0.4);
     border-radius: 15px;
