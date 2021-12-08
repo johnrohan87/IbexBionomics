@@ -44,27 +44,31 @@ const S4PlantNutrition = () => {
       <BannerWrapper>
         <Container>
          
+           {/**
           <ContentArea>
             <Fade bottom >
               <img src={S4PlantNutritionWheat} style={{height:"100%",width:"100%"}}/>
             </Fade>
-          </ContentArea>
+          </ContentArea> */}
          
           
-          <ContentArea>
+          <ContentArea className="flex alignCenter" >
             <Fade bottom >
 
               <div className="shadow">
-                <div className="shadowDark">  
-                  <img src={IBEXLogo}/>
+                <div>
+                <img src={S4PlantNutritionWheat} style={{height:"100%",width:"100%"}}/>
                 </div>
+                {/**<div className="shadowDark">  
+                  <img src={IBEXLogo}/>
+                </div> */}
                 <div className="shadowDark">  
                   <Heading as="h1" textAlign="center" content={title} />
                 </div>
               </div>
             </Fade>
           </ContentArea>
-  
+
         </Container>
       </BannerWrapper>
     </div>

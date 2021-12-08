@@ -102,13 +102,13 @@ export const ContentArea = styled.div`
       line-height: 25px;
     }
   @media only screen and (max-width: 1600px) {
-    width: 50%;
+    width: 80%;
   }
   @media only screen and (max-width: 1360px) {
-    width: 50%;
+    width: 80%;
   }
   @media only screen and (max-width: 1200px) {
-    width: 50%;
+    width: 80%;
   }
   @media only screen and (max-width: 767px) {
     width: 90%;

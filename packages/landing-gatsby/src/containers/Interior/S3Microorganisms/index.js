@@ -48,7 +48,7 @@ const S3Microorganisms = () => {
       <BannerWrapper>
         <Container>
           
-            <ContentArea >
+            <ContentArea minWidth="80vw" minHeight="100vh" >
               <Fade bottom >
                 <div className="shadow">
                   <div className="shadowDark">
@@ -62,7 +62,7 @@ const S3Microorganisms = () => {
               </Fade>
             </ContentArea>
           
-          
+          {/**
             <ContentArea>
               <Fade bottom >
                 <div className="shadow">
@@ -71,7 +71,7 @@ const S3Microorganisms = () => {
                   </div>
                 </div>
               </Fade>
-            </ContentArea>
+            </ContentArea> */}
           
         </Container>
       </BannerWrapper>
