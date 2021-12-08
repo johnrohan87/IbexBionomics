@@ -55,12 +55,9 @@ const S22Novater = () => {
             </Fade>
           </div>
           <div className="flex">
-            <ContentArea minHeight="0" minWidth="40vw" className="alignTop">
-              
-            </ContentArea>
           
           
-            <ContentArea  minWidth="60vw" minHeight="100vh" >
+            <ContentArea  minWidth="80vw" minHeight="100vh" >
               <Fade bottom >
                 <div className="shadow">
                   <div className="shadowDark">

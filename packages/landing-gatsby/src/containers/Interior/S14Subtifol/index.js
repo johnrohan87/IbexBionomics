@@ -55,8 +55,8 @@ const S14Subtifol = () => {
             </Fade>
           </div>
           <div className="flex h100 alignCenter">
-            <ContentArea minWidth="40vw" minHeight="0" />
-              <ContentArea minWidth="60vw" minHeight="100vh" >
+            
+              <ContentArea minWidth="80vw" minHeight="100vh" >
                 <Fade bottom >
                   <div className="shadow" >
                     <div className="shadowDark">
