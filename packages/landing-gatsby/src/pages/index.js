@@ -4,31 +4,13 @@ import { ThemeProvider } from 'styled-components';
 import { interiorTheme } from 'common/theme/interior';
 import { DrawerProvider } from 'common/contexts/DrawerContext';
 import Navbar from 'containers/Interior/Navbar';
-import Banner from 'containers/Interior/Banner';
-import S2Products from 'containers/Interior/S2Products';
-import S3Microorganisms from 'containers/Interior/S3Microorganisms';
-import S4PlantNutrition from 'containers/Interior/S4PlantNutrition';
-import S5Rhyzomac from 'containers/Interior/S5Rhyzomac';
-import S6Rhyzomin from 'containers/Interior/S6Rhyzomin';
-import S7QBN3 from 'containers/Interior/S7QBN-3';
-import S8Banner from 'containers/Interior/S8Banner';
-import S9Rayfol from 'containers/Interior/S9Rayfol';
-import S10Banner from 'containers/Interior/S10Banner';
-import S11QComplex from 'containers/Interior/S11QComplex';
-import S12QClean from 'containers/Interior/S12QClean';
-import S13QCombat from 'containers/Interior/S13QCombat';
-import S14Subtifol from 'containers/Interior/S14Subtifol';
-import S15LanceTip from 'containers/Interior/S15LanceTip';
-import S16Banner from 'containers/Interior/S16Banner';
-import S17PlantGrowth from 'containers/Interior/S17PlantGrowth';
-import S18PlantGrowthP2 from 'containers/Interior/S18PlantGrowthP2';
-import S19SubtisoilAndNovater from 'containers/Interior/S19SubtisoilAndNovater';
-import S20SubtisoilAndNovaterP2 from 'containers/Interior/S20SubtisoilAndNovaterP2';
-import S21Subtisoil from 'containers/Interior/S21Subtisoil';
-import S22Novater from 'containers/Interior/S22Novater';
+
+import HPBanner from 'containers/Interior/HomePage/Banner';
+import HPCatalog from 'containers/Interior/HomePage/Catalog';
+
 //import Feature from 'containers/Interior/Feature';
-import AboutUs from 'containers/Interior/AboutUs';
-import Project from 'containers/Interior/Project';
+//import AboutUs from 'containers/Interior/AboutUs';
+//import Project from 'containers/Interior/Project';
 //import Team from 'containers/Interior/Team';
 //import News from 'containers/Interior/News';
 //import Testimonial from 'containers/Interior/Testimonial';
@@ -58,28 +40,10 @@ const Interior = () => {
             </DrawerProvider>
           </Sticky>
           <ContentWrapper>
-            <Banner />
-            <S2Products />
-            <S3Microorganisms />
-            <S4PlantNutrition />
-            <S5Rhyzomac />
-            <S6Rhyzomin />
-            <S7QBN3 />
-            <S8Banner />
-            <S9Rayfol />
-            <S10Banner />
-            <S11QComplex />
-            <S12QClean />
-            <S13QCombat />
-            <S14Subtifol />
-            <S15LanceTip />
-            <S16Banner />
-            <S17PlantGrowth />
-            <S18PlantGrowthP2 />
-            <S19SubtisoilAndNovater />
-            <S20SubtisoilAndNovaterP2 />
-            <S21Subtisoil />
-            <S22Novater />
+            
+            <HPBanner />
+            <HPCatalog />
+
            {/* <Feature />
             <AboutUs />
             <Project />*/}
