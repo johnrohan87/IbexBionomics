@@ -38,6 +38,7 @@ const CloseModalButtonAlt = () => (
 );
 
 const Navbar = ({ navbarStyle, logoStyle }) => {
+  {/**
   const data = useStaticQuery(graphql`
     query {
       interiorJson {
@@ -105,7 +106,7 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
     dispatch({
       type: 'TOGGLE',
     });
-  };
+  }; */}
 
   return (
     <NavbarWrapper {...navbarStyle}>
@@ -116,6 +117,7 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
           title="Interior"
           logoStyle={logoStyle}
         />
+        {/**
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <Button
             variant="textButton"
@@ -151,7 +153,7 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
             />
             <Copyright data={data.interiorJson.socialProfile} />
           </Drawer>
-        </div>
+        </div> */}
       </Container>
     </NavbarWrapper>
   );

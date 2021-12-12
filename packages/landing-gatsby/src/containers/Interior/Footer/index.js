@@ -19,6 +19,9 @@ import FooterWrapper, {
   SocialList,
 } from './footer.style';
 
+import footerlogo from 'common/assets/image/interior/IbexImages/IbexBionomicsLogo2.png';
+
+
 const socialLinks = [
   {
     id: 1,
@@ -76,10 +79,10 @@ const Footer = ({ row, col, colOne, colTwo }) => {
     }
   `);
   const { logo, mail, phone, menuWidgets } = data.interiorJson.footerData;
-
+ 
   return (
     <Fragment>
-      <CurvIcon>
+      {/***/}<CurvIcon>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 222.29">
           <g>
             <g>
@@ -102,17 +105,18 @@ const Footer = ({ row, col, colOne, colTwo }) => {
               <Text className="text" content={mail} />
               <Text className="text" content={phone} />
               <SocialList>
+                {/**
                 {socialLinks.map((item) => (
                   <li className={item.name} key={`link-key${item.id}`}>
                     <a aria-label={item.name} href={item.link}>
                       {item.icon}
                     </a>
                   </li>
-                ))}
+                ))} */}
               </SocialList>
             </Box>
             {/* End of logo column */}
-
+                  {/**
             <Box className="col-two" {...colTwo}>
               {menuWidgets.map((widget) => (
                 <Box
@@ -135,11 +139,13 @@ const Footer = ({ row, col, colOne, colTwo }) => {
                 </Box>
               ))}
             </Box>
+             */}
             {/* End of List column */}
           </Box>
           {/* End of widgets row */}
           <Box className="row copyright" {...row}>
-            <Text className="text" content="copyright 2019 @RedQ" />
+            <Text className="text" content="copyright 2021 Ibex Bionomics" />
+            {/**
             <p>
               Built & designed with
               <svg
@@ -155,7 +161,7 @@ const Footer = ({ row, col, colOne, colTwo }) => {
                   fill="#f4291e"
                 />
               </svg>
-            </p>
+            </p> */}
           </Box>
           {/* End of copyright row */}
         </Container>

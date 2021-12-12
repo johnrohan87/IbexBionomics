@@ -354,9 +354,9 @@
     "note": "Note: Please call us at 12pm to 8am. otherwise our customer supporter will not available to reach your call, but you can drop mail anytime."
   },
   "footerData": {
-    "logo": "../../assets/image/interior/logo.svg",
-    "mail": "hello@redq.io",
-    "phone": "585-396-6302",
+    "logo": "../../assets/image/interior/IbexImages/IbexBionomicsLogo2.png",
+    "mail": "info@IBEXBionomics.com",
+    "phone": "",
     "menuWidgets": [
       {
         "id": 1,
