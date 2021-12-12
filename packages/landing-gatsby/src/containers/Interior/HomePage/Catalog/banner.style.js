@@ -42,9 +42,9 @@ export const Container = styled.div`
   height: 100%;
   margin: 10px 0;
   max-width: 1580px;
-  min-height: 100vh;
+  min-height: 50vh;
   margin: 0 auto;
-  padding: 0 20px;
+  //padding: 0 20px;
   display: flex-column;
   align-items: center;
   .alignCenter{
@@ -53,7 +53,7 @@ export const Container = styled.div`
     align-self: center;
     justify-content: center;
     text-align: center;
-    padding: 30px 0;
+    //padding: 30px 0;
     img{
       width: auto;
     }
@@ -179,7 +179,18 @@ export const ContentArea = styled.div`
   justify-content: center;
   text-align: center;
   margin:  auto;
-  padding: 0 20px;
+  //padding: 0 20px;
+  .centerXandY{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 40vh;
+  }
+  .whiteText{
+    color: white;
+    text-shadow: 0 0 10px #000, 0 0 15px #000;
+  }
   img{
     height: auto;
     width: auto;
@@ -218,7 +229,7 @@ export const ContentArea = styled.div`
     width: 80%;
   }
   @media only screen and (max-width: 1200px) {
-    width: 80%;
+    width: 100%;
     .flex-row{
       display: block;
     }
