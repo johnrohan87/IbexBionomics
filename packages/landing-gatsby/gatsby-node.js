@@ -33,7 +33,14 @@ exports.onCreateWebpackConfig = ({ actions, stage, plugins, getConfig, loaders }
 
     actions.setWebpackConfig({
       plugins: [plugins.provide({ process: 'process/browser' })],
-      
+      module: {
+        rules: [
+          {
+            test: /react-pdf,pdfjs-dist/,
+            use: loaders.null(),
+          },
+        ],
+      },
     });
   }
 };
