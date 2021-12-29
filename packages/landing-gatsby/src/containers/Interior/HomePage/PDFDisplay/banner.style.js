@@ -180,7 +180,6 @@ export const ContentArea = styled.div`
   text-align: center;
   margin:  auto;
   //padding: 0 20px;
-
   canvas{
     height: 100% !important;
     width: 100% !important;

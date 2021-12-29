@@ -46,7 +46,7 @@ const Interior = () => {
             <HPCatalog />
             <PDFDisplay />
 
-           {/* <Feature />
+            {/*<Feature />
             <AboutUs />
             <Project />*/}
             {/*<Team />

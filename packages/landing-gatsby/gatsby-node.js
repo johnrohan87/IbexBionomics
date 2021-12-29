@@ -7,7 +7,7 @@
 // You can delete this file if you're not using it
 const path = require('path');
 
-exports.onCreateWebpackConfig = ({ actions, stage, plugins, getConfig }) => {
+exports.onCreateWebpackConfig = ({ actions, stage, plugins, getConfig, loaders }) => {
   actions.setWebpackConfig({
     resolve: {
       modules: [path.resolve(__dirname, 'src'), 'node_modules'],
@@ -33,6 +33,7 @@ exports.onCreateWebpackConfig = ({ actions, stage, plugins, getConfig }) => {
 
     actions.setWebpackConfig({
       plugins: [plugins.provide({ process: 'process/browser' })],
+      
     });
   }
 };
