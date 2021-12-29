@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Document, Page } from 'react-pdf/dist/umd/entry.webpack';
+import { pdfjs, Document, Page } from 'react-pdf';
+pdfjs.GlobalWorkerOptions.workerSrc = 'pdf.worker.min.js';
 //, { Fragment, useState, useEffect }
 //import { useStaticQuery, graphql } from 'gatsby';
 import Fade from 'react-reveal/Fade';
