@@ -7,6 +7,7 @@ import Navbar from 'containers/Interior/Navbar';
 
 import HPBanner from 'containers/Interior/HomePage/Banner';
 import HPCatalog from 'containers/Interior/HomePage/Catalog';
+import PDFDisplay from 'containers/Interior/HomePage/PDFDisplay';
 
 //import Feature from 'containers/Interior/Feature';
 //import AboutUs from 'containers/Interior/AboutUs';
@@ -43,6 +44,7 @@ const Interior = () => {
             
             <HPBanner />
             <HPCatalog />
+            <PDFDisplay />
 
            {/* <Feature />
             <AboutUs />
