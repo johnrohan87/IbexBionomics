@@ -26,6 +26,7 @@ import {
 import Seo from 'components/seo';
 
 const Interior = () => {
+
   return (
     <ThemeProvider theme={interiorTheme}>
       <Fragment>
