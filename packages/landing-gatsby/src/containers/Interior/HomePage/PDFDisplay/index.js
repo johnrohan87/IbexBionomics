@@ -68,7 +68,9 @@ const PDFDisplay = () => {
                   >
                     <Page pageNumber={pageNumber} />
                   </Document>
-                  <div className="zindexTop">
+                  
+                </div>
+                <div className="zindexTop">
                     <p>
                       Page {pageNumber || (numPages ? 1 : '--')} of {numPages || '--'}
                     </p>
@@ -76,6 +78,7 @@ const PDFDisplay = () => {
                       type="button"
                       disabled={pageNumber <= 1}
                       onClick={previousPage}
+                      className="zindexTop"
                     >
                       Previous
                     </button>
@@ -83,11 +86,11 @@ const PDFDisplay = () => {
                       type="button"
                       disabled={pageNumber >= numPages}
                       onClick={nextPage}
+                      className="zindexTop"
                     >
                       Next
                     </button>
                   </div>
-                </div>
             </ContentArea>
           </div>
         </Container>
