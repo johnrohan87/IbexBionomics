@@ -35,7 +35,7 @@ exports.onCreateWebpackConfig = ({ actions, stage, plugins, getConfig, loaders }
       plugins: [plugins.provide({ process: 'process/browser' })],
     });
   }
-  if (stage === "build-html") {
+  if (stage === "build-html" || stage === "develop-html") {
     actions.setWebpackConfig({
       module: {
         rules: [
