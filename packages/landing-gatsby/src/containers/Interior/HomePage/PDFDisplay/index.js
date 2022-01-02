@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import * as pdfjs from 'react-pdf';
+//import * as pdfjs from 'react-pdf';
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 //, { Fragment, useState, useEffect }
 //import { useStaticQuery, graphql } from 'gatsby';
