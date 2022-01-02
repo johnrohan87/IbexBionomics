@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
-
 //, { Fragment, useState, useEffect }
 //import { useStaticQuery, graphql } from 'gatsby';
 import Fade from 'react-reveal/Fade';
@@ -29,7 +28,8 @@ import Hydrocarbon_Catalog from '../../../../common/assets/PDFs/Hydrocarbon_Cata
 import Waste_Waters_Catalogue from '../../../../common/assets/PDFs/Waste_Waters_Catalogue.pdf'
 
 const PDFDisplay = () => {
-  pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+  //pdfjs.GlobalWorkerOptions.workerSrc = require(`https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`);
+  pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
 

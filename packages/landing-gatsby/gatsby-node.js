@@ -40,6 +40,10 @@ exports.onCreateWebpackConfig = ({ actions, stage, plugins, getConfig, loaders }
       module: {
         rules: [
           {
+            test: /react-pdf/,
+            use: loaders.null(),
+          },
+          {
             test: /pdfjs-dist/,
             use: loaders.null(),
           },
