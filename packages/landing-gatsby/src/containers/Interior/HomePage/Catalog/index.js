@@ -40,43 +40,43 @@ const Catalog = () => {
         <Container>
           <div className="flex h100 alignCenter">
             <ContentArea minWidth="25vw" minHeight="60vh" backgroundImage={`url(${leafbg})`} >
-                <p className="centerXandY whiteText">
-              <a className="whiteText" href={Agriculture_Catalogue} download>
-                  <b>
-                  Agriculture
-                  </b>
-              </a>
-                </p>
+              <p className="centerXandY whiteText">
+                    <b>
+                    Agriculture
+                    </b>
+                {/*<a className="whiteText" href={Agriculture_Catalogue} download>
+                </a>*/}
+              </p>
             </ContentArea>
             <ContentArea minWidth="25vw" minHeight="60vh" backgroundImage={`url(${hpAquaculture})`}>
-                <p className="centerXandY whiteText">
-              <a className="whiteText" href={Aquaculture_Catalog} download>
-                  <b>
-                  Aquaculture
-                  </b>
-              </a>
-                </p>
+              <p className="centerXandY whiteText">
+                <b>
+                Aquaculture
+                </b>
+              {/** <a className="whiteText" href={Aquaculture_Catalog} download>
+              </a> */}
+              </p>
             </ContentArea>
             <ContentArea minWidth="25vw" minHeight="60vh" backgroundImage={`url(${hpHydrocarbon})`}>
-                <p className="centerXandY whiteText">
-              <a className="whiteText" href={Hydrocarbon_Catalog} download>
+              <p className="centerXandY whiteText">
                   <b>
                   Environmental Remediation
                   <br/>
                   Hydrocarbons
                   </b>
-              </a>
+              {/** <a className="whiteText" href={Hydrocarbon_Catalog} download>
+              </a> */}
                 </p>
             </ContentArea>
             <ContentArea minWidth="25vw" minHeight="60vh" backgroundImage={`url(${MicroorganismsBG})`}>
                 <p className="centerXandY whiteText">
-              <a className="whiteText" href={Waste_Waters_Catalogue} download>
                   <b>
                   Environmental Remediation
                   <br/>
                   Waste Waters
                   </b>
-              </a>
+              {/** <a className="whiteText" href={Waste_Waters_Catalogue} download>
+              </a> */}
                 </p>
             </ContentArea>
           </div>

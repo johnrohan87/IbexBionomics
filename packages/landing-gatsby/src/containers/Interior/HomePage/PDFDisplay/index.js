@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import Pdf from '@mikecousins/react-pdf';
+import React, { useState, useRef } from 'react';
+import { usePdf } from '@mikecousins/react-pdf';
 //, { Fragment, useState, useEffect }
 //import { useStaticQuery, graphql } from 'gatsby';
 import Fade from 'react-reveal/Fade';
@@ -28,8 +28,14 @@ import Hydrocarbon_Catalog from '../../../../common/assets/PDFs/Hydrocarbon_Cata
 import Waste_Waters_Catalogue from '../../../../common/assets/PDFs/Waste_Waters_Catalogue.pdf'
 
 const PDFDisplay = () => {
-
   const [page, setPage] = useState(1);
+  const canvasRef = useRef(null);
+
+  const { pdfDocument, pdfPage } = usePdf({
+    file: `${Agriculture_Catalogue}`,
+    page,
+    canvasRef,
+  });
 
   return(
     <div> 
@@ -37,7 +43,29 @@ const PDFDisplay = () => {
         <Container>
           <div className="flex h100 alignCenter">
             <ContentArea minWidth="100vw" minHeight="80vh" >
-              <Pdf file={Agriculture_Catalogue} page={page} />
+              <div>
+                {!pdfDocument && <span>Loading...</span>}
+                <canvas ref={canvasRef} />
+                {Boolean(pdfDocument && pdfDocument.numPages) && (
+                  <nav>
+                    <ul className="pager">
+                      <li className="previous">
+                        <button disabled={page === 1} onClick={() => setPage(page - 1)}>
+                          Previous
+                        </button>
+                      </li>
+                      <li className="next">
+                        <button
+                          disabled={page === pdfDocument.numPages}
+                          onClick={() => setPage(page + 1)}
+                        >
+                          Next
+                        </button>
+                      </li>
+                    </ul>
+                  </nav>
+                )}
+              </div>
             </ContentArea>
           </div>
         </Container>
