@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useState} from 'react';
+import PDFDisplay from '../PDFDisplay';
 //, { Fragment, useState, useEffect }
 //import { useStaticQuery, graphql } from 'gatsby';
 import Fade from 'react-reveal/Fade';
@@ -27,20 +28,21 @@ import leafbg from '../../../../common/assets/image/interior/IbexImages/S2/LeafB
 import hpAquaculture from '../../../../common/assets/image/interior/IbexImages/HomePage/HPAquaculture.jpg'
 import hpHydrocarbon from '../../../../common/assets/image/interior/IbexImages/HomePage/HPHydrocarbon.jpg'
 import MicroorganismsBG from '../../../../common/assets/image/interior/IbexImages/S3/S3MicroorganismsBG.jpg'
+
 import Agriculture_Catalogue from '../../../../common/assets/PDFs/Agriculture_Catalogue_ENG.pdf'
 import Aquaculture_Catalog from '../../../../common/assets/PDFs/Aquaculture_Catalog.pdf'
 import Hydrocarbon_Catalog from '../../../../common/assets/PDFs/Hydrocarbon_Catalog.pdf'
 import Waste_Waters_Catalogue from '../../../../common/assets/PDFs/Waste_Waters_Catalogue.pdf'
 
-const Catalog = () => {
- 
+const Catalog = (props) => {
+  const [currentPDF,setCurrentPDF] = useState('none')
   return(
     <div> 
       <BannerWrapper>
         <Container>
           <div className="flex h100 alignCenter">
             <ContentArea minWidth="25vw" minHeight="60vh" backgroundImage={`url(${leafbg})`} >
-              <p className="centerXandY whiteText">
+              <p className="centerXandY whiteText" onClick={()=>setCurrentPDF(Agriculture_Catalogue)}>
                     <b>
                     Agriculture
                     </b>
@@ -49,7 +51,7 @@ const Catalog = () => {
               </p>
             </ContentArea>
             <ContentArea minWidth="25vw" minHeight="60vh" backgroundImage={`url(${hpAquaculture})`}>
-              <p className="centerXandY whiteText">
+              <p className="centerXandY whiteText" onClick={()=>setCurrentPDF(Aquaculture_Catalog)}>
                 <b>
                 Aquaculture
                 </b>
@@ -58,7 +60,7 @@ const Catalog = () => {
               </p>
             </ContentArea>
             <ContentArea minWidth="25vw" minHeight="60vh" backgroundImage={`url(${hpHydrocarbon})`}>
-              <p className="centerXandY whiteText">
+              <p className="centerXandY whiteText" onClick={()=>setCurrentPDF(Hydrocarbon_Catalog)}>
                   <b>
                   Environmental Remediation
                   <br/>
@@ -69,7 +71,7 @@ const Catalog = () => {
                 </p>
             </ContentArea>
             <ContentArea minWidth="25vw" minHeight="60vh" backgroundImage={`url(${MicroorganismsBG})`}>
-                <p className="centerXandY whiteText">
+                <p className="centerXandY whiteText" onClick={()=>setCurrentPDF(Waste_Waters_Catalogue)}>
                   <b>
                   Environmental Remediation
                   <br/>
@@ -80,6 +82,7 @@ const Catalog = () => {
                 </p>
             </ContentArea>
           </div>
+          {currentPDF == "none" ? "" : <PDFDisplay pdf={currentPDF} />}
         </Container>
       </BannerWrapper>
     </div>

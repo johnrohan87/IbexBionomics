@@ -192,7 +192,7 @@ export const ContentArea = styled.div`
     justify-content: center;
     align-items: center;
     display: flex;
-    min-height: 40vh;
+    //min-height: 40vh;
   }
   .whiteText{
     color: white;
@@ -228,6 +228,9 @@ export const ContentArea = styled.div`
   }
   .column{
     flex-direction: column;
+  }
+  .row{
+    flex-direction: row;
   }
   @media only screen and (max-width: 1600px) {
     width: 80%;

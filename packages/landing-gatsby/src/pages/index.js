@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import Sticky from 'react-stickynode';
 import { ThemeProvider } from 'styled-components';
 import { interiorTheme } from 'common/theme/interior';
@@ -7,7 +7,7 @@ import Navbar from 'containers/Interior/Navbar';
 
 import HPBanner from 'containers/Interior/HomePage/Banner';
 import HPCatalog from 'containers/Interior/HomePage/Catalog';
-import PDFDisplay from 'containers/Interior/HomePage/PDFDisplay';
+
 
 //import Feature from 'containers/Interior/Feature';
 //import AboutUs from 'containers/Interior/AboutUs';
@@ -26,7 +26,6 @@ import {
 import Seo from 'components/seo';
 
 const Interior = () => {
-
   return (
     <ThemeProvider theme={interiorTheme}>
       <Fragment>
@@ -45,7 +44,6 @@ const Interior = () => {
             
             <HPBanner />
             <HPCatalog />
-            <PDFDisplay />
 
             {/*<Feature />
             <AboutUs />
