@@ -85,6 +85,15 @@ const PDFDisplay = ({ pdf }) => {
                           Previous
                         </button>
                       </li>
+                      <li className="download">
+                        <a href={pdf} download>
+                        <button
+                          to={pdf}
+                        >
+                          Download PDF
+                        </button>
+                        </a>
+                      </li>
                       <li className="next">
                         <button
                           disabled={page === pdfDocument.numPages}
