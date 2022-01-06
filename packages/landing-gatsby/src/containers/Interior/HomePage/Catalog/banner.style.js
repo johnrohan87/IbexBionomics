@@ -180,6 +180,9 @@ export const ContentArea = styled.div`
   text-align: center;
   margin:  auto;
   //padding: 0 20px;
+  .cursorPointer{
+    cursor: pointer;
+  }
   .centerXandY{
     text-align: center;
     justify-content: center;
@@ -236,7 +239,7 @@ export const ContentArea = styled.div`
   }
   @media only screen and (max-width: 767px) {
     width: 100%;
-    padding-right: 50px;
+    //padding-right: 50px;
     .flex-row{
       display: block;
     }

@@ -187,7 +187,7 @@ export const ContentArea = styled.div`
   .zindexTop{
     z-index: 1;
   }
-  .centerXandY{
+  .centerXandYPDF{
     text-align: center;
     justify-content: center;
     align-items: center;

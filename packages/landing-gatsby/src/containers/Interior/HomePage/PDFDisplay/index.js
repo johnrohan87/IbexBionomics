@@ -50,7 +50,7 @@ const PDFDisplay = ({ pdf }) => {
                 {!pdfDocument && <span>Loading...</span>}
                 {Boolean(pdfDocument && pdfDocument.numPages) && (
                   <div>
-                    <ul className="pager flex centerXandY row">
+                    <ul className="pager flex centerXandYPDF row">
                       <li className="previous">
                         <button disabled={page === 1} onClick={() => setPage(page - 1)}>
                           Previous
@@ -79,7 +79,7 @@ const PDFDisplay = ({ pdf }) => {
                 <canvas ref={canvasRef} />
                 {Boolean(pdfDocument && pdfDocument.numPages) && (
                   <div>
-                    <ul className="pager flex centerXandY row">
+                    <ul className="pager flex centerXandYPDF row">
                       <li className="previous">
                         <button disabled={page === 1} onClick={() => setPage(page - 1)}>
                           Previous

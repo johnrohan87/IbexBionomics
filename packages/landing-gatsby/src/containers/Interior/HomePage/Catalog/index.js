@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState, useEffect } from 'react';
 import PDFDisplay from '../PDFDisplay';
 //, { Fragment, useState, useEffect }
 //import { useStaticQuery, graphql } from 'gatsby';
@@ -36,31 +36,53 @@ import Waste_Waters_Catalogue from '../../../../common/assets/PDFs/Waste_Waters_
 
 const Catalog = (props) => {
   const [currentPDF,setCurrentPDF] = useState('none')
+  const [isNarrowScreen, setIsNarrowScreen] = useState(false);
+
+  useEffect(() => {
+    console.log(isNarrowScreen)
+    // set initial value
+    const mediaWatcher = window.matchMedia("(max-width: 1000px)")
+    setIsNarrowScreen(mediaWatcher.matches);
+
+    //watch for updates
+    function updateIsNarrowScreen(e) {
+      setIsNarrowScreen(e.matches);
+    }
+    mediaWatcher.addEventListener('change', updateIsNarrowScreen)
+
+    // clean up after ourselves
+    return function cleanup() {
+      mediaWatcher.removeEventListener('change', updateIsNarrowScreen)
+    }
+  })
+  
   return(
     <div> 
       <BannerWrapper>
         <Container>
           <div className="flex h100 alignCenter">
             <ContentArea minWidth="25vw" minHeight="60vh" backgroundImage={`url(${leafbg})`} >
-              <p className="centerXandY whiteText" onClick={()=>setCurrentPDF(Agriculture_Catalogue)}>
+              <p className="centerXandY whiteText cursorPointer" onClick={()=>setCurrentPDF(Agriculture_Catalogue)}>
                     <b>
                     Agriculture
                     </b>
                 {/*<a className="whiteText" href={Agriculture_Catalogue} download>
                 </a>*/}
               </p>
+              { isNarrowScreen ? (currentPDF == Agriculture_Catalogue ? <PDFDisplay pdf={currentPDF} /> : "") : ""}
             </ContentArea>
             <ContentArea minWidth="25vw" minHeight="60vh" backgroundImage={`url(${hpAquaculture})`}>
-              <p className="centerXandY whiteText" onClick={()=>setCurrentPDF(Aquaculture_Catalog)}>
+              <p className="centerXandY whiteText cursorPointer" onClick={()=>setCurrentPDF(Aquaculture_Catalog)}>
                 <b>
                 Aquaculture
                 </b>
               {/** <a className="whiteText" href={Aquaculture_Catalog} download>
               </a> */}
               </p>
+              { isNarrowScreen ? (currentPDF == Aquaculture_Catalog ? <PDFDisplay pdf={currentPDF} /> : "") : ""}
             </ContentArea>
             <ContentArea minWidth="25vw" minHeight="60vh" backgroundImage={`url(${hpHydrocarbon})`}>
-              <p className="centerXandY whiteText" onClick={()=>setCurrentPDF(Hydrocarbon_Catalog)}>
+              <p className="centerXandY whiteText cursorPointer" onClick={()=>setCurrentPDF(Hydrocarbon_Catalog)}>
                   <b>
                   Environmental Remediation
                   <br/>
@@ -69,9 +91,10 @@ const Catalog = (props) => {
               {/** <a className="whiteText" href={Hydrocarbon_Catalog} download>
               </a> */}
                 </p>
+                { isNarrowScreen ? (currentPDF == Hydrocarbon_Catalog ? <PDFDisplay pdf={currentPDF} /> : "") : ""}
             </ContentArea>
             <ContentArea minWidth="25vw" minHeight="60vh" backgroundImage={`url(${MicroorganismsBG})`}>
-                <p className="centerXandY whiteText" onClick={()=>setCurrentPDF(Waste_Waters_Catalogue)}>
+                <p className="centerXandY whiteText cursorPointer" onClick={()=>setCurrentPDF(Waste_Waters_Catalogue)}>
                   <b>
                   Environmental Remediation
                   <br/>
@@ -80,9 +103,10 @@ const Catalog = (props) => {
               {/** <a className="whiteText" href={Waste_Waters_Catalogue} download>
               </a> */}
                 </p>
+                { isNarrowScreen ? (currentPDF == Waste_Waters_Catalogue ? <PDFDisplay pdf={currentPDF} /> : "") : ""}
             </ContentArea>
           </div>
-          {currentPDF == "none" ? "" : <PDFDisplay pdf={currentPDF} />}
+          {isNarrowScreen ? "" : currentPDF == "none" ? "" : <PDFDisplay pdf={currentPDF} />}
         </Container>
       </BannerWrapper>
     </div>
