@@ -10,6 +10,24 @@ const Container = styled.div`
   width: 100%;
   align-items: center;
   justify-content: space-between;
+
+  .info_container{
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  @media only screen and (max-width: 480px) {
+    .info_container{
+      flex-direction: column;
+      p{
+        margin-block-start: .5em;
+        margin-block-end: .5em;
+      }
+    }
+  }
   
 `;
 
