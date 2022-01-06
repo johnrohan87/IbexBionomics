@@ -41,12 +41,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Ibex Bionomics`,
+        short_name: `Ibex Bionomics`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
-        display: `minimal-ui`,
+        display: `Ibex Bionomics`,
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
