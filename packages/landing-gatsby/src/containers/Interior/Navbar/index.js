@@ -120,6 +120,7 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
           logoStyle={logoStyle}
         />
         <div className="info_container">
+          {/**
           <div style={{ display: 'flex'}}>
             <p>
               305-
@@ -130,7 +131,7 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
             <p>
               5111
             </p>
-          </div>
+          </div> */}
           <div style={{ display: 'flex'}}>
             <p >
               info@
