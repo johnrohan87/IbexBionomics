@@ -29,7 +29,7 @@ const Interior = () => {
   return (
     <ThemeProvider theme={interiorTheme}>
       <Fragment>
-        <Seo title="Interior" />
+        <Seo title="Ibex Bionomics Home" />
         <ResetCSS />
         <GlobalStyle />
 
