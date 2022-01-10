@@ -38,7 +38,7 @@ const PDFDisplay = ({ pdf }) => {
   });
   useEffect(()=> {
     setPage(1);
-  },[pdfDocument,pdf])
+  },[pdf])
 
   return(
     <div> 

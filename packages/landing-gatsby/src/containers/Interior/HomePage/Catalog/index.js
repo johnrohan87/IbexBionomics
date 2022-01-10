@@ -39,7 +39,7 @@ const Catalog = (props) => {
   const [isNarrowScreen, setIsNarrowScreen] = useState(false);
 
   useEffect(() => {
-    console.log(isNarrowScreen)
+    //console.log(isNarrowScreen)
     // set initial value
     const mediaWatcher = window.matchMedia("(max-width: 1000px)")
     setIsNarrowScreen(mediaWatcher.matches);
@@ -48,13 +48,22 @@ const Catalog = (props) => {
     function updateIsNarrowScreen(e) {
       setIsNarrowScreen(e.matches);
     }
-    mediaWatcher.addEventListener('change', updateIsNarrowScreen)
 
-    // clean up after ourselves
-    return function cleanup() {
-      mediaWatcher.removeEventListener('change', updateIsNarrowScreen)
+    if(mediaWatcher.addEventListener) {
+      mediaWatcher.addEventListener('change', updateIsNarrowScreen)
+      // clean up after ourselves
+      return function cleanup() {
+        mediaWatcher.removeEventListener('change', updateIsNarrowScreen)
+      }
+    } else {
+      // backwards compatibility
+      mediaWatcher.addListener(updateIsNarrowScreen)
+      return function cleanup() {
+        mediaWatcher.removeListener(updateIsNarrowScreen)
+      }
     }
-  })
+    
+  },[])
   
   return(
     <div> 
@@ -69,7 +78,9 @@ const Catalog = (props) => {
                 {/*<a className="whiteText" href={Agriculture_Catalogue} download>
                 </a>*/}
               </p>
+              <div className="Agriculture_Catalogue">
               { isNarrowScreen ? (currentPDF == Agriculture_Catalogue ? <PDFDisplay pdf={currentPDF} /> : "") : ""}
+              </div>
             </ContentArea>
             <ContentArea minWidth="25vw" minHeight="60vh" backgroundImage={`url(${hpAquaculture})`}>
               <p className="centerXandY whiteText cursorPointer" onClick={()=>setCurrentPDF(Aquaculture_Catalog)}>
