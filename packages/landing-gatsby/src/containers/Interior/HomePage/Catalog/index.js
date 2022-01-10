@@ -32,18 +32,14 @@ import MicroorganismsBG from '../../../../common/assets/image/interior/IbexImage
 import Agriculture_Catalogue from '../../../../common/assets/PDFs/Agriculture_Catalogue_ENG.pdf'
 import Aquaculture_Catalog from '../../../../common/assets/PDFs/Aquaculture_Catalog.pdf'
 import Hydrocarbon_Catalog from '../../../../common/assets/PDFs/Hydrocarbon_Catalog.pdf'
-import Waste_Waters_Catalog from '../../../../common/assets/PDFs/Waste_Waters_Catalogue.pdf'
+import Waste_Waters_Catalogue from '../../../../common/assets/PDFs/Waste_Waters_Catalogue.pdf'
 
 const Catalog = (props) => {
   const [currentPDF,setCurrentPDF] = useState('none')
   const [isNarrowScreen, setIsNarrowScreen] = useState(false);
-  const [showAgriculture, setAgriculture] = useState(false);
-  const [showAquaculture, setAquaculture] = useState(false);
-  const [showHydrocarbon, setHydrocarbon] = useState(false);
-  const [showWaste_Waters, setWaste_Waters] = useState(false);
 
   useEffect(() => {
-    //console.log(showAgriculture)
+    //console.log(isNarrowScreen)
     // set initial value
     const mediaWatcher = window.matchMedia("(max-width: 1000px)")
     setIsNarrowScreen(mediaWatcher.matches);
@@ -75,7 +71,7 @@ const Catalog = (props) => {
         <Container>
           <div className="flex h100 alignCenter">
             <ContentArea minWidth="25vw" minHeight="60vh" backgroundImage={`url(${leafbg})`} >
-              <p className="centerXandY whiteText cursorPointer" onClick={()=>setAgriculture(!showAgriculture)}>
+              <p className="centerXandY whiteText cursorPointer" onClick={()=>setCurrentPDF(Agriculture_Catalogue)}>
                     <b>
                     Agriculture
                     </b>
@@ -83,24 +79,21 @@ const Catalog = (props) => {
                 </a>*/}
               </p>
               <div className="Agriculture_Catalogue">
-              <PDFDisplay visible={showAgriculture} pdf={Agriculture_Catalogue} />
-              {/** isNarrowScreen ? (currentPDF == Agriculture_Catalogue ? <><PDFDisplay pdf={currentPDF} /></> : <></>) : <></>*/}
+              { isNarrowScreen ? (currentPDF == Agriculture_Catalogue ? <><PDFDisplay pdf={currentPDF} /></> : <></>) : <></>}
               </div>
             </ContentArea>
             <ContentArea minWidth="25vw" minHeight="60vh" backgroundImage={`url(${hpAquaculture})`}>
-              <p className="centerXandY whiteText cursorPointer" onClick={()=>setAquaculture(!showAquaculture)}>
+              <p className="centerXandY whiteText cursorPointer" onClick={()=>setCurrentPDF(Aquaculture_Catalog)}>
                 <b>
                 Aquaculture
                 </b>
               {/** <a className="whiteText" href={Aquaculture_Catalog} download>
               </a> */}
               </p>
-              <div className="Aquaculture_Catalog">
-              <PDFDisplay visible={showAquaculture} pdf={Aquaculture_Catalog} />
-              </div>
+              { isNarrowScreen ? (currentPDF == Aquaculture_Catalog ? <PDFDisplay pdf={currentPDF} /> : "") : ""}
             </ContentArea>
             <ContentArea minWidth="25vw" minHeight="60vh" backgroundImage={`url(${hpHydrocarbon})`}>
-              <p className="centerXandY whiteText cursorPointer" onClick={()=>setHydrocarbon(!showHydrocarbon)}>
+              <p className="centerXandY whiteText cursorPointer" onClick={()=>setCurrentPDF(Hydrocarbon_Catalog)}>
                   <b>
                   Environmental Remediation
                   <br/>
@@ -108,13 +101,11 @@ const Catalog = (props) => {
                   </b>
               {/** <a className="whiteText" href={Hydrocarbon_Catalog} download>
               </a> */}
-              </p>
-              <div className="Hydrocarbon_Catalog">
-              <PDFDisplay visible={showHydrocarbon} pdf={Hydrocarbon_Catalog} />
-              </div>
+                </p>
+                { isNarrowScreen ? (currentPDF == Hydrocarbon_Catalog ? <PDFDisplay pdf={currentPDF} /> : "") : ""}
             </ContentArea>
             <ContentArea minWidth="25vw" minHeight="60vh" backgroundImage={`url(${MicroorganismsBG})`}>
-                <p className="centerXandY whiteText cursorPointer" onClick={()=>setWaste_Waters(!showWaste_Waters)}>
+                <p className="centerXandY whiteText cursorPointer" onClick={()=>setCurrentPDF(Waste_Waters_Catalogue)}>
                   <b>
                   Environmental Remediation
                   <br/>
@@ -123,9 +114,7 @@ const Catalog = (props) => {
               {/** <a className="whiteText" href={Waste_Waters_Catalogue} download>
               </a> */}
                 </p>
-                <div className="Waste_Waters_Catalog">
-                <PDFDisplay visible={showWaste_Waters} pdf={Waste_Waters_Catalog} />
-                </div>
+                { isNarrowScreen ? (currentPDF == Waste_Waters_Catalogue ? <PDFDisplay pdf={currentPDF} /> : "") : ""}
             </ContentArea>
           </div>
           {isNarrowScreen ? "" : currentPDF == "none" ? "" : <PDFDisplay pdf={currentPDF} />}

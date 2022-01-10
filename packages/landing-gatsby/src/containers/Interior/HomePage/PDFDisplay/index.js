@@ -30,7 +30,7 @@ import BannerWrapper, {
 const PDFDisplay = ({ pdf, visible }) => {
   const [page, setPage] = useState(1);
   const canvasRef = useRef(null);
-  const [hidden, setHidden] = useState(false);
+  //const [hidden, setHidden] = useState(styleVisible);
   
 
   const { pdfDocument, pdfPage } = usePdf({
@@ -40,8 +40,8 @@ const PDFDisplay = ({ pdf, visible }) => {
   });
   useEffect(()=> {
     setPage(1);
-    visible ? setHidden(styleVisible):setHidden(styleHidden)
-    console.log(visible)
+    //visible ? setHidden(styleVisible):setHidden(styleHidden)
+    //console.log(visible)
   },[pdf,visible])
 
   const styleHidden = {
@@ -54,7 +54,7 @@ const PDFDisplay = ({ pdf, visible }) => {
   }
   return(
     <div> 
-      <BannerWrapper style={{...hidden}}>
+      <BannerWrapper >
         <Container>
           <div className="flex h100 alignCenter">
             <ContentArea minWidth="100vw" minHeight="80vh" >
