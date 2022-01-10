@@ -27,9 +27,11 @@ import BannerWrapper, {
 //import Hydrocarbon_Catalog from '../../../../common/assets/PDFs/Hydrocarbon_Catalog.pdf'
 //import Waste_Waters_Catalogue from '../../../../common/assets/PDFs/Waste_Waters_Catalogue.pdf'
 
-const PDFDisplay = ({ pdf }) => {
+const PDFDisplay = ({ pdf, visible }) => {
   const [page, setPage] = useState(1);
   const canvasRef = useRef(null);
+  const [hidden, setHidden] = useState(false);
+  
 
   const { pdfDocument, pdfPage } = usePdf({
     file: `${pdf}`,
@@ -38,11 +40,21 @@ const PDFDisplay = ({ pdf }) => {
   });
   useEffect(()=> {
     setPage(1);
-  },[pdf])
+    visible ? setHidden(styleVisible):setHidden(styleHidden)
+    console.log(visible)
+  },[pdf,visible])
 
+  const styleHidden = {
+    display: 'none',
+    visibility: 'hidden'
+  }
+  const styleVisible ={
+    display: 'block',
+    visibility: 'visible'
+  }
   return(
     <div> 
-      <BannerWrapper>
+      <BannerWrapper style={{...hidden}}>
         <Container>
           <div className="flex h100 alignCenter">
             <ContentArea minWidth="100vw" minHeight="80vh" >
