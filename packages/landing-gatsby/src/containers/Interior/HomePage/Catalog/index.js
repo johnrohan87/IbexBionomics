@@ -79,7 +79,7 @@ const Catalog = (props) => {
                 </a>*/}
               </p>
               <div className="Agriculture_Catalogue">
-              { isNarrowScreen ? (currentPDF == Agriculture_Catalogue ? <PDFDisplay pdf={currentPDF} /> : "") : ""}
+              { isNarrowScreen ? (currentPDF == Agriculture_Catalogue ? <PDFDisplay pdf={currentPDF} /> : <></>) : <></>}
               </div>
             </ContentArea>
             <ContentArea minWidth="25vw" minHeight="60vh" backgroundImage={`url(${hpAquaculture})`}>
