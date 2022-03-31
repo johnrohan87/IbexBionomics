@@ -1,5 +1,8 @@
 
 module.exports = {
+  flags: {
+    DEV_SSR: false
+  },
   siteMetadata: {
     title: `Ibex Bionomics`,
     description: `In Collaboration With Nature. IBEX develops transformative products, processes and technologies guided by the systemic wisdom of nature… the adaptive processes of its bacteria, fungi, plants, animals, organisms and ecosystems - which have allowed them to survive for 3.85 billion years on Earth.`,

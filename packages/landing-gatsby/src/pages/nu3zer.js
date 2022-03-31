@@ -1,44 +1,65 @@
-import React, { useState, useRef } from 'react';
-import { usePdf } from '@mikecousins/react-pdf';
+import React, { useState } from 'react';
+import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 import nu3zer from 'common/assets/PDFs/Nu3zer_Catalog.pdf'
-import { display } from 'styled-system';
+import { ResetCSS } from 'common/assets/css/style';
+import {
+    GlobalStyle,
+    InteriorWrapper,
+    ContentWrapper,
+  } from 'containers/Interior/interior.style';
+import { width } from 'styled-system';
 
+const Nu3zer = (props) =>{
+    const [numPages, setNumPages] = useState(null);
+    const [pageNumber, setPageNumber] = useState(1);
+    const [curWidth,setWidth] = useState("100vw")
+  
+    function onDocumentLoadSuccess({ numPages }) {
+      setNumPages(numPages);
+      setPageNumber(1);
+      console.log(props)
+    }
 
-const Nu3zer = () => {
-  const [page, setPage] = useState(1);
-  const canvasRef = useRef(null);
+    function changePage(offset) {
+        setPageNumber(prevPageNumber => prevPageNumber + offset);
+    }
 
-  const { pdfDocument, pdfPage } = usePdf({
-    file: nu3zer,
-    page,
-    canvasRef,
-  });
+    function previousPage() {
+        changePage(-1);
+    }
 
-  return (
-    <div>
-      {!pdfDocument && <span>Loading...</span>}
-      <canvas ref={canvasRef} style={{maxWidth:"100vw"}}/>
-      {Boolean(pdfDocument && pdfDocument.numPages) && (
-        <nav>
-          <ul className="pager" style={{width:"100vw", display:"flex", alignItems: "center", justifyContent: "center", gap: "10%"}}>
-            <li className="previous" style={{width:"25vw"}}>
-              <button disabled={page === 1} onClick={() => setPage(page - 1)} style={{width:"25vw"}}>
-                Previous Page
-              </button>
-            </li>
-            <li className="next" style={{width:"25vw"}}>
-              <button
-                disabled={page === pdfDocument.numPages}
-                onClick={() => setPage(page + 1)}
-                style={{width:"25vw"}}
-              >
-                Next Page
-              </button>
-            </li>
-          </ul>
-        </nav>
-      )}
-    </div>
-  );
-};
+    function nextPage() {
+        changePage(1);
+    }
+
+    const { pdf } = props;
+
+    return (
+        <div >
+            <ResetCSS />
+            <GlobalStyle />
+            <Document file={nu3zer} onLoadSuccess={onDocumentLoadSuccess} >
+                <Page pageNumber={pageNumber} width={window.innerWidth} />
+            </Document>
+            <div >
+                <p>
+                    Page {pageNumber || (numPages ? 1 : "--")} of {numPages || "--"}
+                </p>
+                <button type="button" disabled={pageNumber <= 1} onClick={previousPage}>
+                    Previous
+                </button>
+                <button
+                type="button"
+                disabled={pageNumber >= numPages}
+                onClick={nextPage}
+                >
+                    Next
+                </button>
+            </div>
+        </div>
+    );
+  
+
+  
+}
 export default Nu3zer;
