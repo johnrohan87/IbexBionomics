@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 //import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 import { Document, Page } from 'react-pdf';
 import nu3zer from 'common/assets/PDFs/Nu3zer_Catalog.pdf'
@@ -13,7 +13,11 @@ import { width } from 'styled-system';
 const Nu3zer = (props) =>{
     const [numPages, setNumPages] = useState(null);
     const [pageNumber, setPageNumber] = useState(1);
-    const [curWidth,setWidth] = useState("100vw")
+    const [curWidth,setWidth] = useState(null)
+
+    useEffect(() => {
+        setWidth(window.innerWidth)
+    }, [])
   
     function onDocumentLoadSuccess({ numPages }) {
       setNumPages(numPages);
@@ -40,7 +44,7 @@ const Nu3zer = (props) =>{
             <ResetCSS />
             <GlobalStyle />
             <Document file={nu3zer} onLoadSuccess={onDocumentLoadSuccess} >
-                <Page pageNumber={pageNumber} width={window.innerWidth} />
+                <Page pageNumber={pageNumber} width={curWidth} />
             </Document>
             <div >
                 <p>
