@@ -18,6 +18,19 @@ exports.onCreateWebpackConfig = ({ actions, stage, plugins, getConfig, loaders }
    * MiniCssExtractPlugin css order warning
    * @link https://github.com/gatsbyjs/gatsby/discussions/30169#discussioncomment-621285
    */
+   if (stage === "build-html") {
+    actions.setWebpackConfig({
+      module: {
+        rules: [
+          {
+            test: /canvas/,
+            use: loaders.null(),
+          },
+        ],
+      },
+    })
+  }
+  
   if (stage === 'build-javascript' || stage === 'develop') {
     const config = getConfig();
 
