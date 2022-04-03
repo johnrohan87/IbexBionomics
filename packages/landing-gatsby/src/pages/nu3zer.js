@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Document, Page } from 'react-pdf/dist/umd/entry.webpack';
+import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 //import { Document, Page } from 'react-pdf';
 import nu3zer from 'common/assets/PDFs/Nu3zer_Catalog.pdf'
 import { ResetCSS } from 'common/assets/css/style';
