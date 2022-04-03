@@ -13,50 +13,52 @@ import {
     ContentWrapper,
   } from 'containers/Interior/interior.style';
 import { width } from 'styled-system';
-import React, { useEffect, useState, useRef, useCallback } from 'react';
-import * as pdfjsLib from "pdfjs-dist/build/pdf";
-import pdfjsWorker from "pdfjs-dist/build/pdf.worker.entry";
 
-export default function PdfViewer({url}){
-    if (url === null){
-        url = nu3zer;
-    }
-  const canvasRef = useRef();
-  pdfjsLib.GlobalWorkerOptions.workerSrc = pdfjsWorker;
+import React, { useState, useEffect } from "react";
+import { Document, Page } from "react-pdf";
+import { pdfjs } from "react-pdf";
+// import "react-pdf/dist/Page/AnnotationLayer.css";
+//import SamplePDF from "./sample.pdf";
 
-  const [pdfRef, setPdfRef] = useState();
-  const [currentPage, setCurrentPage] = useState(1);
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${
+  pdfjs.version
+}/pdf.worker.js`;
 
-  const renderPage = useCallback((pageNum, pdf=pdfRef) => {
-    pdf && pdf.getPage(pageNum).then(function(page) {
-      const viewport = page.getViewport({scale: 1.5});
-      const canvas = canvasRef.current;
-      canvas.height = viewport.height;
-      canvas.width = viewport.width;
-      const renderContext = {
-        canvasContext: canvas.getContext('2d'),
-        viewport: viewport
-      };
-      page.render(renderContext);
-    });   
-  }, [pdfRef]);
+function PDF(props) {
+  const [numPages, setNumPages] = useState(null);
+  const [pageNumber, setPageNumber] = useState(1);
 
-  useEffect(() => {
-    renderPage(currentPage, pdfRef);
-  }, [pdfRef, currentPage, renderPage]);
+  const onDocumentLoadSuccess = ({ numPages }) => {
+    console.log("on document load success");
+    setNumPages(numPages);
+  };
 
-  useEffect(() => {
-    const loadingTask = pdfjsLib.getDocument(url);
-    loadingTask.promise.then(loadedPdf => {
-      setPdfRef(loadedPdf);
-    }, function (reason) {
-      console.error(reason);
-    });
-  }, [url]);
+  const clicked = ({ pageNumber }) => {
+    console.log(pageNumber);
+  };
 
-  const nextPage = () => pdfRef && currentPage < pdfRef.numPages && setCurrentPage(currentPage + 1);
-
-  const prevPage = () => currentPage > 1 && setCurrentPage(currentPage - 1);
-
-  return <canvas ref={canvasRef}></canvas>;
+  return (
+    <div className="pdf-container">
+      <Document
+        file={nu3zer}
+        onLoadSuccess={onDocumentLoadSuccess}
+        onItemClick={clicked}
+      >
+        {Array.from(new Array(numPages), (el, index) => (
+          <div className="pdf-page-container" key={`pdfpage${index + 1}`}>
+            <Page
+              className="pdf-page"
+              key={`page_${index + 1}`}
+              pageNumber={index + 1}
+            />
+            <p className="pagenum" key={`pagenum+${index + 1}`}>
+              Page {index + 1} of {numPages}
+            </p>
+          </div>
+        ))}
+      </Document>
+    </div>
+  );
 }
+
+export default PDF;
