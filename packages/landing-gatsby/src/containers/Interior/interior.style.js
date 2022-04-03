@@ -274,9 +274,6 @@ const GlobalStyle = createGlobalStyle`
         background-color: ${themeGet('colors.white', '#ffffff')};
       }
     }
-    .react-pdf__Page__canvas {
-      width: 100vw;
-    }
   }
 `;
 

@@ -27,11 +27,18 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 function PDF(props) {
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
+  const [curWinInnerWidth, setCurWinInnerWidth] = useState(0);
 
   const onDocumentLoadSuccess = ({ numPages }) => {
     console.log("on document load success");
     setNumPages(numPages);
+    setPageNumber(1);
   };
+
+  useEffect(() => {
+    setCurWinInnerWidth(window.innerWidth)
+  }, [])
+
 
   const clicked = ({ pageNumber }) => {
     console.log(pageNumber);
@@ -39,17 +46,20 @@ function PDF(props) {
 
   return (
     <div className="pdf-container">
+        <ResetCSS />
+        <GlobalStyle />
       <Document
         file={nu3zer}
         onLoadSuccess={onDocumentLoadSuccess}
         onItemClick={clicked}
       >
         {Array.from(new Array(numPages), (el, index) => (
-          <div className="pdf-page-container" key={`pdfpage${index + 1}`}>
+          <div className="pdf-page-container" key={`pdfpage${index + 1}`} >
             <Page
               className="pdf-page"
               key={`page_${index + 1}`}
               pageNumber={index + 1}
+              width={curWinInnerWidth}
             />
             <p className="pagenum" key={`pagenum+${index + 1}`}>
               Page {index + 1} of {numPages}
