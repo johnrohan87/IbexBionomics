@@ -1,6 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
+//import React, { useState, useEffect } from 'react';
+//import { Document, Page } from 'pdfjs-dist';
+//import { Document, Page } from 'pdfjs-dist/webpack';
+//import pdfjsLib from "pdfjs-dist/build/pdf";
+//import pdfjsWorker from "pdfjs-dist/build/pdf.worker.entry";
 //import { Document, Page } from 'react-pdf';
+
 import nu3zer from 'common/assets/PDFs/Nu3zer_Catalog.pdf'
 import { ResetCSS } from 'common/assets/css/style';
 import {
@@ -9,62 +13,50 @@ import {
     ContentWrapper,
   } from 'containers/Interior/interior.style';
 import { width } from 'styled-system';
+import React, { useEffect, useState, useRef, useCallback } from 'react';
+import * as pdfjsLib from "pdfjs-dist/build/pdf";
+import pdfjsWorker from "pdfjs-dist/build/pdf.worker.entry";
 
-const Nu3zer = (props) =>{
-    const [numPages, setNumPages] = useState(null);
-    const [pageNumber, setPageNumber] = useState(1);
-    const [curWidth,setWidth] = useState(null)
-
-    useEffect(() => {
-        setWidth(window.innerWidth)
-    }, [])
-  
-    function onDocumentLoadSuccess({ numPages }) {
-      setNumPages(numPages);
-      setPageNumber(1);
-      console.log(props)
+export default function PdfViewer({url}){
+    if (url === null){
+        url = nu3zer;
     }
+  const canvasRef = useRef();
+  pdfjsLib.GlobalWorkerOptions.workerSrc = pdfjsWorker;
 
-    function changePage(offset) {
-        setPageNumber(prevPageNumber => prevPageNumber + offset);
-    }
+  const [pdfRef, setPdfRef] = useState();
+  const [currentPage, setCurrentPage] = useState(1);
 
-    function previousPage() {
-        changePage(-1);
-    }
+  const renderPage = useCallback((pageNum, pdf=pdfRef) => {
+    pdf && pdf.getPage(pageNum).then(function(page) {
+      const viewport = page.getViewport({scale: 1.5});
+      const canvas = canvasRef.current;
+      canvas.height = viewport.height;
+      canvas.width = viewport.width;
+      const renderContext = {
+        canvasContext: canvas.getContext('2d'),
+        viewport: viewport
+      };
+      page.render(renderContext);
+    });   
+  }, [pdfRef]);
 
-    function nextPage() {
-        changePage(1);
-    }
+  useEffect(() => {
+    renderPage(currentPage, pdfRef);
+  }, [pdfRef, currentPage, renderPage]);
 
-    const { pdf } = props;
+  useEffect(() => {
+    const loadingTask = pdfjsLib.getDocument(url);
+    loadingTask.promise.then(loadedPdf => {
+      setPdfRef(loadedPdf);
+    }, function (reason) {
+      console.error(reason);
+    });
+  }, [url]);
 
-    return (
-        <div >
-            <ResetCSS />
-            <GlobalStyle />
-            <Document file={nu3zer} onLoadSuccess={onDocumentLoadSuccess} >
-                <Page pageNumber={pageNumber} width={curWidth} />
-            </Document>
-            <div >
-                <p>
-                    Page {pageNumber || (numPages ? 1 : "--")} of {numPages || "--"}
-                </p>
-                <button type="button" disabled={pageNumber <= 1} onClick={previousPage}>
-                    Previous
-                </button>
-                <button
-                type="button"
-                disabled={pageNumber >= numPages}
-                onClick={nextPage}
-                >
-                    Next
-                </button>
-            </div>
-        </div>
-    );
-  
+  const nextPage = () => pdfRef && currentPage < pdfRef.numPages && setCurrentPage(currentPage + 1);
 
-  
+  const prevPage = () => currentPage > 1 && setCurrentPage(currentPage - 1);
+
+  return <canvas ref={canvasRef}></canvas>;
 }
-export default Nu3zer;
