@@ -44,6 +44,18 @@ function PDF(props) {
     console.log(pageNumber);
   };
 
+  function changePage(offset) {
+    setPageNumber(prevPageNumber => prevPageNumber + offset);
+  }
+
+  function previousPage() {
+    changePage(-1);
+  }
+
+  function nextPage() {
+    changePage(1);
+  }
+
   return (
     <div className="pdf-container">
         <ResetCSS />
@@ -53,7 +65,55 @@ function PDF(props) {
         onLoadSuccess={onDocumentLoadSuccess}
         onItemClick={clicked}
       >
-        {Array.from(new Array(numPages), (el, index) => (
+        
+       {Array.from(new Array(numPages), (el, index) => (
+          <div className="pdf-page-container" key={`pdfpage${index + 1}`} >
+            <Page
+              className="pdf-page"
+              key={`page_${index + 1}`}
+              pageNumber={index + 1}
+              width={curWinInnerWidth}
+            />
+            <br />
+            {/** <p className="pagenum" key={`pagenum+${index + 1}`}>
+              Page {index + 1} of {numPages}
+       </p> **/}
+          </div>
+        ))}
+      </Document>
+        {
+        /**
+         * Page on click style
+         <Document
+        file={nu3zer}
+        onLoadSuccess={onDocumentLoadSuccess}
+      >
+        <Page pageNumber={pageNumber} width={curWinInnerWidth} />
+      </Document>
+      <div>
+            <p>
+            Page {pageNumber || (numPages ? 1 : '--')} of {numPages || '--'}
+            </p>
+            <button
+            type="button"
+            disabled={pageNumber <= 1}
+            onClick={previousPage}
+            >
+            Previous
+            </button>
+            <button
+            type="button"
+            disabled={pageNumber >= numPages}
+            onClick={nextPage}
+            >
+            Next
+            </button>
+        </div>
+         */
+         }
+      {/**
+       onItemClick={clicked}
+       {Array.from(new Array(numPages), (el, index) => (
           <div className="pdf-page-container" key={`pdfpage${index + 1}`} >
             <Page
               className="pdf-page"
@@ -66,7 +126,7 @@ function PDF(props) {
             </p>
           </div>
         ))}
-      </Document>
+       */}
     </div>
   );
 }
