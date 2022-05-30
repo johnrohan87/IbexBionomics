@@ -38,7 +38,7 @@ function PDFDisplay(props) {
 
   useEffect(() => {
     setCurWinInnerWidth(window.innerWidth)
-  }, [])
+  }, [curWinInnerWidth])
 
 
   const clicked = ({ pageNumber }) => {
