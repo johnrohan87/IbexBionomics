@@ -184,6 +184,9 @@ export const ContentArea = styled.div`
     height: 100% !important;
     width: 100% !important;
   }
+  .react-pdf__Page__canvas * {
+      width: 100% !important;
+  }
   .zindexTop{
     z-index: 1;
   }

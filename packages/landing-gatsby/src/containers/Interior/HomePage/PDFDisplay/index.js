@@ -17,6 +17,7 @@ import { width } from 'styled-system';
 import React, { useState, useEffect } from "react";
 import { Document, Page } from "react-pdf";
 import { pdfjs } from "react-pdf";
+import { ContentArea } from '../Catalog/banner.style';
 // import "react-pdf/dist/Page/AnnotationLayer.css";
 //import SamplePDF from "./sample.pdf";
 
@@ -37,7 +38,8 @@ function PDFDisplay(props) {
   };
 
   useEffect(() => {
-    setCurWinInnerWidth(window.innerWidth)
+    setCurWinInnerWidth(document.documentElement.clientWidth || window.innerWidth);
+    console.log(curWinInnerWidth,"curWinInnerWidth");
   }, [curWinInnerWidth])
 
 
@@ -58,7 +60,8 @@ function PDFDisplay(props) {
   }
 
   return (
-    <div className="pdf-container">
+    <ContentArea>
+    <div className="pdf-container" width="100%">
         <ResetCSS />
         <GlobalStyle />
       <Document
@@ -67,13 +70,13 @@ function PDFDisplay(props) {
         onItemClick={clicked}
       >
         
-       {Array.from(new Array(numPages), (el, index) => (
-          <div className="pdf-page-container" key={`pdfpage${index + 1}`} >
+       {[...Array(numPages).keys()].map((index) => (
+          <div className="pdf-page-container" key={`pdfpage${index + 1}`} width={curWinInnerWidth} >
             <Page
-              className="pdf-page"
               key={`page_${index + 1}`}
               pageNumber={index + 1}
               width={curWinInnerWidth}
+              scale="1"
             />
             <br />
             {/** <p className="pagenum" key={`pagenum+${index + 1}`}>
@@ -82,53 +85,8 @@ function PDFDisplay(props) {
           </div>
         ))}
       </Document>
-        {
-        /**
-         * Page on click style
-         <Document
-        file={nu3zer}
-        onLoadSuccess={onDocumentLoadSuccess}
-      >
-        <Page pageNumber={pageNumber} width={curWinInnerWidth} />
-      </Document>
-      <div>
-            <p>
-            Page {pageNumber || (numPages ? 1 : '--')} of {numPages || '--'}
-            </p>
-            <button
-            type="button"
-            disabled={pageNumber <= 1}
-            onClick={previousPage}
-            >
-            Previous
-            </button>
-            <button
-            type="button"
-            disabled={pageNumber >= numPages}
-            onClick={nextPage}
-            >
-            Next
-            </button>
-        </div>
-         */
-         }
-      {/**
-       onItemClick={clicked}
-       {Array.from(new Array(numPages), (el, index) => (
-          <div className="pdf-page-container" key={`pdfpage${index + 1}`} >
-            <Page
-              className="pdf-page"
-              key={`page_${index + 1}`}
-              pageNumber={index + 1}
-              width={curWinInnerWidth}
-            />
-            <p className="pagenum" key={`pagenum+${index + 1}`}>
-              Page {index + 1} of {numPages}
-            </p>
-          </div>
-        ))}
-       */}
     </div>
+    </ContentArea>
   );
 }
 

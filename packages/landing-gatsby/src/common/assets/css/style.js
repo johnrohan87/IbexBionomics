@@ -73,6 +73,12 @@ export const ResetCSS = createGlobalStyle`
     text-decoration: none;
   }
 
+  .react-pdf__Page__canvas{
+    margin: 0 auto;
+    width: 100% !important;
+    height: 100% !important;
+}
+
   .reuseModalHolder {
     padding: 0 !important;
     &.demo_switcher_modal {
