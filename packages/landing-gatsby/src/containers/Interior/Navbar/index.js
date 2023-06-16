@@ -114,7 +114,7 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
     <NavbarWrapper {...navbarStyle}>
       <Container>
         <Logo
-          href="/interior"
+          href="/"
           logoSrc={logo}
           title="Interior"
           logoStyle={logoStyle}
@@ -133,15 +133,11 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
             </p>
           </div> */}
           <div style={{ display: 'flex'}}>
-            <p >
-              info@
-            </p>
-            <p>
-              IBEXBionomics
-            </p>
-            <p>
-              .com
-            </p>
+            <a href={"mailto:info@IBEXBionomics.com"} >
+              <p >
+                info@IBEXBionomics.com
+              </p>
+            </a>
           </div>
         </div>
         {/**

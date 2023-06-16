@@ -96,14 +96,24 @@ const Footer = ({ row, col, colOne, colTwo }) => {
         <Container width="1330px">
           <Box className="row" {...row}>
             <Box className="col-one" {...colOne}>
-              <Logo
+              <li >
+                <Logo
                 className="logo"
-                href="/interior"
+                href="/"
                 logoSrc={logo.publicURL}
                 title="Interior"
-              />
-              <Text className="text" content={mail} />
-              <Text className="text" content={phone} />
+                style={{backgroundColor: '#FFFFFF',
+                mozBorderRadius: "120px / 70px",
+                webkitBorderRadius: "120px / 70px",
+                borderRadius: "120px / 70px",
+                boxShadow: "0 0 15px 15px #FFFFFF"}}
+                />
+                <a href={"mailto:info@IBEXBionomics.com"} >
+                  <Text className="text" content={mail} />
+                </a>
+                <Text className="text" content={phone} />
+              </li>
+              
               <SocialList>
                 {/**
                 {socialLinks.map((item) => (
