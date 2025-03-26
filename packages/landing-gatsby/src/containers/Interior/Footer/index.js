@@ -1,28 +1,28 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
-import { Icon } from 'react-icons-kit';
-import { facebook } from 'react-icons-kit/fa/facebook';
-import { dribbble } from 'react-icons-kit/fa/dribbble';
-import { googlePlus } from 'react-icons-kit/fa/googlePlus';
-import { skype } from 'react-icons-kit/fa/skype';
-import { twitter } from 'react-icons-kit/fa/twitter';
+//import { Icon } from 'react-icons-kit';
+//import { facebook } from 'react-icons-kit/fa/facebook';
+//import { dribbble } from 'react-icons-kit/fa/dribbble';
+//import { googlePlus } from 'react-icons-kit/fa/googlePlus';
+//import { skype } from 'react-icons-kit/fa/skype';
+//import { twitter } from 'react-icons-kit/fa/twitter';
 import Box from 'common/components/Box';
 import Text from 'common/components/Text';
-import Heading from 'common/components/Heading';
+//import Heading from 'common/components/Heading';
 import Logo from 'common/components/UIElements/Logo';
 import Container from 'common/components/UI/Container';
 import FooterWrapper, {
   CurvIcon,
-  List,
-  ListItem,
+  //List,
+  //ListItem,
   SocialList,
 } from './footer.style';
 
-import footerlogo from 'common/assets/image/interior/IbexImages/IbexBionomicsLogo2.png';
+//import footerlogo from 'common/assets/image/interior/IbexImages/IbexBionomicsLogo2.png';
 
 
-const socialLinks = [
+/*const socialLinks = [
   {
     id: 1,
     icon: <Icon icon={facebook} />,
@@ -53,9 +53,14 @@ const socialLinks = [
     name: 'twitter',
     link: '#',
   },
-];
+];*/
 
-const Footer = ({ row, col, colOne, colTwo }) => {
+const Footer = ({ 
+  row, 
+  //col, 
+  colOne, 
+  //colTwo 
+}) => {
   const data = useStaticQuery(graphql`
     query {
       interiorJson {
@@ -78,7 +83,9 @@ const Footer = ({ row, col, colOne, colTwo }) => {
       }
     }
   `);
-  const { logo, mail, phone, menuWidgets } = data.interiorJson.footerData;
+  const { logo, mail, phone, 
+    //menuWidgets 
+    } = data.interiorJson.footerData;
  
   return (
     <Fragment>
