@@ -29,7 +29,8 @@ const Interior = () => {
   return (
     <ThemeProvider theme={interiorTheme}>
       <Fragment>
-        <Seo title="Ibex Bionomics Home" />
+        <Seo title="IBEX Bionomics | Organic Biotech for Sustainable Solutions"
+              description="Explore certified organic biotech kits for aquaculture, agriculture, and environmental remediation." />
         <ResetCSS />
         <GlobalStyle />
 

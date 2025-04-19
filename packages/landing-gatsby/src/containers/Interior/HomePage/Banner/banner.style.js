@@ -58,6 +58,13 @@ export const Container = styled.div`
     padding-bottom: 50px;
     text-align: center;
   }
+  h2{
+    //color: ${themeGet('colors.label', '#C6C6C6')};
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
   @media only screen and (max-width: 1600px) {
     padding: 0 81px;
   }
@@ -77,12 +84,15 @@ export const Container = styled.div`
     -moz-border-radius: 15px;
     //border: 2px solid #000;
   }
-  .shadowDark{
+  .BGShadowDark{
     padding: 5px 10px;
-    background: rgb(0, 0, 0, 0.4);
+    background: rgb(0, 0, 0, 0.55);
     border-radius: 15px;
     -moz-border-radius: 15px;
     //border: 2px solid #000;
+  }
+  .TxtShadowDark{ 
+    text-shadow: 2px 2px 2px black;
   }
 `;
 

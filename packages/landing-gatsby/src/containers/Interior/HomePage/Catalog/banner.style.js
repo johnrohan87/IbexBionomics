@@ -106,6 +106,34 @@ export const ContentArea = styled.div`
   text-align: center;
   margin: auto;
 
+  .catalogContent {
+  padding: 20px 30px;
+  background: rgba(0, 0, 0, 0.55); // adds contrast
+  border-radius: 12px;
+  margin: 20px auto;
+  max-width: 90%;
+  backdrop-filter: blur(4px);
+}
+
+.sectorTitle {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+  text-shadow: 0 0 15px rgba(0,0,0,0.8);
+}
+
+.sectorDescription {
+  color: #f2f2f2;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  text-align: center;
+  font-weight: 400;
+  text-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+
   .cursorPointer {
     cursor: pointer;
   }
@@ -149,6 +177,17 @@ export const ContentArea = styled.div`
     + p {
       margin: 0;
     }
+  }
+
+  .BGShadowDark{
+    padding: 5px 10px;
+    background: rgb(0, 0, 0, 0.55);
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    //border: 2px solid #000;
+  }
+  .TxtShadowDark{ 
+    text-shadow: 2px 2px 2px black;
   }
 `;
 

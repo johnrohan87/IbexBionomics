@@ -2,7 +2,7 @@ import React from 'react';
 import PDFDisplay from '../PDFDisplay';
 import { ContentArea, PDFDisplayArea } from './banner.style';
 
-const CatalogItem = ({ label, backgroundImage, pdf, currentPDF, setCurrentPDF, isNarrowScreen }) => {
+const CatalogItem = ({ className={...className}, label, backgroundImage, description, pdf, currentPDF, setCurrentPDF, isNarrowScreen }) => {
   const isActive = currentPDF === pdf;
 
   const handleSelect = () => {
@@ -27,9 +27,10 @@ const CatalogItem = ({ label, backgroundImage, pdf, currentPDF, setCurrentPDF, i
         onKeyDown={handleKeyDown}
         className="cursorPointer"
       >
-        <p className="centerXandY whiteText">
-          <b>{label}</b>
-        </p>
+        <div className="catalogContent">
+          <p className="sectorTitle">{label}</p>
+          <p className="sectorDescription">{description}</p>
+        </div>
       </ContentArea>
       <PDFDisplayArea>
       {isNarrowScreen && isActive && <PDFDisplay pdf={pdf} />}

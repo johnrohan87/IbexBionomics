@@ -6,7 +6,7 @@ import Fade from 'react-reveal/Fade';
 //import { iosEmailOutline } from 'react-icons-kit/ionicons/iosEmailOutline';
 //import Heading from 'common/components/Heading';
 //import Text from 'common/components/Text';
-//import Button from 'common/components/Button';
+import Button from 'common/components/Button';
 //import Input from 'common/components/Input';
 //import GlideCarousel from 'common/components/GlideCarousel';
 //import GatsbyImage from 'common/components/GatsbyImage';
@@ -62,11 +62,19 @@ const HPBanner = () => {
         <Container>
           <Fade bottom >
             <div className="">
-              <h1 className="shadowDark">
+              <h1 className="BGShadowDark TxtShadowDark">
                 <b>
                 IBEX BIONOMICS
                 </b>
               </h1>
+            </div>
+            <div>
+            <h2 className='BGShadowDark TxtShadowDark'>
+                <b>
+                  100% organic biotechnology for aquaculture, agriculture, and environmental remediation.
+                </b>
+                <Button title="Explore Solutions" variant="textButton" />
+              </h2>
             </div>
           </Fade>
         <ContentArea>

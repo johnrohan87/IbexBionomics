@@ -42,14 +42,17 @@ const Catalog = () => {
           <div className="flex h100 alignCenter">
             <CatalogItem
               label="Agriculture"
+              description="Certified organic biostimulants and microbial fertilizers for soil health, crop productivity, and natural pest control. Includes RHYZOMAC, QBN-3, Q-COMBAT, and more."
               backgroundImage={leafbg}
               pdf={Agriculture_Catalogue}
               currentPDF={currentPDF}
               setCurrentPDF={setCurrentPDF}
               isNarrowScreen={isNarrowScreen}
+              className="TxtShadowDark"
             />
             <CatalogItem
               label="Aquaculture"
+              description="Improves water quality and oxygenation while reducing feed and energy costs. Kits like HYDROLIFE and MINERVIX boost phyto/zoo-plankton and reduce sludge by up to 80%."
               backgroundImage={hpAquaculture}
               pdf={Aquaculture_Catalog}
               currentPDF={currentPDF}
@@ -69,6 +72,7 @@ const Catalog = () => {
           <div className="flex h100 alignCenter">
             <CatalogItem
               label="Environmental Remediation\nHydrocarbons"
+              description="Biodegrade oil-based contamination in soil and water using enzyme-microbial blends like X-BLAST and D-TOXOL. Ideal for landfarming, refinery wastewater, and in situ cleanup."
               backgroundImage={hpHydrocarbon}
               pdf={Hydrocarbon_Catalog}
               currentPDF={currentPDF}
@@ -77,6 +81,7 @@ const Catalog = () => {
             />
             <CatalogItem
               label="Environmental Remediation\nWaste Waters"
+              description="Organic kits reduce BOD/COD, sludge, and toxic elements in wastewater systems. Uses microbial-mineral blends to restore ecological balance and meet discharge standards."
               backgroundImage={MicroorganismsBG}
               pdf={Waste_Waters_Catalogue}
               currentPDF={currentPDF}
@@ -96,6 +101,7 @@ const Catalog = () => {
           <div className="flex h100 alignCenter">
             <CatalogItem
               label="Nu3zer"
+              description="Foundation bio-optimizer that enhances photosynthesis and crop resistance. Combine with NPKs for yield increases, phytosanitary protection, and early harvests."
               backgroundImage={nu3zer}
               pdf={Nu3zer_Catalog}
               currentPDF={currentPDF}
