@@ -73,7 +73,7 @@ const HPBanner = () => {
                 <b>
                   100% organic biotechnology for aquaculture, agriculture, and environmental remediation.
                 </b>
-                <Button title="Explore Solutions" variant="textButton" />
+                {/*<Button title="Explore Solutions" variant="textButton" />*/}
               </h2>
             </div>
           </Fade>
