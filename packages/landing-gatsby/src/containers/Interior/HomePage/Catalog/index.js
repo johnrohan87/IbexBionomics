@@ -71,7 +71,7 @@ const Catalog = () => {
         <Container>
           <div className="flex h100 alignCenter">
             <CatalogItem
-              label="Environmental Remediation\nHydrocarbons"
+              label={<>Environmental Remediation<br />Hydrocarbons</>}
               description="Biodegrade oil-based contamination in soil and water using enzyme-microbial blends like X-BLAST and D-TOXOL. Ideal for landfarming, refinery wastewater, and in situ cleanup."
               backgroundImage={hpHydrocarbon}
               pdf={Hydrocarbon_Catalog}
@@ -80,7 +80,7 @@ const Catalog = () => {
               isNarrowScreen={isNarrowScreen}
             />
             <CatalogItem
-              label="Environmental Remediation\nWaste Waters"
+              label={<>Environmental Remediation<br />Waste Waters</>}
               description="Organic kits reduce BOD/COD, sludge, and toxic elements in wastewater systems. Uses microbial-mineral blends to restore ecological balance and meet discharge standards."
               backgroundImage={MicroorganismsBG}
               pdf={Waste_Waters_Catalogue}
