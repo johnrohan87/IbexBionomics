@@ -105,7 +105,7 @@ export const ContentArea = styled.div`
   justify-content: center;
   text-align: center;
   margin: auto;
-
+/*
   .catalogContent {
   padding: 20px 30px;
   background: rgba(0, 0, 0, 0.55); // adds contrast
@@ -113,6 +113,7 @@ export const ContentArea = styled.div`
   margin: 20px auto;
   max-width: 90%;
   backdrop-filter: blur(4px);
+*/
 }
 
 .sectorTitle {

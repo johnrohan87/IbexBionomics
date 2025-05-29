@@ -40,7 +40,7 @@ const CatalogItem = ({ className, label, backgroundImage, description, pdf, curr
       >
         <div className="catalogContent">
           <p className="sectorTitle">{label}</p>
-          <p className="sectorDescription">{description}</p>
+          {/*<p className="sectorDescription">{description}</p>*/}
         </div>
       </ContentArea>
       <PDFDisplayArea>

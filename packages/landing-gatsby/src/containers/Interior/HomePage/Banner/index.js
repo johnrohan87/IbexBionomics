@@ -68,14 +68,14 @@ const HPBanner = () => {
                 </b>
               </h1>
             </div>
-            <div>
-            <h2 className='BGShadowDark TxtShadowDark'>
-                <b>
-                  100% organic biotechnology for aquaculture, agriculture, and environmental remediation.
-                </b>
-                {/*<Button title="Explore Solutions" variant="textButton" />*/}
+            {/*<div>
+              <h2 className='BGShadowDark TxtShadowDark'>
+                  <b>
+                    100% organic biotechnology for aquaculture, agriculture, and environmental remediation.
+                  </b>
+                  <Button title="Explore Solutions" variant="textButton" />
               </h2>
-            </div>
+            </div>*/}
           </Fade>
         <ContentArea>
           
