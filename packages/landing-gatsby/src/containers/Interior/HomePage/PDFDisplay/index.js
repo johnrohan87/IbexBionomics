@@ -67,7 +67,15 @@ function PDFDisplay({ pdf }) {
   };
 
   // Avoid rendering Document until blob is ready
-  if (!pdfBlobUrl) return null;
+  if (!pdfBlobUrl) {
+    return (
+      <ContentArea>
+        <p style={{ textAlign: 'center', padding: '2rem', fontWeight: 'bold' }}>
+          Loading PDF…
+        </p>
+      </ContentArea>
+    );
+  }
 
   return (
     <ContentArea>

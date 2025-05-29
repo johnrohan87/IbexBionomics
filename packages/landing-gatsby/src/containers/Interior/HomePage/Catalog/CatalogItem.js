@@ -6,6 +6,9 @@ const CatalogItem = ({ className={...className}, label, backgroundImage, descrip
   const isActive = currentPDF === pdf;
 
   const handleSelect = () => {
+    if (!isActive) {
+      console.log(`Loading PDF: ${pdf}`);
+    }
     setCurrentPDF(isActive ? 'none' : pdf);
   };
 
@@ -26,6 +29,12 @@ const CatalogItem = ({ className={...className}, label, backgroundImage, descrip
         onClick={handleSelect}
         onKeyDown={handleKeyDown}
         className="cursorPointer"
+        style={{
+          cursor: 'pointer',
+          border: isActive ? '2px solid #007acc' : 'none',
+          boxShadow: isActive ? '0 0 10px rgba(0,0,0,0.3)' : 'none',
+          transition: 'box-shadow 0.2s ease-in-out',
+        }}
       >
         <div className="catalogContent">
           <p className="sectorTitle">{label}</p>
