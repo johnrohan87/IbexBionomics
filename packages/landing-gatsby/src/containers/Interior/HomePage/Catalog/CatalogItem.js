@@ -2,7 +2,7 @@ import React from 'react';
 import PDFDisplay from '../PDFDisplay';
 import { ContentArea, PDFDisplayArea } from './banner.style';
 
-const CatalogItem = ({ className={...className}, label, backgroundImage, description, pdf, currentPDF, setCurrentPDF, isNarrowScreen }) => {
+const CatalogItem = ({ className, label, backgroundImage, description, pdf, currentPDF, setCurrentPDF, isNarrowScreen }) => {
   const isActive = currentPDF === pdf;
 
   const handleSelect = () => {
@@ -18,6 +18,8 @@ const CatalogItem = ({ className={...className}, label, backgroundImage, descrip
     }
   };
 
+  const combinedClassName = `cursorPointer ${className || ''}`;
+
   return (
     <div>
       <ContentArea
@@ -28,7 +30,7 @@ const CatalogItem = ({ className={...className}, label, backgroundImage, descrip
         tabIndex={0}
         onClick={handleSelect}
         onKeyDown={handleKeyDown}
-        className="cursorPointer"
+        className={combinedClassName}
         style={{
           cursor: 'pointer',
           border: isActive ? '2px solid #007acc' : 'none',
